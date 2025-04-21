@@ -9,7 +9,7 @@
 	/**
 	 * Whether cheating in items is enabled.
 	 */
-	cheat-mode: false;
+	cheat-mode: true;
 
 	/**
 	 * How much EMI should use tooltips and popups to show controls and information.
@@ -82,13 +82,13 @@
 	 * Whether to use the batched render system. Batching is faster, but may have
 	 * incompatibilities with shaders or other mods.
 	 */
-	use-batched-renderer: true;
+	use-batched-renderer: false;
 
 	/**
 	 * Whether to have the search bar in the center of the screen, instead of to the
 	 * side.
 	 */
-	center-search-bar: true;
+	center-search-bar: false;
 
 	/**
 	 * Which sidebar type to switch to when searching.
@@ -207,7 +207,7 @@
 	/**
 	 * The subpanels in the right sidebar
 	 */
-	right-sidebar-subpanels: none;
+	right-sidebar-subpanels: lookup-history 2;
 
 	/**
 	 * How many columns and rows of ingredients to limit the right sidebar to
@@ -389,7 +389,7 @@
 	 * Move ingredients for as many results as possible and put in inventory if
 	 * possible.
 	 */
-	craft-all-to-inventory: "key.keyboard.unknown";
+	craft-all-to-inventory: "ctrl shift key.mouse.left";
 
 	/**
 	 * When on a stack with an associated recipe:
@@ -468,7 +468,7 @@
 	/**
 	 * Whether hovering the output of a recipe should show the recipe's EMI ID.
 	 */
-	show-recipe-ids: false;
+	show-recipe-ids: true;
 
 	/**
 	 * Whether to display additional widgets added to recipes from other mods.
