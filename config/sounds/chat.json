@@ -21,7 +21,8 @@
 		"soundEvent": "minecraft:block.note_block.chime"
 	},
 	"mentionKeywords": [
-		"@swzo"
+		"@swzo",
+		"@Pipo1660"
 	],
 	"ignoreSystemChats": false,
 	"enableChatSoundCooldown": false,
