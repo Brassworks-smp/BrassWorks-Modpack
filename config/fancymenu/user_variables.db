@@ -2,8 +2,8 @@ type = user_variables
 
 variable {
   name = claimamount
-  value = 124
-  reset_on_launch = false
+  value = 4
+  reset_on_launch = true
 }
 
 variable {
