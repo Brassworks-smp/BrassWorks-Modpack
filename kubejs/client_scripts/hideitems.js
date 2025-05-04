@@ -16,6 +16,7 @@ JEIEvents.hideItems(event => {
     additionalItemsToHide.forEach(item => {
         event.hide(item);
     });
+    event.hide('#forge:hidden')
 });
 
 // Hide these items from EMI if it's available
@@ -32,9 +33,12 @@ ClientEvents.tick(event => {
                     // Use EMI's API if available
                     global.emi.api.hideItem(item);
                 });
+                global.emi.api.hideItem('#forge:hidden')
+                global.emi.api.hideFluid('#forge:hidden')
             } catch (e) {
                 // Fallback if EMI's API isn't available
                 console.log("EMI API not available, items may still show in EMI");
+                console.warn('EMI API not available; forge:hidden may still appear')
             }
         }
     }
@@ -45,4 +49,5 @@ ServerEvents.recipes(event => {
     additionalItemsToHide.forEach(item => {
         event.remove({output: item});
     });
+    event.remove({ output: '#forge:hidden' })
 });

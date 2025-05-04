@@ -32,7 +32,7 @@ PlayerEvents.loggedIn(event => {
 // Prevent right-clicking with blocked items
 ItemEvents.rightClicked(event => {
     if (blockedItems.includes(event.item.id)) {
-        event.player.tell("Cet item a été supprimé du jeu !");
+        event.player.tell("This block has been removed from the game!");
         event.cancel();
     }
 });
@@ -40,7 +40,7 @@ ItemEvents.rightClicked(event => {
 // Prevent placing blocked blocks
 BlockEvents.placed(event => {
     if (blockedItems.includes(event.item.id)) {
-        event.player.tell("Ce bloc a été supprimé du jeu !");
+        event.player.tell("This block has been removed from the game!");
         event.cancel();
     }
 });
