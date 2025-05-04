@@ -7,6 +7,10 @@
     {
       "predicate": { "custom_model_data": 69420 },
       "model": "item/starter_book_model" 
+    },
+    {
+      "predicate": { "custom_model_data": 696969 },
+      "model": "item/land_book" 
     }
   ]
 }

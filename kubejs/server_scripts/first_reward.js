@@ -5,7 +5,7 @@ PlayerEvents.loggedIn(event => {
         player.persistentData.hasReceivedBundle = true;
         console.info(`[KubeJS] marking ${player.name.string} as received bundle`);
 
-        // 1) build your bundle NBT as a JS object
+        //build bundlle NBT as a JS objectt
         const bundleNbt = {
             Unbreakable: 1,
             HideFlags: 4,
@@ -46,11 +46,37 @@ PlayerEvents.loggedIn(event => {
                         "[[\"\\nSee you in the world,\\n– \",{\"text\":\"The Brassworks Team\",\"color\":\"#ffcc66\",\"bold\":true},{\"text\":\" 🛠\",\"color\":\"#ffcc66\"},\" (aka pipo & swzo)\"]]"
                     ]
                   }
+                },
+                {
+                  id:    "minecraft:written_book",
+                  Count: 1,
+                  tag: {
+                    title: "Claiming Land 101",
+                    author: "swzo",
+                    resolved: 1,
+                    display: {
+                        Name: '[["",{"text":"🏰Landlord’s Ledger","italic":false,"color":"#cc9966"}]]',
+                        Lore: ['["",{"text":"A Landlord’s Guide to the Real Estate Market","italic":false,"color":"#33cc66"}]']
+                    },
+                    CustomModelData: 696969,
+                    pages: [
+                        '[["",{"text":"📌","color":"#c26251"},{"text":"Claiming Land 101","color":"#c26251","bold":true},"\\nBy default every newcomer gets ",{"text":"4 free chunks","color":"#ffcc33","bold":true},". Want more claim slots? Open the ",{"text":"OpenPAC","color":"#ff99cc"}," menu with ",{"text":"’","bold":true}," (apostrophe) or ",{"text":"click here","color":"#66cccc","clickEvent":{"action":"run_command","value":"/openguiscreen xaero.pac.client.gui.MainMenu"},"hoverEvent":{"action":"show_text","contents":"Open Claims GUI"}},". You’ll see:\\nA ",{"text":"slider","bold":true}," to increase your total claim limit\\nA ",{"text":"Buy Chunks","color":"#00cc66","bold":true}," button to pay with Spurs\\nEach extra chunk slot costs ",{"text":"4 Spurs","color":"#c26251","bold":true},".\\n",{"text":"(flip to next page)","color":"#666666"}]]',
+                        '[["",{"text":"🔲","color":"#66cccc"},{"text":"Claiming Chunks","color":"#66cccc","bold":true},"\\nTo actually claim land:\\n",{"text":"Right-click","bold":true}," and drag over the chunks you want on the map.\\nClick ",{"text":"Claim Chunks","color":"#00cc66","bold":true},".\\nEach claimed chunk uses one of your available slots. Only you and your party can build there.\\n",{"text":"(flip to next page)","color":"#666666"}]]',
+                        '[["",{"text":"❌","color":"#ff3333"},{"text":"Unclaiming Chunks","color":"#ff3333","bold":true},"\\nYou don’t ",{"text":"buy chunks","color":"#00cc66"}," one-by-one. You buy slots. When you ",{"text":"unclaim","color":"#ff3333"}," :\\nYou free up capacity to claim elsewhere\\nClick your ",{"text":"claimed chunks","color":"#00cc66"}," again on the map and hit ",{"text":"Unclaim","color":"#ff3333","bold":true},". Your ",{"text":"Spurs","color":"#c26251"}," aren’t refunded, but your slots return.\\n",{"text":"(flip to next page)","color":"#666666"}]]',
+                        '[["",{"text":"👥","color":"#9933ff","bold":true},{"text":"Create or Join a Party","color":"#9933ff","bold":true},"\\nWant ",{"text":"friends","color":"#ffcc33"}," to build on your ",{"text":"land","color":"#c26251"},"? ",{"text":"Create a party","color":"#ff99cc","bold":true},{"text":" using this command: ","color":"#ff99cc"},{"text":"/openpac-parties create","color":"#66cccc","clickEvent":{"action":"copy_to_clipboard","value":"/openpac-parties create"},"hoverEvent":{"action":"show_text","contents":"Click To Copy Command"}},"\\nTo invite a friend:\\n",{"text":"/openpac-parties member invite <player>","color":"#66cccc","clickEvent":{"action":"copy_to_clipboard","value":"/openpac-parties member invite <player>"},"hoverEvent":{"action":"show_text","contents":"Click To Copy Command"}},"\\n",{"text":"(flip to next page)","color":"#666666"}]]',
+                        '[["",{"text":"✏","color":"#ff6633","bold":true},{"text":"Rename Your Party","color":"#ff6633","bold":true},"\\nPress ",{"text":"’ (or click here)","color":"#66cccc","clickEvent":{"action":"run_command","value":"/openguiscreen xaero.pac.client.gui.MainMenu"},"hoverEvent":{"action":"show_text","contents":"Open Claims GUI"}}," → Player Config → My Player Config\\nEnter your new party name in ",{"text":"Party Name","color":"#66cccc"}," box, then ",{"text":"Save","color":"green","bold":true},".\\nMake it memorable: “",{"text":"Spur Syndicate","color":"#c26251"},"” or “",{"text":"Brick Barons.","color":"#ff6666"},"”\\n",{"text":"(flip to next page)","color":"#666666"}]]',
+                        '[["",{"text":"🚪","color":"#cc6633","bold":true},{"text":"Invite, Kick & Transfer","color":"#cc6633","bold":true},"\\n",{"text":"Invite: "},{"text":"/openpac-parties member invite <player>","color":"#66cccc","clickEvent":{"action":"copy_to_clipboard","value":"/openpac-parties member invite <player>"},"hoverEvent":{"action":"show_text","contents":"Click To Copy Command"}},"\\n",{"text":"Kick: "},{"text":"/openpac-parties member kick <player>","color":"#66cccc","clickEvent":{"action":"copy_to_clipboard","value":"/openpac-parties member kick <player>"},"hoverEvent":{"action":"show_text","contents":"Click To Copy Command"}},"\\n",{"text":"Transfer leadership: "},{"text":"/openpac-parties transfer <player>","color":"#66cccc","clickEvent":{"action":"copy_to_clipboard","value":"/openpac-parties transfer <player>"},"hoverEvent":{"action":"show_text","contents":"Click To Copy Command"}},"\\n",{"text":"Don’t be that guy who gets kicked, play nice."},"\\n",{"text":"(flip to next page)","color":"#666666"}]]',
+                        '[["",{"text":"💬","color":"#ff99cc","bold":true},{"text":"Party Chat","color":"#ff99cc","bold":true},"\\n",{"text":"Keep plans private. Send party-only chat: "},{"text":"/opm <message>","color":"#66cccc","clickEvent":{"action":"copy_to_clipboard","value":"/opm <message>"},"hoverEvent":{"action":"show_text","contents":"Click To Copy Command"}},"\\n",{"text":"Your party sees it; the rest of the server is left guessing."},"\\n",{"text":"(flip to next page)","color":"#666666"}]]',
+                        '[["",{"text":"🛠","color":"#ccff33","bold":true},{"text":"Advanced Commands","color":"#ccff33","bold":true},"\\n",{"text":"/openpac-parties ally <party>","color":"#66cccc","clickEvent":{"action":"copy_to_clipboard","value":"/openpac-parties ally <party>"},"hoverEvent":{"action":"show_text","contents":"Click To Copy Command"}},{"text":" – Ally with another party for shared builds"},"\\n",{"text":"/openpac-parties leave","color":"#66cccc","clickEvent":{"action":"copy_to_clipboard","value":"/openpac-parties leave"},"hoverEvent":{"action":"show_text","contents":"Click To Copy Command"}},{"text":" – Leave your party (leader must transfer first)"},"\\n",{"text":"/openpac-parties member rank <rank> <player>","color":"#66cccc","clickEvent":{"action":"copy_to_clipboard","value":"/openpac-parties member rank <rank> <player>"},"hoverEvent":{"action":"show_text","contents":"Click To Copy Command"}},{"text":" – Set rank: ADMIN, MODERATOR, MEMBER"},"\\n",{"text":"Use these to build alliances or friendly trade networks."},"\\n",{"text":"(flip to next page)","color":"#666666"}]]',
+                        '[["",{"text":"🏰","color":"#ff99cc","bold":true},{"text":"Time to Rule Your Kingdom","color":"#ff99cc","bold":true},"\\n",{"text":"You now know how to:"},"\\n",{"text":"• Claim and unclaim land"},"\\n",{"text":"• Buy claim slots with Spurs"},"\\n",{"text":"• Create and manage parties"},"\\n",{"text":"• Chat privately and form alliances"},"\\n",{"text":"• Go stake your claim, build your dream base, or open a shop on your land. Brassworks SMP is yours to shape."}]]',
+                        '[["\\nSee you on the map!\\n– ",{"text":"Brassworks Team ⚙","color":"#ffcc33"}]]'
+                    ]
+                  }
                 }
             ]
         };
 
-        // 2) flatten it to a one‑line JSON string
+        // flatten it to a one‑line JSON string
         const nbtString = JSON.stringify(bundleNbt);
 
         player.give(Item.of('minecraft:bundle', bundleNbt));
