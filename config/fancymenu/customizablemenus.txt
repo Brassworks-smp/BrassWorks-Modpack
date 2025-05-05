@@ -24,3 +24,6 @@ net.minecraft.client.gui.screens.inventory.BookViewScreen {
 xaero.pac.client.gui.MainMenu {
 }
 
+net.minecraft.client.gui.screens.inventory.BookViewScreen {
+}
+

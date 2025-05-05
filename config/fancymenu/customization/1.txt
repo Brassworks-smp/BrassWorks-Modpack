@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = brassworks.pac.helpbook
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1746412903100
-  is_enabled = true
+  last_edited_time = 1746439236868
+  is_enabled = false
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:ea7619d6-7961-449c-8332-9615145091d5-1746412865335] = [groups:][instances:]
+  [loading_requirement_container_meta:3b3117bd-852d-45ac-98dd-6f39327a68b7-1746439236877] = [groups:][instances:]
 }
 
 customization {
@@ -65,8 +65,8 @@ element {
   fade_out_speed = 1.0
   base_opacity = 1.0
   auto_sizing = false
-  auto_sizing_base_screen_width = 1366
-  auto_sizing_base_screen_height = 746
+  auto_sizing_base_screen_width = 3440
+  auto_sizing_base_screen_height = 1440
   sticky_anchor = false
   anchor_point = mid-centered
   x = -176

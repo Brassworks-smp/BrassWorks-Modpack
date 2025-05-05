@@ -4,12 +4,12 @@ layout-meta {
   identifier = brassworks.pac.helpbook
   render_custom_elements_behind_vanilla = false
   last_edited_time = 1746408089299
-  is_enabled = false
+  is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:0aa38598-65cc-4b27-9056-39f2090d552c-1746412865336] = [groups:][instances:]
+  [loading_requirement_container_meta:46566e77-a700-4ba3-943d-85c1f564297d-1746439236879] = [groups:][instances:]
 }
 
 customization {
