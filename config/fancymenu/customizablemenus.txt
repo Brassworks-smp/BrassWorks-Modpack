@@ -15,6 +15,12 @@ net.minecraft.client.gui.screens.ChatScreen {
 net.minecraft.client.gui.screens.PauseScreen {
 }
 
+xaero.pac.client.gui.ConfigMenu {
+}
+
+net.minecraft.client.gui.screens.inventory.BookViewScreen {
+}
+
 xaero.pac.client.gui.MainMenu {
 }
 
