@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = brassworks.pac.helpbook
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1746439236868
-  is_enabled = false
+  last_edited_time = 1746446909230
+  is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:3b3117bd-852d-45ac-98dd-6f39327a68b7-1746439236877] = [groups:][instances:]
+  [loading_requirement_container_meta:f4d094d3-3e81-4b4c-8813-afab7ad94fbb-1746446346413] = [groups:][instances:]
 }
 
 customization {
@@ -33,7 +33,7 @@ layout_action_executable_blocks {
 
 element {
   interactable = true
-  source = Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+  source = %#ff99cc%🌟 Hey there, adventurer!%#%%n%%n%Welcome to the **%#ffcc66%Brassworks SMP%#%**, where:%n%- the builds are cool%n%- the shops are thriving%n%- the economy runs on shiny coins called **%#d57259%Spurs%#%**%n%%n%You've just spawned in, and guess what?  %n%You're already kinda rich *(%#999999%not really%#%)*
   source_mode = direct
   shadow = false
   scale = 1.0
@@ -66,7 +66,7 @@ element {
   base_opacity = 1.0
   auto_sizing = false
   auto_sizing_base_screen_width = 3440
-  auto_sizing_base_screen_height = 1440
+  auto_sizing_base_screen_height = 1370
   sticky_anchor = false
   anchor_point = mid-centered
   x = -176
@@ -90,7 +90,7 @@ element {
 
 element {
   interactable = true
-  source = this is page 1
+  source = 🎁 **Check Your Bundle!**%n%%n%You’ve got:%n%🪙 **64 Spurs** — your starting money  %n%🧰 **Bank Terminal** — your personal money vault%n%%n%This magic block works like an **Ender Chest** but for money:%n%- 🔁 Infinite storage  %n%- 🌍 Accessible anywhere  %n%- 🛠️ Break and replace safely%n%%n%Just don’t try to smelt it. Trust us.
   source_mode = direct
   shadow = false
   scale = 1.0
@@ -122,11 +122,11 @@ element {
   fade_out_speed = 1.0
   base_opacity = 1.0
   auto_sizing = false
-  auto_sizing_base_screen_width = 1366
-  auto_sizing_base_screen_height = 746
+  auto_sizing_base_screen_width = 3440
+  auto_sizing_base_screen_height = 1370
   sticky_anchor = false
   anchor_point = mid-centered
-  x = 6
+  x = 10
   y = -120
   width = 172
   height = 201
@@ -183,12 +183,12 @@ element {
   fade_out_speed = 1.0
   base_opacity = 1.0
   auto_sizing = false
-  auto_sizing_base_screen_width = 1366
-  auto_sizing_base_screen_height = 746
+  auto_sizing_base_screen_width = 3440
+  auto_sizing_base_screen_height = 1440
   sticky_anchor = false
   anchor_point = element
   anchor_point_element = f30b4b5a-fa01-4913-9eef-495b06053e1b-1746404868647
-  x = 144
+  x = 140
   y = 200
   width = 23
   height = 13
