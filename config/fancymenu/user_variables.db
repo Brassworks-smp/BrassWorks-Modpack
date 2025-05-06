@@ -13,6 +13,12 @@ variable {
 }
 
 variable {
+  name = parties.join.partyid
+  value = Nigfg
+  reset_on_launch = false
+}
+
+variable {
   name = claim
   value = 
   reset_on_launch = true
