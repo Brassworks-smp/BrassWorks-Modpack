@@ -8,7 +8,7 @@ variable {
 
 variable {
   name = claimamount
-  value = 
+  value = 256
   reset_on_launch = true
 }
 
