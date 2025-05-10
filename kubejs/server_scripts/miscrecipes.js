@@ -1,6 +1,8 @@
 ServerEvents.recipes(event => {
-  // Remove old Bank Terminal recipe
+  // Recipe Removals
   event.remove({ output: 'numismatics:bank_terminal' })
+  event.remove({ output: 'supplementaries:cannon' })
+
 
   // New shapeless Bank Terminal recipe
   event.shapeless(
@@ -43,6 +45,7 @@ ServerEvents.tags('item', event => {
     event.add('forge:hidden', [
         'createaddition:digital_adapter',
         'createaddition:cake_base',
+        'supplementaries:cannon',
         'createaddition:cake_base_baked'
     ])
 })
