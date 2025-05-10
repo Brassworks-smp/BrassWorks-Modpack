@@ -2,7 +2,7 @@ ServerEvents.recipes(event => {
   // Recipe Removals
   event.remove({ output: 'numismatics:bank_terminal' })
   event.remove({ output: 'supplementaries:cannon' })
-
+  event.remove({ output: 'buzzier_bees:honey_apple' })
 
   // New shapeless Bank Terminal recipe
   event.shapeless(
@@ -46,6 +46,7 @@ ServerEvents.tags('item', event => {
         'createaddition:digital_adapter',
         'createaddition:cake_base',
         'supplementaries:cannon',
-        'createaddition:cake_base_baked'
+        'createaddition:cake_base_baked',
+        'buzzier_bees:honey_apple'
     ])
 })
