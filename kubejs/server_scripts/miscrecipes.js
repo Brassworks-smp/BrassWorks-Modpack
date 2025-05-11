@@ -31,6 +31,28 @@ ServerEvents.recipes(event => {
     ]
   )
 
+  // whoopee cushion
+  event.shaped('artifacts:whoopee_cushion', [
+    ' L ',
+    'DML',
+    'SD '
+  ], {
+    L: 'minecraft:leather',
+    D: 'minecraft:magenta_dye',
+    M: 'environmental:mud_ball',
+    S: 'minecraft:slime_ball'
+  })
+
+// heave ho music disc
+  event.shaped('supplementaries:music_disc_heave_ho', [
+    'PPP',
+    'PMP',
+    'PPP'
+  ], {
+    P: '#minecraft:planks',
+    M: '#minecraft:music_discs'
+  })
+
   // Smelt Bank Terminal into a Spur
   event.smelting(
     'numismatics:spur',          
@@ -47,6 +69,9 @@ ServerEvents.tags('item', event => {
         'createaddition:cake_base',
         'supplementaries:cannon',
         'createaddition:cake_base_baked',
-        'buzzier_bees:honey_apple'
+        'buzzier_bees:honey_apple',
+        'artifacts:eternal_steak',
+        'artifacts:everlasting_beef'
     ])
 })
+

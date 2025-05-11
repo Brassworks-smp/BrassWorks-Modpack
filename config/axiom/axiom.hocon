@@ -34,7 +34,7 @@ capabilities {
     flightCameraDirection=false
     flightMomentum=1
     # Bypass block placement restrictions
-    forcePlace=true
+    forcePlace=false
     # Removes the reach limit
     infiniteReach=true
     infiniteReachLimit=-1
