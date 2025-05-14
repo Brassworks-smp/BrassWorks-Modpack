@@ -84,4 +84,4 @@ B:show_welcome_screen = 'false';
 
 ##[keyframe_editor]
 
-B:arrow_keys_move_preview = 'false';
+B:arrow_keys_move_preview = 'true';

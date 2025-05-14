@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = brassworks.pac.helpbook
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1746446909230
+  last_edited_time = 1747248595000
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:7608dac2-5364-416e-9732-c02342531318-1746781585214] = [groups:][instances:]
+  [loading_requirement_container_meta:1eaf4581-dba3-4ff3-8032-507048c4a69a-1747253073624] = [groups:][instances:]
 }
 
 customization {

@@ -1,20 +1,122 @@
 type = user_variables
 
 variable {
-  name = parties.invite.playername
-  value = swzo
-  reset_on_launch = false
-}
-
-variable {
   name = claimamount
   value = 
   reset_on_launch = true
 }
 
 variable {
+  name = randomtext
+  value = 11
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips16
+  value = %#D9973C%*sniffs* Wait a minute...%#% %#A73125%is that {"placeholder":"playername"}? Phew! You might want to try a shower, or at least a splash potion!%#%
+  reset_on_launch = false
+}
+
+variable {
   name = parties.join.partyid
-  value = Nigfg
+  value = 
+  reset_on_launch = true
+}
+
+variable {
+  name = sniffytips9
+  value = %#D9973C%Digging this advice:%#% %#A73125%Chipped blocks are a sniff-tacular way to decorate!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips14
+  value = %#D9973C%My snout suggests:%#% %#A73125%Jetpacks are a scent-sational way to explore!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips15
+  value = %#D9973C%I've been sniffing around and%#% %#A73125%you can take selfies with the camera item!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips7
+  value = %#D9973C%Snout-standing tip:%#% %#A73125%Use stack upgrades from Sophisticated Backpacks for more storage!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips12
+  value = %#D9973C%I caught a whiff that%#% %#A73125%you can rickroll your friends with the flute item!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips8
+  value = %#D9973C%My nose knows:%#% %#A73125%You can smelt bank terminals to get your Spurs back!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips13
+  value = %#D9973C%Sniff-errific fun:%#% %#A73125%Craft party poppers and use them for celebrations!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips5
+  value = %#D9973C%Sniffy says:%#% %#A73125%You can use the Axiom mod in creative mode for nose-dropping builds!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips10
+  value = %#D9973C%Sniff around and%#% %#A73125%make a shop at spawn - it's scent-sational for business!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips6
+  value = %#D9973C%I sniffed out%#% %#A73125%that you can craft airplanes using the Immersive Aircraft mod!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips11
+  value = %#D9973C%Nose-worthy tip:%#% %#A73125%Put tipping jars in your shop for extra sniffs... I mean Spurs!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips3
+  value = %#D9973C%Sniffer tip:%#% %#A73125%We love digging up torchflower seeds - they're sniff-tacular!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips4
+  value = %#D9973C%I'm not just nosy,%#% %#A73125%I'm professionally curious!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = parties.invite.playername
+  value = 
+  reset_on_launch = true
+}
+
+variable {
+  name = sniffytips1
+  value = %#D9973C%Sniff sniff!%#% %#A73125%Don't forget to check your weekly missions for extra Spurs!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips2
+  value = %#D9973C%Keep your nose to the ground%#% %#A73125%for server events on our Discord!%#%
   reset_on_launch = false
 }
 
