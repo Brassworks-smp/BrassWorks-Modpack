@@ -4,6 +4,7 @@ ServerEvents.recipes(event => {
   event.remove({ output: 'supplementaries:cannon' })
   event.remove({ output: 'buzzier_bees:honey_apple' })
   event.remove({ output: 'vanillabackport:dried_ghast' })
+  event.remove({ output: 'createadvlogistics:redstone_radio' })
   event.remove({ id: 'minecraft:lead' }) // Remove vanilla lead recipe
 
   // New shapeless Bank Terminal recipe
@@ -120,7 +121,8 @@ ServerEvents.tags('item', event => {
         'createaddition:cake_base_baked',
         'buzzier_bees:honey_apple',
         'artifacts:eternal_steak',
-        'artifacts:everlasting_beef'
+        'artifacts:everlasting_beef',
+        'createadvlogistics:redstone_radio'
     ])
 })
 

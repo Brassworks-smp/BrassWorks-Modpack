@@ -30,7 +30,7 @@ capabilities {
     # Hold down left-click to break blocks very fast
     bulldozer=true
     # Place blocks very fast in a controlled manner
-    fastPlace=true
+    fastPlace=false
     flightCameraDirection=false
     flightMomentum=1
     # Bypass block placement restrictions
