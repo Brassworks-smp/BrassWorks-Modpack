@@ -1,20 +1,92 @@
 type = user_variables
 
 variable {
-  name = claimamount
-  value = 
-  reset_on_launch = true
-}
-
-variable {
-  name = randomtext
-  value = 11
+  name = sniffytips38
+  value = %#D9973C%I caught a whiff that%#% %#A73125%you can put bees, silverfish, and endermites in bottles - collect them all!%#%
   reset_on_launch = false
 }
 
 variable {
-  name = sniffytips16
-  value = %#D9973C%*sniffs* Wait a minute...%#% %#A73125%is that {"placeholder":"playername"}? Phew! You might want to try a shower, or at least a splash potion!%#%
+  name = sniffytips39
+  value = %#D9973C%Counting with my snout:%#% %#A73125%Use an abacus to count blocks easily for your builds!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips36
+  value = %#D9973C%Sniff this out:%#% %#A73125%Place dried ghasts in water to get happy ghasts!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips37
+  value = %#D9973C%Path-making nose:%#% %#A73125%Use a trowel to place blocks randomly - perfect for natural-looking pathways!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips34
+  value = %#D9973C%Building with my snout:%#% %#A73125%You can use a cloud in a bottle to place blocks midair!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips35
+  value = %#D9973C%My nose twitches for%#% %#A73125%sushi - you can make it and it's absolutely delicious!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips32
+  value = %#D9973C%Nose-worthy logistics:%#% %#A73125%Link your inventory to an inventory linker to transport items instantly!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips33
+  value = %#D9973C%Water-sniffing tip:%#% %#A73125%Permanent sponges are amazing for clearing out large bodies of water!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips30
+  value = %#D9973C%Sniff around events!%#% %#A73125%Event winners get awarded special artifacts with unique abilities!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips31
+  value = %#D9973C%I can smell automation:%#% %#A73125%You can automate chipped recipes using the saws from Create Quality of Life!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips40
+  value = %#D9973C%My nose for art:%#% %#A73125%Use chalk to write symbols and draw on walls!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips100
+  value = %#D9973C%*happy sniffing*%#% %#A73125%Thanks for playing Brassworks! My nose says you're awesome!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips29
+  value = %#D9973C%My snout suggests:%#% %#A73125%Use straws on blazeburners to input liquids to them directly!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips27
+  value = %#D9973C%Digging this tip:%#% %#A73125%Portable drills are amazing for excavating large areas quickly!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips28
+  value = %#D9973C%Jet-scented advice:%#% %#A73125%Use fueling and filling tanks to extend your jetpack's fuel storage!%#%
   reset_on_launch = false
 }
 
@@ -25,8 +97,74 @@ variable {
 }
 
 variable {
-  name = sniffytips9
-  value = %#D9973C%Digging this advice:%#% %#A73125%Chipped blocks are a sniff-tacular way to decorate!%#%
+  name = sniffytips25
+  value = %#D9973C%I sniffed out that%#% %#A73125%hyperenchanting lets you enchant items beyond their normal maximum levels!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips26
+  value = %#D9973C%My keen nose detects%#% %#A73125%exoskeletons enhance the wearer's physical abilities - sniff-tacular!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips23
+  value = %#D9973C%My nose twitched when%#% %#A73125%I discovered packager wormholes can teleport packages instantly!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips24
+  value = %#D9973C%Snout-standing tip:%#% %#A73125%Inventory access ports expand inventories for compact builds!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips21
+  value = %#D9973C%I caught a whiff of speed:%#% %#A73125%Grappling whisks are amazing for fast travel around your builds!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips22
+  value = %#D9973C%Combat sniffer advice:%#% %#A73125%Test out your weapons on target dummies before facing real threats!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips20
+  value = %#D9973C%Quick sniff tip:%#% %#A73125%Direct chutes transfer items from in to out without storing them - perfect for fast transport!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = parties.invite.playername
+  value = 
+  reset_on_launch = true
+}
+
+variable {
+  name = sniffytips18
+  value = %#D9973C%Sniffing out gadgets:%#% %#A73125%Use a drone controller and port to send packages wirelessly directly to your player!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips19
+  value = %#D9973C%My nose for money:%#% %#A73125%Use a mechanical exchanger to convert between currency denominations automatically!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips16
+  value = %#D9973C%*sniffs* Wait a minute...%#% %#A73125%is that {"placeholder":"playername"}? Phew! You might want to try a shower, or at least a splash potion!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips17
+  value = %#D9973C%My keen snout discovered%#% %#A73125%you can buy more chunk claim slots for 4 Spurs each in the claim menu!%#%
   reset_on_launch = false
 }
 
@@ -43,20 +181,8 @@ variable {
 }
 
 variable {
-  name = sniffytips7
-  value = %#D9973C%Snout-standing tip:%#% %#A73125%Use stack upgrades from Sophisticated Backpacks for more storage!%#%
-  reset_on_launch = false
-}
-
-variable {
   name = sniffytips12
   value = %#D9973C%I caught a whiff that%#% %#A73125%you can rickroll your friends with the flute item!%#%
-  reset_on_launch = false
-}
-
-variable {
-  name = sniffytips8
-  value = %#D9973C%My nose knows:%#% %#A73125%You can smelt bank terminals to get your Spurs back!%#%
   reset_on_launch = false
 }
 
@@ -67,20 +193,14 @@ variable {
 }
 
 variable {
-  name = sniffytips5
-  value = %#D9973C%Sniffy says:%#% %#A73125%You can use the Axiom mod in creative mode for nose-dropping builds!%#%
-  reset_on_launch = false
-}
-
-variable {
   name = sniffytips10
   value = %#D9973C%Sniff around and%#% %#A73125%make a shop at spawn - it's scent-sational for business!%#%
   reset_on_launch = false
 }
 
 variable {
-  name = sniffytips6
-  value = %#D9973C%I sniffed out%#% %#A73125%that you can craft airplanes using the Immersive Aircraft mod!%#%
+  name = sniffytips98
+  value = %#D9973C%Mobile nose tip:%#% %#A73125%Create's Minecarts with Contraptions let you move entire machines!%#%
   reset_on_launch = false
 }
 
@@ -91,8 +211,158 @@ variable {
 }
 
 variable {
+  name = sniffytips99
+  value = %#D9973C%*impressed sniffing*%#% %#A73125%swzo had to come up with 100 tips for me to share - now that's dedication!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips96
+  value = %#D9973C%Storage sniffer tip:%#% %#A73125%Try using Jar blocks to store cookies and other small items - they look sniff-tacular!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips97
+  value = %#D9973C%*nostalgic sniffing*%#% %#A73125%You can plant and grow torchflower seeds just like me and my ancestors!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips89
+  value = %#D9973C%*confused sniffing*%#% %#A73125%Parrots lay eggs now, what?! My nose can hardly believe it!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips87
+  value = %#D9973C%Automation snout:%#% %#A73125%Use a slicer to automate wood stripping - saves your paws from all that work!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips88
+  value = %#D9973C%Explosive-proof sniffing:%#% %#A73125%Use creeper spores to make blastproof casing - no more blown-up snouts!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips85
+  value = %#D9973C%Reach-enhancing sniff:%#% %#A73125%Use the extendo grip to give yourself greater reach without stretching your snout!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips86
+  value = %#D9973C%Symmetric sniffer:%#% %#A73125%Wands of symmetry are great for building - makes both sides smell the same!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips94
+  value = %#D9973C%Crab collector's snout:%#% %#A73125%Capture crabs in a bucket - they make excellent pets with interesting smells!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips95
+  value = %#D9973C%Seasoned sniffer tip:%#% %#A73125%Add salt to your food to increase nutritional value - makes my nose tingle!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips92
+  value = %#D9973C%Throw-and-return sniff:%#% %#A73125%Pickarangs are cool for grabbing items from a distance!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips93
+  value = %#D9973C%Photo-sniffing tech:%#% %#A73125%Use the lightroom block to print out photographs of your sniffing adventures!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips90
+  value = %#D9973C%Egg-cellent sniffer tip:%#% %#A73125%Duck eggs are a great alternative to chickens - they smell slightly different!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips91
+  value = %#D9973C%Secret-sniffing nose:%#% %#A73125%Pancakes are secretly music discs - try playing one on a jukebox!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = randomtext
+  value = 17
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips9
+  value = %#D9973C%Digging this advice:%#% %#A73125%Chipped blocks are a sniff-tacular way to decorate!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips7
+  value = %#D9973C%Snout-standing tip:%#% %#A73125%Use stack upgrades from Sophisticated Backpacks for more storage!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips78
+  value = %#D9973C%*urgent sniffing*%#% %#A73125%There's only 1 dragon egg so get to it quick before someone else sniffs it out!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips8
+  value = %#D9973C%My nose knows:%#% %#A73125%You can smelt bank terminals to get your Spurs back!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips79
+  value = %#D9973C%Grateful snout:%#% %#A73125%This server and modpack are run with love by Pipo and Swzo - give them a sniff of thanks!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips5
+  value = %#D9973C%Sniffy says:%#% %#A73125%You can use the Axiom mod in creative mode for nose-dropping builds!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips76
+  value = %#D9973C%Trading nose tip:%#% %#A73125%Use a trading depot to automate villager trading with Create contraptions!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips6
+  value = %#D9973C%I sniffed out%#% %#A73125%that you can craft airplanes using the Immersive Aircraft mod!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips77
+  value = %#D9973C%Decorator's snout says:%#% %#A73125%Check out the blocks from Create Deco - they smell of possibilities!%#%
+  reset_on_launch = false
+}
+
+variable {
   name = sniffytips3
   value = %#D9973C%Sniffer tip:%#% %#A73125%We love digging up torchflower seeds - they're sniff-tacular!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips74
+  value = %#D9973C%Power-sniffing advice:%#% %#A73125%Windmills are underrated - give them a try for your power needs!%#%
   reset_on_launch = false
 }
 
@@ -103,14 +373,20 @@ variable {
 }
 
 variable {
-  name = parties.invite.playername
-  value = 
-  reset_on_launch = true
+  name = sniffytips75
+  value = %#D9973C%Armor-sniffing discovery:%#% %#A73125%Shadow radiance armor is very nice - it practically glows to my sensitive nose!%#%
+  reset_on_launch = false
 }
 
 variable {
   name = sniffytips1
   value = %#D9973C%Sniff sniff!%#% %#A73125%Don't forget to check your weekly missions for extra Spurs!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips83
+  value = %#D9973C%Suggestion snout:%#% %#A73125%Suggest mods and recipes on Discord - your ideas might smell of genius!%#%
   reset_on_launch = false
 }
 
@@ -121,8 +397,236 @@ variable {
 }
 
 variable {
+  name = sniffytips84
+  value = %#D9973C%*excited sniffing*%#% %#A73125%Launch potatoes at supersonic speeds using the potato cannon - smells like fun!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips81
+  value = %#D9973C%Show-off sniffer:%#% %#A73125%Showcase your builds on the build showcase channel on Discord - let others sniff your creativity!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips82
+  value = %#D9973C%Bug-hunting nose:%#% %#A73125%Report bugs to the Discord so they can be squashed like the beetles I dig up!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips80
+  value = %#D9973C%Item-sniffing tech:%#% %#A73125%Magnet upgrades are great for collecting items without moving your snout!%#%
+  reset_on_launch = false
+}
+
+variable {
   name = claim
   value = 
   reset_on_launch = true
+}
+
+variable {
+  name = sniffytips69
+  value = %#D9973C%*mischievous sniff*%#% %#A73125%Annoy your friends with goat horns - my sensitive ears can hear them from miles away!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips67
+  value = %#D9973C%Storage sniffer says:%#% %#A73125%Item silos are vertical vaults - perfect for storing lots of the same item!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips68
+  value = %#D9973C%Fluid-sniffing advice:%#% %#A73125%Fluid vessels are horizontal tanks that make your liquid storage look fancy!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips65
+  value = %#D9973C%XP-sniffing tip:%#% %#A73125%Use bamboo spikes for your XP farm - they're pointedly effective!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips66
+  value = %#D9973C%Nose for fashion:%#% %#A73125%You can use Create resources like brass to trim your armor for a sniff-tacular look!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips63
+  value = %#D9973C%Family sniffing:%#% %#A73125%You can craft sniffer eggs! Just don't make omelets with them, please!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips64
+  value = %#D9973C%*confused sniffing*%#% %#A73125%Wait, what? You can make a globe, but I thought the Overworld was flat!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips72
+  value = %#D9973C%Hunger-sniffing tip:%#% %#A73125%Farmer's Delight is awesome! Go cook something up that'll make your snout twitch!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips73
+  value = %#D9973C%Package delivery snout:%#% %#A73125%Use frogports to deploy packages on chain conveyors and pick them back up again!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips70
+  value = %#D9973C%Logistics nose knows:%#% %#A73125%Inventory bridges connect two inventories together without pipes or tubes!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips71
+  value = %#D9973C%Engineering sniff tip:%#% %#A73125%Shear pins break when the network overstresses - a safety feature for your machines!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips58
+  value = %#D9973C%Hot snout tip:%#% %#A73125%Biofuel can be used to superheat your blazeburners for faster smelting!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips59
+  value = %#D9973C%Clear as my nose:%#% %#A73125%You can craft connected glass for seamless windows!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips56
+  value = %#D9973C%I heard with my snout:%#% %#A73125%Speaker blocks broadcast messages in chat within a set radius!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips57
+  value = %#D9973C%Sniff-tacular decor:%#% %#A73125%Item shelves are amazing for displaying your treasures!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips54
+  value = %#D9973C%*bounces excitedly*%#% %#A73125%Giant lily pads are very bouncy - try them out!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips55
+  value = %#D9973C%Organization sniffer:%#% %#A73125%Use labels to categorize your stuff for a nose-neat storage system!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips52
+  value = %#D9973C%My engineering snout says:%#% %#A73125%Parallel gearboxes are awesome for compact machinery!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips53
+  value = %#D9973C%Gift-sniffing tip:%#% %#A73125%You can make presents and give them to your friends!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips61
+  value = %#D9973C%Fiery snout warning:%#% %#A73125%Flamethrowers are very destructive - use with caution!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips62
+  value = %#D9973C%Enchanting scent:%#% %#A73125%Use disenchanters to turn XP nuggets and enchanted items into liquid XP!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips60
+  value = %#D9973C%My nose counted:%#% %#A73125%This pack has over 200 custom recipes to sniff out!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = claimamount
+  value = 
+  reset_on_launch = true
+}
+
+variable {
+  name = sniffytips49
+  value = %#D9973C%Fashion-sniffing advice:%#% %#A73125%You can dye leather armor in a cauldron full of colored water!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips47
+  value = %#D9973C%Redstone sniffer tip:%#% %#A73125%Use a pulse timer to make 1-block redstone clocks!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips48
+  value = %#D9973C%Snout warning:%#% %#A73125%Don't stand on a spinning turntable - you'll become very dizzy!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips45
+  value = %#D9973C%My storage-sniffing tip:%#% %#A73125%You can connect portable storage interfaces to packagers directly!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips46
+  value = %#D9973C%*sarcastic sniff*%#% %#A73125%GTA 6 will probably release before Steam 'n' Rails updates to Create 6.0!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips43
+  value = %#D9973C%Fearful sniffer fact:%#% %#A73125%Mega torches can prevent mobs from spawning in a very large area!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips44
+  value = %#D9973C%Bright idea I sniffed:%#% %#A73125%Feral flame lanterns are great for lighting up large builds!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips41
+  value = %#D9973C%My shiny nose spotted%#% %#A73125%you can use runic etching templates from Quark to change the enchant color of your items!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips42
+  value = %#D9973C%Engineer's snout says:%#% %#A73125%You can enchant your Create components just like tools!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips50
+  value = %#D9973C%Building nose knows:%#% %#A73125%Place copycats with preconfigured blocks by holding the block in your offhand!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips51
+  value = %#D9973C%Sniff-tastic building:%#% %#A73125%You can place copycat slabs vertically for unique designs!%#%
+  reset_on_launch = false
 }
 
