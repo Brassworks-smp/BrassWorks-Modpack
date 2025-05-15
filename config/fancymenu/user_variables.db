@@ -410,7 +410,7 @@ variable {
 
 variable {
   name = randomtext
-  value = 99
+  value = 64
   reset_on_launch = false
 }
 
@@ -536,7 +536,7 @@ variable {
 
 variable {
   name = sniffytips140
-  value = %#FFE04D%Map-sniffing advice:%#% %#FFFFFF%Trade with cartographers for pathfinder quills which can be used to find biomes!%#%
+  value = %#FFE04D%Map-sniffing advice:%#% %#FFFFFF%Trade with cartographers for pathfinder quills to find biomes!%#%
   reset_on_launch = false
 }
 
@@ -776,7 +776,7 @@ variable {
 
 variable {
   name = sniffytips139
-  value = %#FFE04D%Map-sniffing advice:%#% %#FFFFFF%Trade with cartographers for pathfinder quills which can be used to find biomes!%#%
+  value = %#FFE04D%Map-sniffing advice:%#% %#FFFFFF%Trade with cartographers for pathfinder quills to find biomes!%#%
   reset_on_launch = false
 }
 
