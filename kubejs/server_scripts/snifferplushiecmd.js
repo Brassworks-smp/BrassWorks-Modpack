@@ -20,7 +20,7 @@ ServerEvents.commandRegistry(event => {
             
             // Broadcast message to all players
             const server = ctx.source.server;
-            server.tellAll([
+            server.tell([
               Text.of('★ ').color('gold'),
               Text.of(playerName).color('aqua'),
               Text.of(' has received a ').color('white'),
