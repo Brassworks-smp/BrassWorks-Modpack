@@ -24,7 +24,7 @@ ServerEvents.commandRegistry(event => {
               Text.of('★ ').color('gold'),
               Text.of(playerName).color('aqua'),
               Text.of(' has received a ').color('white'),
-              Text.of('Sniffer Plushie').color('#407744'),
+              Text.of('Sniffer Plushie').color('#ffcc00'),
               Text.of(' as a reward for winning the event! ').color('white'),
               Text.of('★').color('gold')
             ]);
