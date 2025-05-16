@@ -335,6 +335,21 @@ ServerEvents.recipes(event => {
     E: '#forge:eggs'
   })
 
+  // Sniffer Wool Recipe
+  event.shaped('brassworks:sniffer_wool', [
+    'RR',
+    'RR'
+  ], {
+    R: 'brassworks:sniffer_fur'
+  })
+
+  // Sniffer Carpet Recipe
+  event.shaped('3x brassworks:sniffer_carpet', [
+    'RR'
+  ], {
+    R: 'brassworks:sniffer_wool'
+  })
+
   // Smelt Bank Terminal into a Spur
   event.smelting(
     'numismatics:spur',          
