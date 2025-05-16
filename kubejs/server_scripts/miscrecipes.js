@@ -9,7 +9,8 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'minecraft:lead' }) // Remove vanilla lead recipe
   event.remove({ output: 'missions:mechanical_exchanger' }) // Remove any existing recipe for mechanical exchanger
   event.remove({ output: 'missions:jar_of_tips' }) // Remove any existing recipe for jar of tips
-
+  event.remove({ output: 'createqol:inventory_linker' }) 
+  event.remove({ output: 'createqol:player_paper' })
   // New shapeless Bank Terminal recipe
   event.shapeless(
     'numismatics:bank_terminal',
@@ -353,7 +354,9 @@ ServerEvents.tags('item', event => {
         'buzzier_bees:honey_apple',
         'artifacts:eternal_steak',
         'artifacts:everlasting_beef',
-        'createadvlogistics:redstone_radio'
+        'createadvlogistics:redstone_radio',
+        'createqol:player_paper',
+        'createqol:inventory_linker'
     ])
 
     // Create the alexcavesradon tag and add all the framed radon lamp items
@@ -385,4 +388,3 @@ ServerEvents.tags('item', event => {
       'create:repackager'
     ])
 })
-

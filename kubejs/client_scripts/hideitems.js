@@ -19,6 +19,7 @@ JEIEvents.hideItems(event => {
     event.hide('#forge:hidden')
 });
 
+
 // Hide these items from EMI if it's available
 // This approach works with multiple recipe viewers
 ClientEvents.tick(event => {

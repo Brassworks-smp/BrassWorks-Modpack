@@ -2,7 +2,7 @@ type = user_variables
 
 variable {
   name = sniffytips104
-  value = %#FFE04D%Fashion-forward snout:%#% %#FFFFFF%Give blaze burners, frogports, and mechanical arms goggles for extra drip!%#%
+  value = %#FFE04D%Fashion-forward snout:%#% %#FFFFFF%Give blaze burners, frogports, mechanical arms, and sniffers goggles for extra drip!%#%
   reset_on_launch = false
 }
 
@@ -86,7 +86,7 @@ variable {
 
 variable {
   name = sniffytips32
-  value = %#FFE04D%Nose-worthy logistics:%#% %#FFFFFF%Link your inventory to an inventory linker to transport items instantly!%#%
+  value = %#FFE04D%Engineering sniff tip:%#% %#FFFFFF%Sniffy says: Right-click a Sniffer with Engineer's Goggles to give them my texture—sniff, I smell an upgrade!%#%
   reset_on_launch = false
 }
 
@@ -410,7 +410,7 @@ variable {
 
 variable {
   name = randomtext
-  value = 6
+  value = 81
   reset_on_launch = false
 }
 

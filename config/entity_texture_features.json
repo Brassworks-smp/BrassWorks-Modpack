@@ -30,11 +30,19 @@
   "disableVanillaDirectoryVariantTextures": false,
   "use3DSkinLayerPatch": true,
   "enableFullBodyWardenTextures": true,
-  "entityEmissiveOverrides": {},
+  "entityEmissiveOverrides": {
+    "entity.minecraft.sniffer": true
+  },
   "propertiesDisabled": [],
   "propertyInvertUpdatingOverrides": [],
-  "entityRandomOverrides": {},
-  "entityEmissiveBrightOverrides": {},
-  "entityRenderLayerOverrides": {},
+  "entityRandomOverrides": {
+    "entity.minecraft.sniffer": true
+  },
+  "entityEmissiveBrightOverrides": {
+    "entity.minecraft.sniffer": "DULL"
+  },
+  "entityRenderLayerOverrides": {
+    "entity.minecraft.sniffer": "TRANSLUCENT"
+  },
   "entityLightOverrides": {}
 }
