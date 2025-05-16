@@ -2,7 +2,8 @@
 	"credit": "Made with Blockbench, Awarded to event winners on the brassworks smp",
 	"texture_size": [48, 32],
 	"textures": {
-		"0": "brassworks:item/sniffer_plushie"
+		"0": "brassworks:item/sniffer_plushie",
+		"particle": "brassworks:block/plushieparticle"
 	},
 	"elements": [
 		{
@@ -166,7 +167,7 @@
 			"scale": [0.5, 0.5, 0.5]
 		},
 		"ground": {
-			"translation": [0, 1.25, 0],
+			"translation": [0, 2.25, 0],
 			"scale": [0.5, 0.5, 0.5]
 		},
 		"gui": {
@@ -188,6 +189,12 @@
 			"origin": [8, 0, 8],
 			"color": 0,
 			"children": [
+				{
+					"name": "group",
+					"origin": [8, 8, 8],
+					"color": 0,
+					"children": []
+				},
 				0,
 				1,
 				2,

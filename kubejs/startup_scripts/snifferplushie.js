@@ -6,11 +6,10 @@ StartupEvents.registry('block', event => {
     .displayName([
       Text.of('Event Winner\'s Sniffer Plushie').color('#FFAA00') // Gold color
     ])
-    // Option 2: Set rarity (uncomment this line instead if you prefer)
-    //.rarity('EPIC') // Makes item appear with purple/gold color
-    // Use sound type and map color instead of material
+    //.rarity('EPIC')
     .soundType('wool')  
     .mapColor('COLOR_GREEN')
+    .renderType('translucent')
     .hardness(0.5) // Easy to break
     .resistance(0.5)
     .box(2.5, 0, 0, 13.5, 7, 16) // Adjusted box: 7 pixels high, 11 pixels wide (centered), full length
