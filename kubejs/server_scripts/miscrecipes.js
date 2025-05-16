@@ -43,6 +43,14 @@ ServerEvents.recipes(event => {
     P: '#kubejs:packagers' // Use the tag instead of specific item
   })
 
+  //mechanical exchanger recycling recipe
+  event.smelting(
+    'numismatics:spur',          
+    'missions:mechanical_exchanger'  
+  )
+  .xp(0.1)
+  .id('kubejs:smelting/mechanical_exchanger_to_spur')
+
   // Mechanical Exchanger Recipe
   event.shaped('missions:mechanical_exchanger', [
     ' B ',
