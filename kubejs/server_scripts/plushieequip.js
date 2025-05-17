@@ -4,7 +4,9 @@ ItemEvents.rightClicked(event => {
   // Define a list of items that can trigger this script
   const equippablePlushies = [
     'brassworks:sniffer_plushie',
-
+    'brassworks:blue_axolotl_plushie',
+    'brassworks:pink_axolotl_plushie',
+    'brassworks:glow_squid_plushie',
   ];
 
   // Only run for main hand and only for items in the equippablePlushies list

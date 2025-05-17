@@ -1,7 +1,7 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "brassworks:item/glow_squid_plushie"
+		"0": "brassworks:item/glow_squid_plushie",
 		"particle": "brassworks:block/sniffyplushieparticle"
 	},
 	"elements": [

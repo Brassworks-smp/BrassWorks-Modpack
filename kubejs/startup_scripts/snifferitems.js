@@ -6,6 +6,8 @@ StartupEvents.registry('block', event => {
     .soundType('wool')  
     .hardness(0.1)
     .resistance(0.1)
+    .transparent(true)
+    .renderType('translucent') // Default render type
     .requiresTool(false) // Shears are handled by the tag
     .tagBlock('minecraft:mineable/shears')
     .mapColor('COLOR_GREEN')
@@ -19,6 +21,8 @@ StartupEvents.registry('block', event => {
     .material('wool')
     .soundType('wool')  
     .hardness(0.8)
+    .transparent(true)
+    .renderType('translucent') // Default render type
     .resistance(0.8)
     .requiresTool(false) // Shears are handled by the tag
     .tagBlock('minecraft:mineable/shears')
