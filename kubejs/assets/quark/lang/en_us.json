@@ -1,0 +1,19 @@
+{
+    "quark.jei.hint.limestone": "Can be found in big clusters in swamps and oceans.",
+	"block.quark.limestone": "Vaultlime",
+	"block.quark.polished_limestone": "Polished Vaultlime",
+	"block.quark.limestone_stairs": "Vaultlime Stairs",
+	"block.quark.polished_limestone_stairs": "Polished Vaultlime Stairs",
+	"block.quark.limestone_slab": "Vaultlime Slab",
+	"block.quark.polished_limestone_slab": "Polished Vaultlime Slab",
+	"block.quark.limestone_vertical_slab": "Vaultlime Vertical Slab",
+	"block.quark.polished_limestone_vertical_slab": "Polished Vaultlime Vertical Slab",
+	"block.quark.limestone_wall": "Vaultlime Wall",
+	"block.quark.limestone_bricks": "Vaultlime Bricks",
+	"block.quark.chiseled_limestone_bricks": "Chiseled Vaultlime Bricks",
+	"block.quark.limestone_bricks_stairs": "Vaultlime Brick Stairs",
+	"block.quark.limestone_bricks_slab": "Vaultlime Brick Slab",
+	"block.quark.limestone_bricks_vertical_slab": "Vaultlime Brick Vertical Slab",
+	"block.quark.limestone_bricks_wall": "Vaultlime Brick Wall",
+	"block.quark.limestone_pillar": "Vaultlime Pillar"
+}
