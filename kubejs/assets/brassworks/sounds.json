@@ -1,0 +1,18 @@
+{
+    "music.truce": {
+        "sounds": [
+            {
+                "name": "brassworks:truce",
+                "stream": true
+            }
+        ]
+    },
+    "music.tears": {
+        "sounds": [
+            {
+                "name": "brassworks:tears",
+                "stream": true
+            }
+        ]
+    }
+}
