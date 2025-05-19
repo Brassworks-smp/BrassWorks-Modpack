@@ -2,6 +2,6 @@
   "parent": "brassworks:item/axolotl_plushie",
   "textures": {
 		"1": "brassworks:item/pink_axolotl_plushie",
-		"particle": "brassworks:block/sniffyplushieparticle"
+		"particle": "brassworks:block/pinkaxolotlplushieparticle"
 	}
 }

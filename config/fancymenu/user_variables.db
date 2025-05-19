@@ -410,7 +410,7 @@ variable {
 
 variable {
   name = randomtext
-  value = 27
+  value = 52
   reset_on_launch = false
 }
 
@@ -489,6 +489,12 @@ variable {
 variable {
   name = sniffytips75
   value = %#FFE04D%Armor-sniffing discovery:%#% %#FFFFFF%Shadow radiance armor is very nice - it practically glows to my sensitive nose!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = welcomemessage
+  value = false
   reset_on_launch = false
 }
 
