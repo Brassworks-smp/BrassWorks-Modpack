@@ -390,13 +390,74 @@ ServerEvents.recipes(event => {
     ]
   )
   .id('kubejs:whitened_pulp')
-
+  
   // Convert Whitened Pulp to Paper (Create pressing)
   event.recipes.create.pressing(
     'minecraft:paper',
     'brassworks:whitened_pulp'
   )
   .id('kubejs:whitened_pulp_to_paper')
+
+  // Create Limestone to Quark Limestone via Spout
+  event.recipes.create.filling(
+    '1x quark:limestone',
+    [
+      '1x create:limestone',
+      Fluid.of('minecraft:water', 100)
+    ]
+  )
+  .id('kubejs:create_limestone_to_quark_limestone')
+
+  // Create Crimsite to Quark Jasper via Spout
+  event.recipes.create.filling(
+    '1x quark:jasper',
+    [
+      '1x create:crimsite',
+      Fluid.of('minecraft:water', 100)
+    ]
+  )
+  .id('kubejs:create_crimsite_to_quark_jasper')
+
+  // Create Asurine to Quark Shale via Spout
+  event.recipes.create.filling(
+    '1x quark:shale',
+    [
+      '1x create:asurine',
+      Fluid.of('minecraft:water', 100)
+    ]
+  )
+  .id('kubejs:create_asurine_to_quark_shale')
+
+  // Create Veridium and Crimsite to Quark Myalite via Mixing
+  event.recipes.create.mixing(
+    '2x quark:myalite',
+    [
+      '1x create:veridium',
+      '1x create:crimsite'
+    ]
+  )
+  .id('kubejs:create_veridium_crimsite_to_quark_myalite')
+
+  // Quark Limestone to Create Limestone via Emptying (draining water)
+  event.recipes.create.emptying([
+    '1x create:limestone',
+    Fluid.of('minecraft:water', 100)
+  ], 'quark:limestone')
+  .id('kubejs:quark_limestone_to_create_limestone')
+
+  // Quark Jasper to Create Crimsite via Emptying (draining water)
+  event.recipes.create.emptying([
+    '1x create:crimsite',
+    Fluid.of('minecraft:water', 100)
+  ], 'quark:jasper')
+  .id('kubejs:quark_jasper_to_create_crimsite')
+
+  // Quark Shale to Create Asurine via Emptying (draining water)
+  event.recipes.create.emptying([
+    '1x create:asurine',
+    Fluid.of('minecraft:water', 100)
+  ], 'quark:shale')
+  .id('kubejs:quark_shale_to_create_asurine')
 })
 
 // Hide specific CreateAddition items from creative/JEI
