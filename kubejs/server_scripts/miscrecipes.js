@@ -20,7 +20,6 @@ ServerEvents.recipes(event => {
       'create:electron_tube'
     ]
   )
-
   // Jar of Tips Recipe
   event.shapeless(
     'missions:jar_of_tips',
@@ -62,6 +61,21 @@ ServerEvents.recipes(event => {
     S: 'numismatics:spur',
     B: 'create:brass_casing'
   })
+
+  //pathfinders quill duplicate recipe
+  event.recipes.shaped("quark:pathfinders_quill", [
+    " I ",
+    "FQF",
+    " F "
+  ], {
+    Q: "quark:pathfinders_quill",
+    F: "feather",
+    I: "ink_sac"
+  })
+  .id('kubejs:pathfinders_quill_dupe_manual_only')
+  .modifyResult((grid, item) => grid.find("quark:pathfinders_quill"))
+  .keepIngredient("quark:pathfinders_quill");
+
 
   // Limestone + Quartz → Calcite
   event.shapeless(
@@ -335,6 +349,15 @@ ServerEvents.recipes(event => {
     E: '#forge:eggs'
   })
 
+  //saddle recipe from 1.21.6
+    event.shaped('minecraft:saddle', [
+    ' L ',
+    'LIL'
+  ], {
+    L: 'leather',
+    I: 'iron_ingot'
+  })
+
   // Sniffer Wool Recipe
   event.shaped('brassworks:sniffer_wool', [
     'RR',
@@ -357,6 +380,23 @@ ServerEvents.recipes(event => {
   )
   .xp(0.1)
   .id('kubejs:smelting/bank_terminal_to_spur')
+
+  // Whitened Pulp Recipe (Create mixing)
+  event.recipes.create.mixing(
+    '3x brassworks:whitened_pulp',
+    [
+      'create:pulp',
+      '2x minecraft:bone_meal'
+    ]
+  )
+  .id('kubejs:whitened_pulp')
+
+  // Convert Whitened Pulp to Paper (Create pressing)
+  event.recipes.create.pressing(
+    'minecraft:paper',
+    'brassworks:whitened_pulp'
+  )
+  .id('kubejs:whitened_pulp_to_paper')
 })
 
 // Hide specific CreateAddition items from creative/JEI

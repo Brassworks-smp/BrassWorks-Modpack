@@ -37,7 +37,7 @@ StartupEvents.registry('block', event => {
     .resistance(6.0)
     .transparent(true)
     .renderType('cutout') // Changed to cutout to prevent culling
-    .fullBlock(false) // Mark as not a full block
+    .fullBlock(false) // Mark as not a full blocka
     .requiresTool(true)
     .tagBlock('minecraft:mineable/pickaxe')
     .mapColor('COLOR_GRAY')
