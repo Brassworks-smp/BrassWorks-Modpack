@@ -23,7 +23,7 @@ PlayerEvents.inventoryChanged((event) => {
                     event.player.persistentData.waypointData.some(
                         (waypoint) => waypoint.x === x && waypoint.z === z
                     );
-
+                    
                 if (waypointExists) {
                     return;
                 }
