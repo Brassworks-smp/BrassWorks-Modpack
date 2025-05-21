@@ -15,5 +15,6 @@
 	"block.quark.limestone_bricks_slab": "Vaultlime Brick Slab",
 	"block.quark.limestone_bricks_vertical_slab": "Vaultlime Brick Vertical Slab",
 	"block.quark.limestone_bricks_wall": "Vaultlime Brick Wall",
-	"block.quark.limestone_pillar": "Vaultlime Pillar"
+	"block.quark.limestone_pillar": "Vaultlime Pillar",
+	"quark.jei.hint.preamble": ""
 }

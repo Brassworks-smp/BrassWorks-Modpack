@@ -189,6 +189,27 @@ ServerEvents.recipes(event => {
     ]
   )
   
+  // Dirt + Water → Mud Balls (Create compacting)
+  event.recipes.create.compacting(
+    '4x environmental:mud_ball',
+    [
+      'minecraft:dirt',
+      Fluid.of('minecraft:water', 250)
+    ]
+  )
+  .id('kubejs:dirt_to_mud_balls')
+  
+  // Porkchop + Ash → Soap (Create compacting)
+  event.recipes.create.compacting(
+    '6x supplementaries:soap',
+    [
+      'minecraft:porkchop',
+      '4x supplementaries:ash',
+      Fluid.of('minecraft:water', 1000)
+    ]
+  )
+  .id('kubejs:porkchop_ash_to_soap')
+  
   // Environmental: Giant Lily Pad (Create compacting)
   event.recipes.create.compacting(
     'environmental:giant_lily_pad',
@@ -458,6 +479,27 @@ ServerEvents.recipes(event => {
     Fluid.of('minecraft:water', 100)
   ], 'quark:shale')
   .id('kubejs:quark_shale_to_create_asurine')
+
+  // Remove pressing recipes for createdeco coins and add crafting recipes using arrays
+  const coinTypes = [
+    {coin: 'createdeco:netherite_coin', nugget: 'createdeco:netherite_nugget'},
+    {coin: 'createdeco:iron_coin', nugget: 'minecraft:iron_nugget'},
+    {coin: 'createdeco:brass_coin', nugget: 'create:brass_nugget'},
+    {coin: 'createdeco:copper_coin', nugget: 'create:copper_nugget'},
+    {coin: 'createdeco:industrial_iron_coin', nugget: 'createdeco:industrial_iron_nugget'},
+    {coin: 'createdeco:zinc_coin', nugget: 'create:zinc_nugget'},
+    {coin: 'createdeco:gold_coin', nugget: 'minecraft:gold_nugget'}
+  ]
+
+  // Remove all coin pressing recipes and add shapeless recipes
+  coinTypes.forEach(coinData => {
+    // Remove pressing recipe
+    event.remove({type: 'create:pressing', output: coinData.coin})
+    
+    // Add shapeless recipe using corresponding nugget
+    event.shapeless(coinData.coin, [coinData.nugget])
+      .id(`kubejs:coins/${coinData.coin.split(':')[1]}_from_nugget`)
+  })
 })
 
 // Hide specific CreateAddition items from creative/JEI
@@ -472,7 +514,8 @@ ServerEvents.tags('item', event => {
         'artifacts:everlasting_beef',
         'createadvlogistics:redstone_radio',
         'createqol:player_paper',
-        'createqol:inventory_linker'
+        'createqol:inventory_linker',
+        'quark:ancient_tome'
     ])
 
     // Create the alexcavesradon tag and add all the framed radon lamp items

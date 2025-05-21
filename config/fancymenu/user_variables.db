@@ -409,8 +409,32 @@ variable {
 }
 
 variable {
+  name = sniffytips148
+  value = %#FFE04D%Climbing snout tip:%#% %#FFFFFF%Ropes can be climbed like ladders, and rope arrows let you deploy them from afar - sniff-tastic access!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips149
+  value = %#FFE04D%Fashion-forward sniffing:%#% %#FFFFFF%Hat stands are like armor stands but just for headwear - perfect for displaying my fancy snout accessories!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips146
+  value = %#FFE04D%*bouncy sniffing*%#% %#FFFFFF%Large lily pads are super duper bouncy - my snout goes flying when I jump on them!%#%
+  reset_on_launch = false
+}
+
+variable {
   name = randomtext
-  value = 74
+  value = 64
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips147
+  value = %#FFE04D%Pond-sniffing fact:%#% %#FFFFFF%Giant lily pads make excellent bouncy platforms - my ancestors used them to cross rivers!%#%
   reset_on_launch = false
 }
 
@@ -553,6 +577,36 @@ variable {
 }
 
 variable {
+  name = sniffytips141
+  value = %#FFE04D%Woodworking snout:%#% %#FFFFFF%The sawmill lets you transform wooden blocks like a stonecutter - my nose can smell the fresh sawdust!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips144
+  value = %#FFE04D%Decorative snout idea:%#% %#FFFFFF%Link chains to walls and fences for sniff-tacular hanging designs - they smell of adventure!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips145
+  value = %#FFE04D%*EXCITED SNIFFING INTENSIFIES*%#% %#FFFFFF%OMG SNIFFER EGGS! MY BABIES! THEY'RE SO ADORABLE I CAN'T STOP SNIFFING THEM!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips142
+  value = %#FFE04D%Security-sniffing tip:%#% %#FFFFFF%Netherite doors can be locked with keys - keep those sneaky players away from your precious smells!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips143
+  value = %#FFE04D%*secretive sniffing*%#% %#FFFFFF%Netherite trapdoors with keys are perfect for your secret underground sniffing spots!%#%
+  reset_on_launch = false
+}
+
+variable {
   name = sniffytips69
   value = %#FFE04D%*mischievous sniff*%#% %#FFFFFF%Annoy your friends with goat horns - my sensitive ears can hear them from miles away!%#%
   reset_on_launch = false
@@ -615,6 +669,36 @@ variable {
 variable {
   name = sniffytips71
   value = %#FFE04D%Engineering sniff tip:%#% %#FFFFFF%Shear pins break when the network overstresses - a safety feature for your machines!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips151
+  value = %#FFE04D%Invisible snout trick:%#% %#FFFFFF%Glass item frames vanish when holding items - makes them look like they're floating by scent alone!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips152
+  value = %#FFE04D%Glowy-nose display:%#% %#FFFFFF%Glowing glass item frames disappear AND provide light - perfect for sniffing out treasures at night!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips150
+  value = %#FFE04D%Display-sniffing advice:%#% %#FFFFFF%Armor stands are great for showing off your shiny gear - my nose can smell the polish from here!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips153
+  value = %#FFE04D%Security-sniffing storage:%#% %#FFFFFF%Safes can be locked with keys to keep your valuable scents... I mean items secure!%#%
+  reset_on_launch = false
+}
+
+variable {
+  name = sniffytips154
+  value = %#FFE04D%*excited vertical sniffing*%#% %#FFFFFF%Spring launchers shoot you up super high when powered - my snout tickles from the wind rushing by!%#%
   reset_on_launch = false
 }
 
