@@ -538,9 +538,75 @@ ServerEvents.tags('item', event => {
         'createframed:framed_radon_lamp_brown'
     ])
     
-    // Add all items from alexcavesradon tag to forge:hidden tag
-    event.add('forge:hidden', '#kubejs:alexcavesradon')
+    event.add('kubejs:createconnctedcopycats', [
+        'create_connected:copycat_block',
+        'create_connected:copycat_slab',
+        'create_connected:copycat_beam',
+        'create_connected:copycat_vertical_step',
+        'create_connected:copycat_stairs',
+        'create_connected:copycat_fence',
+        'create_connected:copycat_fence_gate',
+        'create_connected:copycat_wall',
+        'create_connected:copycat_board',
+        'create_connected:copycat_box',
+        'create_connected:copycat_catwalk'
+    ])
 
+    //tag for all copycats
+    event.add('kubejs:copycats', [
+      'copycats:copycat_block',
+      'copycats:copycat_slab',
+      'copycats:copycat_stairs',
+      'copycats:copycat_vertical_stairs',
+      'copycats:copycat_fence',
+      'copycats:copycat_wall',
+      'copycats:copycat_vertical_step',
+      'copycats:copycat_beam',
+      'copycats:copycat_slice',
+      'copycats:copycat_vertical_slice',
+      'copycats:copycat_corner_slice',
+      'copycats:copycat_ghost_block',
+      'copycats:copycat_layer',
+      'copycats:copycat_half_panel',
+      'copycats:copycat_pane',
+      'copycats:copycat_flat_pane',
+      'copycats:copycat_byte',
+      'copycats:copycat_byte_panel',
+      'copycats:copycat_board',
+      'copycats:copycat_catwalk',
+      'copycats:copycat_box',
+      'copycats:copycat_half_layer',
+      'copycats:copycat_vertical_half_layer',
+      'copycats:copycat_stacked_half_layer',
+      'copycats:copycat_stone_button',
+      'copycats:copycat_wooden_button',
+      'copycats:copycat_fence_gate',
+      'copycats:copycat_iron_trapdoor',
+      'copycats:copycat_trapdoor',
+      'copycats:copycat_folding_door',
+      'copycats:copycat_sliding_door',
+      'copycats:copycat_iron_door',
+      'copycats:copycat_door',
+      'copycats:copycat_slope_layer',
+      'copycats:copycat_vertical_slope',
+      'copycats:copycat_slope',
+      'copycats:copycat_wooden_pressure_plate',
+      'copycats:copycat_stone_pressure_plate',
+      'copycats:copycat_light_weighted_pressure_plate',
+      'copycats:copycat_heavy_weighted_pressure_plate',
+      'copycats:copycat_ladder',
+      'copycats:copycat_fluid_pipe',
+      'copycats:copycat_shaft',
+      'copycats:copycat_cogwheel',
+      'copycats:copycat_large_cogwheel',
+      'create:copycat_step',
+      'create:copycat_panel',
+    ])
+    
+
+    // Add all items from alexcavesradon and copycats from CC tags to forge:hidden tag
+    event.add('forge:hidden', '#kubejs:alexcavesradon')
+    event.add('forge:hidden', '#kubejs:createconnctedcopycats')
     // Create a new tag for packagers
     event.add('kubejs:packagers', [
       'create:packager',

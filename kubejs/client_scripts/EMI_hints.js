@@ -496,8 +496,14 @@ JEIEvents.information(event => {
       'Creates an extremely slippery surface for entities,',
       'causes players and mobs to slide uncontrollably,',
       'useful for movement-based contraptions and traps.'
+    ],
+
+    // Create Copycats
+    '#kubejs:copycats': [
+      'Takes on appearance and properties of other blocks,',
+      'Place then right-click with target block to apply appearance,',
+      'Or hold target block in off-hand while placing for one-step application.'
     ]
-    // End of Supplementaries items
   };
 
   // Add all the items with their hints
