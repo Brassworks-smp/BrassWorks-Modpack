@@ -492,10 +492,32 @@ JEIEvents.information(event => {
       'Hes probably eating it rn,',
       'ask him maybe.'
     ],
-      'supplementaries:soap_block': [
+    'supplementaries:soap_block': [
       'Creates an extremely slippery surface for entities,',
       'causes players and mobs to slide uncontrollably,',
       'useful for movement-based contraptions and traps.'
+    ],
+
+    // Extra Gauges
+    'extra_gauges:logic_gauge': [
+      'Performs logical operations (OR, AND, NOR, NAND, XOR, XNOR) on redstone inputs,',
+      'right-click to open connection GUI, hold right-click to change logic mode,',
+      'essential for advanced redstone automation and control systems.'
+    ],
+    'extra_gauges:integer_gauge': [
+      'Performs mathematical operations (ADD, SUBTRACT, MULTIPLY) on numerical inputs,',
+      'can read from factory gauges and sum multiple redstone signal strengths,',
+      'useful for complex calculations in automation systems.'
+    ],
+    'extra_gauges:comparator_gauge': [
+      'Compares summed inputs against a set value using various conditions,',
+      'supports equals, greater than, less than, and other comparison modes,',
+      'outputs redstone signal when comparison condition is met.'
+    ],
+    'extra_gauges:counter_gauge': [
+      'Counts redstone pulses and outputs signal when threshold is reached,',
+      'configurable threshold value, resets to 0 after triggering,',
+      'perfect for counting operations and batch processing controls.'
     ],
 
     // Create Copycats

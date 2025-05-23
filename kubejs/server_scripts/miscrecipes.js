@@ -607,7 +607,9 @@ ServerEvents.tags('item', event => {
     // Add all items from alexcavesradon and copycats from CC tags to forge:hidden tag
     event.add('forge:hidden', '#kubejs:alexcavesradon')
     event.add('forge:hidden', '#kubejs:createconnctedcopycats')
-    // Create a new tag for packagers
+    event.add('curios:head', '#trinkets:head/hat')
+
+
     event.add('kubejs:packagers', [
       'create:packager',
       'create:repackager'
