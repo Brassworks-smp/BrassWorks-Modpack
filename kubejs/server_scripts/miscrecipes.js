@@ -603,6 +603,16 @@ ServerEvents.tags('item', event => {
       'create:copycat_panel',
     ])
     
+    event.add('kubejs:decorative_glass_blocks', [
+      '#createframed:stained_framed_glass',
+      '#createframed:stained_tiled_glass',
+      '#createframed:vertical_stained_framed_glass',
+      '#createframed:horizontal_stained_framed_glass',
+      'create:tiled_glass',
+      'create:framed_glass',
+      'create:horizontal_framed_glass',
+      'create:vertical_framed_glass'
+    ])
 
     // Add all items from alexcavesradon and copycats from CC tags to forge:hidden tag
     event.add('forge:hidden', '#kubejs:alexcavesradon')
