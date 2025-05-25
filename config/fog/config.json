@@ -7,7 +7,7 @@
 	"disableUndergroundFogMultiplier": false,
 	"disableBiomeFogColour": false,
 	"disableCloudWhitening": false,
-	"initialFogStart": 0.1,
+	"initialFogStart": 0.35,
 	"initialFogEnd": 0.85,
 	"raininessTransitionSpeed": 0.005,
 	"undergroundnessTransitionSpeed": 0.005,

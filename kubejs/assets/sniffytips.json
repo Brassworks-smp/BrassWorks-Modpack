@@ -758,6 +758,10 @@
     {
       "id": "sniffytips190",
       "text": "%#FFE04D%Pedestal-displaying tip:%#% %#FFFFFF%Pedestals show items with special effects and provide enchanting power with end crystals!%#%"
+    },
+    {
+      "id": "sniffytips191",
+      "text": "%#FFE04D%Random text tip:%#% &f{\"placeholder\":\"randomtext\",\"values\":{\"path\":\"kubejs/assets/fpstip.txt\",\"interval\":\"0\"}}"
     }
   ]
 }

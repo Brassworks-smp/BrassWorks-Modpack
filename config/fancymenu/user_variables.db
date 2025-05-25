@@ -7,8 +7,14 @@ variable {
 }
 
 variable {
+  name = random
+  value = {"placeholder":"randomtext","values":{"path":"kubejs/assets/sniffytips.txt","interval":"15"}}
+  reset_on_launch = false
+}
+
+variable {
   name = randomtext
-  value = 20
+  value = 145
   reset_on_launch = false
 }
 

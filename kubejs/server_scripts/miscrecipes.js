@@ -5,7 +5,6 @@ ServerEvents.recipes(event => {
   event.remove({ output: 'buzzier_bees:honey_apple' })
   event.remove({ output: 'vanillabackport:dried_ghast' })
   event.remove({ output: 'createadvlogistics:redstone_radio' })
-  event.remove({ output: 'createadvlogistics:package_wormhole' })
   event.remove({ id: 'minecraft:lead' }) // Remove vanilla lead recipe
   event.remove({ output: 'missions:mechanical_exchanger' }) // Remove any existing recipe for mechanical exchanger
   event.remove({ output: 'missions:jar_of_tips' }) // Remove any existing recipe for jar of tips
@@ -30,18 +29,6 @@ ServerEvents.recipes(event => {
   )
 
 
-  // package wormhole recipe
-  event.shaped('createadvlogistics:package_wormhole', [
-    'CNC',
-    'EPE',
-    'MNM'
-  ], {
-    C: 'minecraft:chorus_fruit',
-    E: 'ender_pearl',
-    N: 'minecraft:netherite_ingot',
-    M: 'create:precision_mechanism',
-    P: '#kubejs:packagers' // Use the tag instead of specific item
-  })
 
   //mechanical exchanger recycling recipe
   event.smelting(
@@ -618,7 +605,7 @@ ServerEvents.tags('item', event => {
     event.add('forge:hidden', '#kubejs:alexcavesradon')
     event.add('forge:hidden', '#kubejs:createconnctedcopycats')
     event.add('curios:head', '#trinkets:head/hat')
-
+    event.add('curios:belt', 'create_mobile_packages:portable_stock_ticker')
 
     event.add('kubejs:packagers', [
       'create:packager',

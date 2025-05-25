@@ -68,10 +68,6 @@ JEIEvents.information(event => {
       'Transfers items instantly from input to output,',
       'with no internal storage, ideal for fast transport.'
     ],
-    'createadvlogistics:package_wormhole': [
-      'Allows instantaneous teleportation of packages,',
-      'regardless of distance between endpoints.'
-    ],
     'create_connected:inventory_access_port': [
       'Expands inventory capabilities,',
       'enabling more compact automation builds.'
@@ -525,7 +521,13 @@ JEIEvents.information(event => {
       'Takes on appearance and properties of other blocks,',
       'Place then right-click with target block to apply appearance,',
       'Or hold target block in off-hand while placing for one-step application.'
+    ],
+    'create:repackager': [
+      'Combines multiple packages from the same order into a single package,',
+      'Example: An order for 2 diamonds, 3 carrots, and 2 stone creates 3 packages,',
+      'The repackager merges these into 1 package, saving space in transport systems.'
     ]
+    
   };
 
   // Add all the items with their hints
