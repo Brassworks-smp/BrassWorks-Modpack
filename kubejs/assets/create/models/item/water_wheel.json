@@ -114,6 +114,12 @@
         "custom_model_data": 19
       },
       "model": "create:block/water_wheel/item_pale_oak"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 20
+      },
+      "model": "create:block/water_wheel/item_stone_pine"
     }
   ]
 }

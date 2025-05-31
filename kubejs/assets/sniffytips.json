@@ -62,7 +62,7 @@
     },
     {
       "id": "sniffytips16",
-      "text": "%#FFE04D%*sniffs* Wait a minute...%#% %#FFFFFF%is that {\"placeholder\":\"playername\"}? Phew! You might want to try a shower, or at least a splash potion!%#%"
+      "text": "%#FFE04D%*sniffs* Wait a minute...%#% %#FFFFFF%Phew! Someone around here could use a shower, or at least a splash potion!%#%"
     },
     {
       "id": "sniffytips17",
@@ -758,10 +758,6 @@
     {
       "id": "sniffytips190",
       "text": "%#FFE04D%Pedestal-displaying tip:%#% %#FFFFFF%Pedestals show items with special effects and provide enchanting power with end crystals!%#%"
-    },
-    {
-      "id": "sniffytips191",
-      "text": "%#FFE04D%Random text tip:%#% &f{\"placeholder\":\"randomtext\",\"values\":{\"path\":\"kubejs/assets/fpstip.txt\",\"interval\":\"0\"}}"
     }
   ]
 }

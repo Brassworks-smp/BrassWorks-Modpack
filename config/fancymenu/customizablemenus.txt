@@ -33,3 +33,6 @@ xaero.pac.client.gui.PlayerConfigScreen {
 net.minecraft.client.gui.screens.inventory.MerchantScreen {
 }
 
+net.irisshaders.iris.gui.screen.ShaderPackScreen {
+}
+

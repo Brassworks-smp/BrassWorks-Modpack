@@ -56,7 +56,7 @@
 			"boxes": [
 				{"coordinates": [-12.5, 7, -20, 25, 0, 40], "textureOffset": [87, 68]},
 				{"coordinates": [-12.5, 4, -20, 25, 29, 40], "textureOffset": [62, 68]},
-				{"coordinates": [-12.5, 9, -20, 25, 24, 40], "textureOffset": [62, 0], "sizeAdd": 0.5},
+				{"coordinates": [-12.5, 9, -20, 25, 24, 40], "textureOffset": [62, 0], "sizeAdd": 0.48},
 				{
 					"coordinates": [13.1, 27.08333, -5, 2, 4, 2],
 					"uvNorth": [26, 164, 24, 160],
