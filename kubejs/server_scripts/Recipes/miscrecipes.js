@@ -10,6 +10,7 @@ ServerEvents.recipes(event => {
   event.remove({ output: 'createqol:inventory_linker' }) 
   event.remove({ output: 'createqol:player_paper' })
   event.remove({ output: 'supplementaries:cog_block' }) 
+  event.remove({ mod: 'createaddition' });
   // New shapeless Bank Terminal recipe
   event.shapeless(
     'numismatics:bank_terminal',
@@ -484,6 +485,16 @@ ServerEvents.recipes(event => {
   )
   .id('kubejs:create_veridium_crimsite_to_quark_myalite')
 
+  // Bundle recipe: top two corners are string, all other edges are leather
+  event.shaped('minecraft:bundle', [
+    'SLS',
+    'L L',
+    'LLL'
+  ], {
+    S: 'minecraft:string',
+    L: 'minecraft:leather'
+  }).id('kubejs:bundle_leather_string')
+
   // Quark Limestone to Create Limestone via Emptying (draining water)
   event.recipes.create.emptying([
     '1x create:limestone',
@@ -525,6 +536,18 @@ ServerEvents.recipes(event => {
     event.shapeless(coinData.coin, [coinData.nugget])
       .id(`kubejs:coins/${coinData.coin.split(':')[1]}_from_nugget`)
   })
+
+  // Remove sawmill:woodcutting recipes for specific items using the correct schema key
+  const woodcuttingRemovals = [
+    'supplementaries:timber_frame',
+    'supplementaries:timber_brace',
+    'supplementaries:timber_cross_brace',
+    'supplementaries:item_shelf'
+  ];
+
+  woodcuttingRemovals.forEach(item => {
+    event.remove({ type: 'sawmill:woodcutting', result: item });
+  });
 })
 
 // Hide specific CreateAddition items from creative/JEI
@@ -540,7 +563,18 @@ ServerEvents.tags('item', event => {
         'createadvlogistics:redstone_radio',
         'createqol:player_paper',
         'createqol:inventory_linker',
-        'quark:ancient_tome'
+        'quark:ancient_tome',
+        'woodworks:warped_boards',
+        'woodworks:crimson_boards',
+        'woodworks:cherry_boards',
+        'woodworks:mangrove_boards',
+        'woodworks:dark_oak_boards',
+        'woodworks:acacia_boards',
+        'woodworks:jungle_boards',
+        'woodworks:birch_boards',
+        'woodworks:spruce_boards',
+        'woodworks:oak_boards',
+        'woodworks:sawmill'
     ])
 
     // Create the alexcavesradon tag and add all the framed radon lamp items
@@ -649,4 +683,13 @@ ServerEvents.tags('item', event => {
       'create:packager',
       'create:repackager'
     ])
+})
+
+ServerEvents.recipes(event => {
+  // Remove all recipes for items in the forge:hidden tag
+  event.remove({ input: '#forge:hidden' })
+  event.remove({ output: '#forge:hidden' })
+
+  // Remove all woodworks:sawing recipes
+  event.remove({ type: 'woodworks:sawing' })
 })
