@@ -1,0 +1,27 @@
+name: "Reactive Music: OFF 1.1 (2010-10, Alpha 1.2.0)"
+version: "1.1 (2010-10, Alpha 1.2.0)"
+author: "D_Greg_D"
+description: "I don't understand... Is Reactive Music off? Why do I hear vanilla music?"
+credits: "All music is written by C418 (2009-2018), Lena Raine (From 2020), Kumi Tanioka (From 2021), Aaron Cherof (From 2023) and Amos Roddy (From 2025)"
+
+musicSwitchSpeed: LONG
+musicDelayLength: LONG
+
+entries:
+
+# Other biomes (music.game)
+- events: [ "overworld" ]
+  songs:
+    # General soundtrack
+    - "clark" # 2009-06 (Classic 0.0.22a)
+    - "danny" # 2010-10 (Alpha 1.2.0)
+    - "dry_hands" # 2010-07 (Alpha 1.0.14)
+    - "haggstrom" # 2010-10 (Alpha 1.2.0)
+    - "key" # 2010-10 (Alpha 1.2.0)
+    - "living_mice" # 2010-10 (Alpha 1.2.0)
+    - "mice_on_venus" # 2010-07 (Alpha 1.0.14)
+    - "minecraft" # 2009-06 (Classic 0.0.22a)
+    - "oxygene" # 2010-10 (Alpha 1.2.0)
+    - "subwoofer_lullaby" # 2010-10 (Alpha 1.2.0)
+    - "sweden" # 2009-06 (Classic 0.0.22a)
+    - "wet_hands" # 2010-07 (Alpha 1.0.14)

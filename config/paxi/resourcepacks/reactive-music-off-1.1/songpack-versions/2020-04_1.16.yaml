@@ -1,0 +1,121 @@
+name: "Reactive Music: OFF 1.1 (2020-04, 1.16)"
+version: "1.1 (2020-04, 1.16)"
+author: "D_Greg_D"
+description: "I don't understand... Is Reactive Music off? Why do I hear vanilla music?"
+credits: "All music is written by C418 (2009-2018), Lena Raine (From 2020), Kumi Tanioka (From 2021), Aaron Cherof (From 2023) and Amos Roddy (From 2025)"
+
+musicSwitchSpeed: LONG
+musicDelayLength: LONG
+
+entries:
+
+# Main Menu (music.menu)
+- events: [ "main_menu" ]
+  forceStopMusicOnChanged: true
+  forceStartMusicOnValid: true
+  songs:
+    # Main Menu soundtrack
+    - "mutation" # 2013-11 (1.7.3, 2013 Music Update)
+    - "moog_city_2" # 2013-11 (1.7.3, 2013 Music Update)
+    - "beginning_2" # 2013-11 (1.7.3, 2013 Music Update)
+    - "floating_trees" # 2013-11 (1.7.3, 2013 Music Update)
+
+# End Poem (music.credits)
+- events: [ "credits" ]
+  forceStopMusicOnChanged: true
+  forceStartMusicOnValid: true
+  songs:
+    - "alpha" # 2013-11 (1.7.3, 2013 Music Update)
+
+# Ender Dragon battle (music.dragon)
+- events: [ "boss" , "end" ]
+  forceStopMusicOnChanged: true
+  forceStartMusicOnValid: true
+  songs:
+    - "boss" # 2013-11 (1.7.3, 2013 Music Update)
+
+# The End (music.end)
+- events: [ "end" ]
+  songs:
+    - "the_end" # 2013-11 (1.7.3, 2013 Music Update)
+
+# Warped Forest (music.nether.warped_forest)
+- events: [ "nether", "biome=warped" ]
+  forceStopMusicOnChanged: true
+  songs:
+    - "system_silence"
+
+# Crimson Forest (music.nether.crimson_forest)
+- events: [ "nether", "biome=crimson" ]
+  songs:
+    # The Nether soundtrack
+    - "concrete_halls" # 2013-11 (1.7.3, 2013 Music Update)
+    - "dead_voxel" # 2013-11 (1.7.3, 2013 Music Update)
+    - "warmth" # 2013-11 (1.7.3, 2013 Music Update)
+    - "ballad_of_the_cats" # 2013-11 (1.7.3, 2013 Music Update)
+    # Crimson Forest soundtrack
+    - "chrysopoeia" # 2020-04 (1.16)
+    - "chrysopoeia" # 2020-04 (1.16)
+    - "chrysopoeia" # 2020-04 (1.16)
+    - "chrysopoeia" # 2020-04 (1.16)
+    - "chrysopoeia" # 2020-04 (1.16)
+    - "chrysopoeia" # 2020-04 (1.16)
+    - "chrysopoeia" # 2020-04 (1.16)
+
+# Basalt Deltas and Soul Sand Valley (music.nether.basalt_deltas, music.nether.soul_sand_valley)
+- events: [ "nether", "biome=basalt || biome=soul" ]
+  songs:
+    # The Nether soundtrack
+    - "concrete_halls" # 2013-11 (1.7.3, 2013 Music Update)
+    - "dead_voxel" # 2013-11 (1.7.3, 2013 Music Update)
+    - "warmth" # 2013-11 (1.7.3, 2013 Music Update)
+    - "ballad_of_the_cats" # 2013-11 (1.7.3, 2013 Music Update)
+    # Basalt Deltas and Soul Sand Valley soundtrack
+    - "so_below" # 2020-04 (1.16)
+    - "so_below" # 2020-04 (1.16)
+    - "so_below" # 2020-04 (1.16)
+    - "so_below" # 2020-04 (1.16)
+    - "so_below" # 2020-04 (1.16)
+    - "so_below" # 2020-04 (1.16)
+    - "so_below" # 2020-04 (1.16)
+
+# Nether Wastes (music.nether.nether_wastes)
+- events: [ "nether" ]
+  forceStopMusicOnChanged: true
+  songs:
+    # The Nether soundtrack
+    - "concrete_halls" # 2013-11 (1.7.3, 2013 Music Update)
+    - "dead_voxel" # 2013-11 (1.7.3, 2013 Music Update)
+    - "warmth" # 2013-11 (1.7.3, 2013 Music Update)
+    - "ballad_of_the_cats" # 2013-11 (1.7.3, 2013 Music Update)
+    # Nether Wastes soundtrack
+    - "rubedo" # 2020-04 (1.16)
+    - "rubedo" # 2020-04 (1.16)
+    - "rubedo" # 2020-04 (1.16)
+    - "rubedo" # 2020-04 (1.16)
+    - "rubedo" # 2020-04 (1.16)
+    - "rubedo" # 2020-04 (1.16)
+
+# Underwater (music.overworld.under_water)
+- events: [ "underwater", "biome=river || biometag=river || biome=ocean || biometag=ocean" ]
+  songs:
+    - "axolotl" # 2018-06 (1.13)
+    - "dragon_fish" # 2018-06 (1.13)
+    - "shuniji" # 2018-06 (1.13)
+
+# Other biomes (music.game)
+- events: [ "overworld" ]
+  songs:
+    # General soundtrack
+    - "clark" # 2009-06 (Classic 0.0.22a)
+    - "danny" # 2010-10 (Alpha 1.2.0)
+    - "dry_hands" # 2010-07 (Alpha 1.0.14)
+    - "haggstrom" # 2010-10 (Alpha 1.2.0)
+    - "key" # 2010-10 (Alpha 1.2.0)
+    - "living_mice" # 2010-10 (Alpha 1.2.0)
+    - "mice_on_venus" # 2010-07 (Alpha 1.0.14)
+    - "minecraft" # 2009-06 (Classic 0.0.22a)
+    - "oxygene" # 2010-10 (Alpha 1.2.0)
+    - "subwoofer_lullaby" # 2010-10 (Alpha 1.2.0)
+    - "sweden" # 2009-06 (Classic 0.0.22a)
+    - "wet_hands" # 2010-07 (Alpha 1.0.14)

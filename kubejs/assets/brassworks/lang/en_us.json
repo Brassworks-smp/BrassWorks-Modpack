@@ -2,5 +2,22 @@
     "item.brassworks.music_disc_tears.desc": "Amos Roddy - Tears",
     "item.brassworks.music_disc_tears": "Music Disc",
     "item.brassworks.music_disc_truce.desc": "Jasmine Leila - Truce",
-    "item.brassworks.music_disc_truce": "Music Disc"
+    "item.brassworks.music_disc_truce": "Music Disc",
+	
+	"item.brassworks.music_disc_chris.desc": "C418 - Chris",
+	"item.brassworks.music_disc_chris": "Music Disc",
+	"item.brassworks.music_disc_door.desc": "C418 - Door",
+	"item.brassworks.music_disc_door": "Music Disc",
+	"item.brassworks.music_disc_droopy_likes.desc": "C418 - Droopy Likes",
+	"item.brassworks.music_disc_droopy_likes": "Music Disc",
+	"item.brassworks.music_disc_ki.desc": "C418 - Ki",
+	"item.brassworks.music_disc_ki": "Music Disc",
+	"item.brassworks.music_disc_intro.desc": "C418 - Intro",
+	"item.brassworks.music_disc_intro": "Music Disc",
+	"item.brassworks.music_disc_spooky_amethyst.desc": "Jukio Kallio - Infinite Spooky Amethyst",
+	"item.brassworks.music_disc_spooky_amethyst": "Music Disc",
+	"item.brassworks.music_disc_spooky_amethyst_trumpet.desc": "Jukio Kallio - Infinite Spooky Amethyst (Trumpet Version)",
+	"item.brassworks.music_disc_spooky_amethyst_trumpet": "Music Disc",
+	"item.brassworks.music_disc_eleven.desc": "C418 - Eleven",
+	"item.brassworks.music_disc_eleven": "Music Disc"
 }

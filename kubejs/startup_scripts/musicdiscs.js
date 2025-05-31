@@ -1,6 +1,14 @@
   let music_list = {
     tears: 175,   // duration in seconds
-    truce: 249
+    truce: 249,
+    chris: 87,
+    door: 111,
+    droopy_likes: 209,
+    ki: 92,
+    intro: 276,
+    spooky_amethyst: 292,
+    spooky_amethyst_trumpet: 292,
+    eleven: 71
   };
 
   // put sound to .minecraft\kubejs\assets\kubejs\sounds (sound must be .ogg mono otherwise it will not be 3-dimensional)

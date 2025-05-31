@@ -14,5 +14,71 @@
                 "stream": true
             }
         ]
+    },
+	
+	
+	"music.chris": {
+        "sounds": [
+            {
+                "name": "brassworks:chris",
+                "stream": true
+            }
+        ]
+    },
+	"music.door": {
+        "sounds": [
+            {
+                "name": "brassworks:door",
+                "stream": true
+            }
+        ]
+    },
+	"music.droopy_likes": {
+        "sounds": [
+            {
+                "name": "brassworks:droopy_likes",
+                "stream": true
+            }
+        ]
+    },
+	"music.ki": {
+        "sounds": [
+            {
+                "name": "brassworks:ki",
+                "stream": true
+            }
+        ]
+    },
+	"music.intro": {
+        "sounds": [
+            {
+                "name": "brassworks:intro",
+                "stream": true
+            }
+        ]
+    },
+	"music.spooky_amethyst": {
+        "sounds": [
+            {
+                "name": "brassworks:spooky_amethyst",
+                "stream": true
+            }
+        ]
+    },
+	"music.spooky_amethyst_trumpet": {
+        "sounds": [
+            {
+                "name": "brassworks:spooky_amethyst_trumpet",
+                "stream": true
+            }
+        ]
+    },
+	"music.eleven": {
+        "sounds": [
+            {
+                "name": "brassworks:eleven",
+                "stream": true
+            }
+        ]
     }
 }
