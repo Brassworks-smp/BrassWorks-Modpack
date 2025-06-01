@@ -1,6 +1,26 @@
 {
-	"f538f9ff-601c-45cf-b6c7-52afc25cfe3e": "admin",
-	"0ee3c1bc-8f04-46f4-bf05-8ffa61b6eb39": "admin",
-	"8227ae0e-fb0f-48ab-bc28-84275830f7cb": "sniffer",
-	"bdeaf575-326b-4c3d-b3ab-d9be4f5bd8f7": "sniffer"
+	"f538f9ff-601c-45cf-b6c7-52afc25cfe3e": {
+		"name": "swzo",
+		"cape": "admin"
+	},
+	"0ee3c1bc-8f04-46f4-bf05-8ffa61b6eb39": {
+		"name": "Pipo1660",
+		"cape": "admin"
+	},
+	"8227ae0e-fb0f-48ab-bc28-84275830f7cb": {
+		"name": "Egyx",
+		"cape": "sniffer"
+	},
+	"bdeaf575-326b-4c3d-b3ab-d9be4f5bd8f7": {
+		"name": "egpy",
+		"cape": "sniffer"
+	},
+	"b876ec32-e396-476b-a115-8438d83c67d4": {
+		"name": "Technoblade",
+		"cape": "sniffer"
+	},
+	"069a79f4-44e9-4726-a5be-fca90e38aaf5": {
+		"name": "Notch",
+		"cape": "admin"
+	}
 }
