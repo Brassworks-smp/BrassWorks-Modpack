@@ -1,4 +1,6 @@
 {
-	"f538f9ff-601c-45cf-b6c7-52afc25cfe3e": "sniffer",
-	"0ee3c1bc-8f04-46f4-bf05-8ffa61b6eb39": "sniffer"
+	"f538f9ff-601c-45cf-b6c7-52afc25cfe3e": "admin",
+	"0ee3c1bc-8f04-46f4-bf05-8ffa61b6eb39": "admin",
+	"8227ae0e-fb0f-48ab-bc28-84275830f7cb": "sniffer",
+	"bdeaf575-326b-4c3d-b3ab-d9be4f5bd8f7": "sniffer"
 }
