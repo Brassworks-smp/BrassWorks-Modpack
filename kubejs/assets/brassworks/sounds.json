@@ -15,6 +15,30 @@
             }
         ]
     },
+    "music.creator": {
+        "sounds": [
+            {
+                "name": "brassworks:creator",
+                "stream": true
+            }
+        ]
+    },
+    "music.creator_music_box": {
+        "sounds": [
+            {
+                "name": "brassworks:creator_music_box",
+                "stream": true
+            }
+        ]
+    },
+    "music.precipice": {
+        "sounds": [
+            {
+                "name": "brassworks:precipice",
+                "stream": true
+            }
+        ]
+    },
 	
 	
 	"music.chris": {
