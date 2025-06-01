@@ -11,7 +11,8 @@
     intro:              [276, "minecraft:slime_drop_music_discs"],
     spooky_amethyst:    [292, "minecraft:slime_drop_music_discs"],
     spooky_amethyst_trumpet: [292, "minecraft:slime_drop_music_discs"],
-    eleven:             [71, "minecraft:slime_drop_music_discs"]
+    eleven:             [71, "minecraft:slime_drop_music_discs"],
+    taswell:             [515, "minecraft:slime_drop_music_discs"]
   };
 
   // put sound to .minecraft\kubejs\assets\kubejs\sounds (sound must be .ogg mono otherwise it will not be 3-dimensional)

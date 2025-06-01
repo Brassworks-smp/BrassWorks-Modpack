@@ -104,5 +104,13 @@
                 "stream": true
             }
         ]
+    },
+    "music.taswell": {
+        "sounds": [
+            {
+                "name": "brassworks:taswell",
+                "stream": true
+            }
+        ]
     }
 }
