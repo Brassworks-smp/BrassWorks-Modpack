@@ -597,6 +597,14 @@ ServerEvents.tags('item', event => {
         'createframed:framed_radon_lamp_brown'
     ])
     
+    event.add('kubejs:shadow_radiance', [
+      'createqol:shadow_radiance_boots',
+      'createqol:shadow_radiance_leggings',
+      'createqol:shadow_radiance',
+      'createqol:shadow_radiance_helmet',
+      'createqol:shadow_radiance_chestplate'
+    ])
+
     event.add('kubejs:createconnctedcopycats', [
         'create_connected:copycat_block',
         'create_connected:copycat_slab',
@@ -676,6 +684,7 @@ ServerEvents.tags('item', event => {
     // Add all items from alexcavesradon and copycats from CC tags to forge:hidden tag
     event.add('forge:hidden', '#kubejs:alexcavesradon')
     event.add('forge:hidden', '#kubejs:createconnctedcopycats')
+    event.add('forge:hidden', '#kubejs:shadow_radiance')
     event.add('curios:head', '#trinkets:head/hat')
     event.add('curios:belt', 'create_mobile_packages:portable_stock_ticker')
 
