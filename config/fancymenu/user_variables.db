@@ -14,13 +14,13 @@ variable {
 
 variable {
   name = randomtext
-  value = 19
+  value = 98
   reset_on_launch = false
 }
 
 variable {
   name = claimamount
-  value = 4
+  value = 
   reset_on_launch = true
 }
 
