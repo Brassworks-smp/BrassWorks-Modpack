@@ -23,6 +23,7 @@ openEditorWindowTypes=[
     clipboard,
     "target_info",
     "tool_masks",
+    "style_editor",
     fill,
     replace,
     autoshade

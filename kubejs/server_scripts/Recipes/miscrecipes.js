@@ -3,6 +3,7 @@ ServerEvents.recipes(event => {
   event.remove({ output: 'numismatics:bank_terminal' })
   event.remove({ output: 'supplementaries:cannon' })
   event.remove({ output: 'buzzier_bees:honey_apple' })
+  event.remove({ output: 'barteringstation:bartering_station' })
   event.remove({ output: 'vanillabackport:dried_ghast' })
   event.remove({ id: 'minecraft:lead' }) // Remove vanilla lead recipe
   event.remove({ output: 'missions:mechanical_exchanger' }) // Remove any existing recipe for mechanical exchanger
@@ -139,6 +140,20 @@ ServerEvents.recipes(event => {
     ]
   )
 
+  //bartering station recipe
+  event.shaped('barteringstation:bartering_station', [
+    'GEG',
+    'CSC',
+    'CDC'
+  ], {
+    G: 'create:electron_tube',
+    E: 'minecraft:gold_ingot',
+    C: 'minecraft:crimson_planks',
+    S: 'create_sa:copper_magnet',
+    D: 'create:depot'
+  }).id('kubejs:barteringstation/create_style_recipe')
+
+
   // Large Fern Recipe (2 ferns)
   event.shapeless(
     'minecraft:large_fern',
@@ -168,7 +183,23 @@ ServerEvents.recipes(event => {
     ]
   )
 
-  
+  event.recipes.create.mechanical_crafting(
+    'create_sa:andesite_exoskeleton_chestplate',
+    [
+      '01210',
+      '00300',
+      '54045'
+    ],
+    {
+      '0': 'create:andesite_alloy',
+      '1': 'create:shaft',
+      '2': 'create:belt_connector',
+      '3': 'create_sa:heat_engine',
+      '4': 'create:zinc_ingot',
+      '5': '#c:stones'
+    }
+  )
+
   // Environmental: Mycelium Sprouts (Create mixing)
   event.recipes.create.mixing(
     '2x environmental:mycelium_sprouts',
@@ -215,6 +246,15 @@ ServerEvents.recipes(event => {
     ]
   )
   
+  event.recipes.create.crushing([
+    // Each track has 33% chance (roughly equal probability for any type)
+    Item.of('brassworks:destroyedtrack_1').withChance(0.33),
+    Item.of('brassworks:destroyedtrack_2').withChance(0.33),
+    Item.of('brassworks:destroyedtrack_3').withChance(0.33),
+    // Small chance for iron nugget as bonus
+    Item.of('minecraft:iron_nugget').withChance(0.01)
+  ], 'create:track').processingTime(100)
+
   // Dirt + Water → Mud Balls (Create compacting)
   event.recipes.create.compacting(
     '4x environmental:mud_ball',
@@ -455,6 +495,15 @@ ServerEvents.recipes(event => {
   )
   .id('kubejs:create_limestone_to_quark_limestone')
 
+  //direct chute recipe
+  event.recipes.create.filling(
+    'direct_chute:direct_chute',
+    [
+      'create:chute',
+      Fluid.of('minecraft:lava', 250)
+    ]
+  )
+
   // Create Crimsite to Quark Jasper via Spout
   event.recipes.create.filling(
     '1x quark:jasper',
@@ -605,6 +654,19 @@ ServerEvents.tags('item', event => {
       'createqol:shadow_radiance_chestplate'
     ])
 
+    event.add('kubejs:disabledjetpacks', [
+      'create_sa:brass_jetpack_chestplate',
+      'create_sa:andesite_jetpack_chestplate',
+      'create_sa:netherite_jetpack_chestplate'
+    ])
+
+    event.add('kubejs:grieferarmor', [
+      'savage_and_ravage:griefer_helmet',
+      'savage_and_ravage:griefer_chestplate',
+      'savage_and_ravage:griefer_leggings',
+      'savage_and_ravage:griefer_boots'
+    ])
+      
     event.add('kubejs:createconnctedcopycats', [
         'create_connected:copycat_block',
         'create_connected:copycat_slab',
@@ -685,6 +747,8 @@ ServerEvents.tags('item', event => {
     event.add('forge:hidden', '#kubejs:alexcavesradon')
     event.add('forge:hidden', '#kubejs:createconnctedcopycats')
     event.add('forge:hidden', '#kubejs:shadow_radiance')
+    event.add('forge:hidden', '#kubejs:disabledjetpacks')
+    event.add('forge:hidden', '#kubejs:grieferarmor')
     event.add('curios:head', '#trinkets:head/hat')
     event.add('curios:belt', 'create_mobile_packages:portable_stock_ticker')
 
