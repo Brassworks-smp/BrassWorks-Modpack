@@ -602,6 +602,7 @@ ServerEvents.recipes(event => {
 // Hide specific CreateAddition items from creative/JEI
 ServerEvents.tags('item', event => {
     event.add('forge:hidden', [
+        'create_sa:grapplin_whisk',
         'createaddition:digital_adapter',
         'createaddition:cake_base',
         'supplementaries:cannon',
