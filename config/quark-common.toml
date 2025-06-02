@@ -513,8 +513,8 @@
 [tweaks]
 	"Armed Armor Stands" = true
 	"Automatic Recipe Unlock" = true
-	"Better Elytra Rocket" = true
-	"Campfires Boost Elytra" = true
+	"Better Elytra Rocket" = false
+	"Campfires Boost Elytra" = false
 	"Compasses Work Everywhere" = true
 	"Coral On Cactus" = true
 	"Diamond Repair" = true
@@ -1673,7 +1673,7 @@
 	#to the netherite_pickaxe.json item model, whose value will be the enchantment level.
 	"Enchantment Predicates" = false
 	"Enchantments Begone" = false
-	"Game Nerfs" = false
+	"Game Nerfs" = true
 	"Narrator Readout" = false
 	"Overlay Shader" = false
 	"Spawner Replacer" = false
@@ -1746,11 +1746,11 @@
 		#Makes tripwire hooks unable to be duplicated
 		"Disable Tripwire Hook Dupe" = true
 		#Makes villages spawn less often when close to spawn
-		"Village Spawn Nerf" = false
+		"Village Spawn Nerf" = true
 		#Distance at which villages will spawn as normal. Effect scales linearly from world spawn
-		"Village Spawn Nerf Distance" = 7000
+		"Village Spawn Nerf Distance" = 750
 		"Non Griefing Entities" = ["minecraft:creeper", "minecraft:enderman"]
-		"Elytra Allowed Dimensions" = ["minecraft:the_end"]
+		"Elytra Allowed Dimensions" = ["brassworks:none"]
 
 	[experimental.overlay_shader]
 		#Sets the name of the shader to load on a regular basis. This can load any shader the Camera module can (and requires the Camera module enabled to apply said logic).
