@@ -1,5 +1,6 @@
 {
 	"removed": [
+		"item:create_sa:grapplin_whisk",
 		"item:createaddition:digital_adapter",
 		"item:createaddition:cake_base",
 		"item:supplementaries:cannon",
