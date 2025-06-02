@@ -1,23 +1,23 @@
-  let music_list = {
-    tears:              [175, ""],   // duration in seconds, tag (for loot table)
-    truce:              [249, ""],
-    creator:            [176, ""],
-    creator_music_box:  [73, ""],
-    precipice:          [299, ""],
-    chris:              [87, "minecraft:slime_drop_music_discs"],
-    door:               [111, "minecraft:slime_drop_music_discs"],
-    droopy_likes:       [209, "minecraft:slime_drop_music_discs"],
-    ki:                 [92, "minecraft:slime_drop_music_discs"],
-    intro:              [276, "minecraft:slime_drop_music_discs"],
-    spooky_amethyst:    [292, "minecraft:slime_drop_music_discs"],
-    spooky_amethyst_trumpet: [292, "minecraft:slime_drop_music_discs"],
-    eleven:             [71, "minecraft:slime_drop_music_discs"],
-    taswell:             [364, "minecraft:slime_drop_music_discs"]
-  };
+let music_list = {
+  tears:                   [175, ""], // duration in seconds, tag (for loot table)
+  truce:                   [249, ""],
+  creator:                 [176, ""],
+  creator_music_box:       [73,  ""],
+  precipice:               [299, ""],
+  chris:                   [87,  "minecraft:slime_drop_music_discs"],
+  door:                    [111, "minecraft:slime_drop_music_discs"],
+  droopy_likes:            [209, "minecraft:slime_drop_music_discs"],
+  ki:                      [92,  "minecraft:slime_drop_music_discs"],
+  intro:                   [276, "minecraft:slime_drop_music_discs"],
+  spooky_amethyst:         [292, "minecraft:slime_drop_music_discs"],
+  spooky_amethyst_trumpet: [292, "minecraft:slime_drop_music_discs"],
+  eleven:                  [71,  "minecraft:slime_drop_music_discs"],
+  taswell:                 [364, "minecraft:slime_drop_music_discs"]
+};
 
-  // put sound to .minecraft\kubejs\assets\kubejs\sounds (sound must be .ogg mono otherwise it will not be 3-dimensional)
-  // also you need to add sound to sounds.json (.minecraft\kubejs\assets\kubejs) 
-  StartupEvents.registry('sound_event', e => {
+// put sound to .minecraft\kubejs\assets\kubejs\sounds (sound must be .ogg mono otherwise it will not be 3-dimensional)
+// also you need to add sound to sounds.json (.minecraft\kubejs\assets\kubejs) 
+StartupEvents.registry('sound_event', e => {
     Object.keys(music_list).forEach(key => {
         e.create(`brassworks:music.${key}`) 
     })

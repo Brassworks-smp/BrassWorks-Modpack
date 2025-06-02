@@ -403,6 +403,25 @@ ServerEvents.recipes(event => {
     S: 'minecraft:soul_sand'
   })
 
+  
+  // Fiddle Ferns: 2 short → 1 tall (shaped)
+  event.shaped(
+    'snifferplus:tall_fiddlefern',
+    [
+      'F',
+      'F'
+    ],
+    {
+      F: 'snifferplus:fiddlefern'
+    }
+  ).id('kubejs:fiddlefern_to_tall_fiddlefern')
+
+  // Fiddle Ferns: Tall → 2 short (Create crushing)
+  event.recipes.create.crushing([
+    Item.of('snifferplus:fiddlefern', 2),
+    Item.of('snifferplus:fiddlefern').withChance(0.25)
+  ], 'snifferplus:tall_fiddlefern').id('kubejs:crushing_tall_fiddlefern')
+
   // whoopee cushion
   event.shaped('artifacts:whoopee_cushion', [
     ' L ',
@@ -682,6 +701,14 @@ ServerEvents.tags('item', event => {
         'create_connected:copycat_catwalk'
     ])
 
+    event.add('minecraft:tall_flowers', [
+      'snifferplus:tall_fiddlefern'
+    ])
+
+    event.add('minecraft:small_flowers', [
+      'snifferplus:fiddlefern'
+    ])
+
     //tag for all copycats
     event.add('kubejs:copycats', [
       'copycats:copycat_block',
@@ -758,6 +785,16 @@ ServerEvents.tags('item', event => {
       'create:repackager'
     ])
 })
+
+ServerEvents.tags('block', event => {
+  event.add('brassworks:tall_flowers', [
+    'snifferplus:tall_fiddlefern'
+  ])
+  event.add('brassworks:small_flowers', [
+    'snifferplus:fiddlefern'
+  ])
+})
+
 
 ServerEvents.recipes(event => {
   // Remove all recipes for items in the forge:hidden tag
