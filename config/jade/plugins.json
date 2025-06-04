@@ -82,6 +82,19 @@
     "registry_name": "OFF",
     "mod_name": true
   },
+  "createenchantablemachinery": {
+    "enchantable_mechanical_roller": true,
+    "enchantable_mechanical_press": true,
+    "enchantable_mechanical_saw": true,
+    "enchantable_spout": true,
+    "enchantable_mechanical_mixer": true,
+    "enchantable_mechanical_harvester": true,
+    "enchantable_millstone": true,
+    "enchantable_crushing_wheel_controller": true,
+    "enchantable_crushing_wheel": true,
+    "enchantable_mechanical_plough": true,
+    "enchantable_encased_fan": true
+  },
   "corpse": {
     "corpse": true
   },

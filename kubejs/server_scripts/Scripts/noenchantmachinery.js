@@ -10,6 +10,7 @@ const blockedmachines = [
     'create:mechanical_saw',
     'create:mechanical_mixer',
     'create:mechanical_roller',
+    'create:spout',
     'create_sa:copper_jetpack_chestplate'
 ]
 
@@ -43,3 +44,4 @@ PlayerEvents.inventoryChanged(event => {
         }
     })
 })
+
