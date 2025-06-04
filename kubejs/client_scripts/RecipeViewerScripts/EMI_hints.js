@@ -526,8 +526,13 @@ JEIEvents.information(event => {
       'Combines multiple packages from the same order into a single package,',
       'Example: An order for 2 diamonds, 3 carrots, and 2 stone creates 3 packages,',
       'The repackager merges these into 1 package, saving space in transport systems.'
-    ]
+    ],
     
+    // Blocked Enchantment Machines
+    '#brassworks:blocked_enchantment_machines': [
+      'All enchantable machines from Create Enchantable Machinery have been blocked,',
+      'except the Mechanical Drill, for balancing reasons.'
+    ]
   };
 
   // Add all the items with their hints

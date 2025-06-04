@@ -709,6 +709,19 @@ ServerEvents.tags('item', event => {
       'snifferplus:fiddlefern'
     ])
 
+    event.add('brassworks:blocked_enchantment_machines', [
+      'create:encased_fan',
+      'create:crushing_wheel',
+      'create:millstone',
+      'create:mechanical_press',
+      'create:mechanical_mixer',
+      'create:mechanical_harvester',
+      'create:mechanical_plough',
+      'create:mechanical_roller',
+      'create:mechanical_saw'
+    ])
+
+
     //tag for all copycats
     event.add('kubejs:copycats', [
       'copycats:copycat_block',

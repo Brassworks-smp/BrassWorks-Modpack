@@ -15,10 +15,10 @@ ForgeEvents.onEvent("net.minecraftforge.event.AnvilUpdateEvent", event => {
     const left = event.getLeft()
     
     if ( machinery.includes(left.getId())){
+        event.setCost(32767);
         event.setCanceled(true);
     }
 })
-
 // couldnt get this working
 /*ForgeEvents.onEvent("net.minecraftforge.event.AnvilUpdateEvent", event => {
 	const machinery = ["create:mechanical_drill", "create:mechanical_saw"]
