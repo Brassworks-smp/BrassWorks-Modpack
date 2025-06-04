@@ -1716,7 +1716,7 @@
 		"Enchantments To Register" = []
 
 	[experimental.enchantments_begone]
-		"Enchantments To Begone" = []
+		"Enchantments To Begone" = ["create_sa:above_the_clouds"]
 
 	[experimental.game_nerfs]
 		#Makes Mending act like the Unmending mod

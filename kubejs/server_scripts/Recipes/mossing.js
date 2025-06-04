@@ -8,12 +8,12 @@ ServerEvents.tags('item', event => {
 
 ServerEvents.recipes(event => {
 
-    const tools = [
+    const mossing_tools = [
         'minecraft:moss_block',
         'minecraft:vine'
     ]
 
-    const recipes = [
+    const mossing_recipes = [
         { output: 'minecraft:mossy_cobblestone',    input: 'minecraft:cobblestone' },
         { output: 'quark:mossy_cobblestone_bricks', input: 'quark:cobblestone_bricks' },
         { output: 'minecraft:mossy_stone_bricks',   input: 'minecraft:stone_bricks' },
@@ -27,10 +27,10 @@ ServerEvents.recipes(event => {
         { output: 'createdeco:mossy_dean_bricks',   input: 'createdeco:dean_bricks' }
     ]
 
-    tools.forEach(tool => {
+    mossing_tools.forEach(tool => {
         const toolName = tool.split(':')[1]
 
-        recipes.forEach(recipe => {
+        mossing_recipes.forEach(recipe => {
             const output = recipe.output
             const input  = recipe.input
             const base   = input.replace(':', '_')
