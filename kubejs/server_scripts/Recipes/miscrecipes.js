@@ -718,7 +718,8 @@ ServerEvents.tags('item', event => {
       'create:mechanical_harvester',
       'create:mechanical_plough',
       'create:mechanical_roller',
-      'create:mechanical_saw'
+      'create:mechanical_saw',
+      'create:spout'
     ])
 
 
