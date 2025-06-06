@@ -1,0 +1,4 @@
+fov:0.5
+renderDistance:12
+simulationDistance:12
+resourcePacks:["scholar:colored_books","scholar:chiseled_bookshelf_colored_books","scholar:chiseled_bookshelf_colored_books_abnww_compat","default_seamless"]

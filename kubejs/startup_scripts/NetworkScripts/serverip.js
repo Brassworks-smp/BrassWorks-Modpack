@@ -4,7 +4,7 @@ StartupEvents.init(event => {
         NetJS.getGists(gists_idserver, resultserver => {
             if (resultserver.success) {
                 JsonIO.write('kubejs/assets/serverip.json', resultserver.raw)
-                console.log('Raw resultserver written to kubejs/assets/serverip.json')
+                console.log('Raw result written to kubejs/assets/serverip.json')
             } else {
                 console.log(resultserver.exception)
             }
