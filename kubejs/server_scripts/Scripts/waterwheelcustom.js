@@ -83,117 +83,99 @@ ServerEvents.recipes(event => {
   })
 })
 
-ItemEvents.pickedUp(event => {
+PlayerEvents.inventoryChanged(event => {
   try {
-    let theItem = event.getItem()
-    
-    // Early exit with optimized water wheel check
-    if (!theItem || (theItem.id !== 'create:water_wheel' && theItem.id !== 'create:large_water_wheel')) return
-    
-    let thePlayer = event.getPlayer()
-    if (!thePlayer) return
-    
-    // Check if already processed
-    if (theItem.nbt && theItem.nbt.CustomModelData && theItem.nbt.CustomModelData !== 420) return
-    
-    // Check for material data
-    let materialId = null
-    if (theItem.nbt?.BlockEntityTag?.Material?.Name) {
-      materialId = theItem.nbt.BlockEntityTag.Material.Name.toString()
+    // Get the item that triggered the inventory change
+    let changedItem = event.getItem();
+
+    // Exit early if the changed item is not a water wheel or large water wheel
+    if (!changedItem || (changedItem.id !== 'create:water_wheel' && changedItem.id !== 'create:large_water_wheel')) {
+      return;
     }
-    
-    if (!materialId) return
-    
-    let foundPlankType = plankTypes.find(p => p.id === materialId)
-    if (!foundPlankType) return
-    
-    let newCmd = theItem.id === 'create:large_water_wheel' ? foundPlankType.cmd + 100 : foundPlankType.cmd
-    
-    // Schedule the replacement for the next tick to ensure the item is in the inventory
-    Utils.server.scheduleInTicks(1, () => {
-      try {
-        let inventory = thePlayer.getInventory()
-        let targetSlot = -1
-        let existingSlot = -1
-        
-        // Find the item to convert and check for existing items with same NBT
-        for (let i = 0; i < 36; i++) {
-          let invItem = inventory.getStackInSlot(i)
-          
-          if (invItem.isEmpty()) continue
-          if (invItem.id !== theItem.id) continue
-          
-          // Check if this is the item we want to modify
-          let invMaterialId = null
-          if (invItem.nbt?.BlockEntityTag?.Material?.Name) {
-            invMaterialId = invItem.nbt.BlockEntityTag.Material.Name.toString()
-          }
-          
-          if (invMaterialId === materialId) {
-            if (theItem.id === 'create:large_water_wheel' && (!invItem.nbt?.CustomModelData || invItem.nbt?.CustomModelData === 0)) {
-              // This is an unmarked large water wheel - mark it first
-              invItem.nbt = invItem.nbt || {}
-              invItem.nbt.CustomModelData = 420
-              targetSlot = i
-            } else if (theItem.id === 'create:large_water_wheel' && invItem.nbt?.CustomModelData === 420) {
-              // This is the marked large water wheel to convert
-              targetSlot = i
-            } else if (theItem.id === 'create:water_wheel' && (!invItem.hasNBT() || !invItem.nbt.CustomModelData)) {
-              // This is the regular water wheel to convert
-              targetSlot = i
-            } else if (invItem.nbt?.CustomModelData === newCmd && invItem.getCount() < 64) {
-              // Found existing item with same NBT that can accept more items
-              existingSlot = i
-            }
-          }
-        }
-        
-        if (targetSlot !== -1) {
-          if (existingSlot !== -1) {
-            // Add to existing stack
-            let existingItem = inventory.getStackInSlot(existingSlot)
-            let pickedUpCount = theItem.getCount()
-            existingItem.setCount(existingItem.getCount() + pickedUpCount)
-            inventory.setStackInSlot(existingSlot, existingItem)
-            
-            // Get the full NBT and clear the item
-            let targetItem = inventory.getStackInSlot(targetSlot)
-            let fullNbt = targetItem.nbt ? targetItem.nbt.toString() : ""
-            let playerUuid = thePlayer.getUuid()
-            
-            if (theItem.id === 'create:large_water_wheel') {
-              Utils.server.runCommandSilent(`execute as ${playerUuid} run clear @s ${theItem.id}{BlockEntityTag:{Material:{Name:"${materialId}"}},CustomModelData:420d} ${pickedUpCount}`)
-            } else {
-              Utils.server.runCommandSilent(`execute as ${playerUuid} run clear @s ${theItem.id}${fullNbt} ${pickedUpCount}`)
-            }
-          } else {
-            // Convert the item in place
-            let pickedUpCount = theItem.getCount()
-            let replacementItem = Item.of(theItem.id, {
-              BlockEntityTag: {
-                Material: {
-                  Name: materialId
-                }
-              },
-              CustomModelData: newCmd,
-              display: {
-                Lore: [
-                  `{"text":"Material: ${foundPlankType.name}","color":"#${foundPlankType.color}","italic":false}`
-                ]
-              }
-            })
-            
-            replacementItem.setCount(pickedUpCount)
-            inventory.setStackInSlot(targetSlot, replacementItem)
-          }
-        }
-      } catch (error) {
-        console.error(`Error in scheduled replacement: ${error}`)
+
+    let player = event.player;
+    let inventory = player.getInventory();
+
+    // Iterate through the player's inventory
+    for (let i = 0; i < 36; i++) {
+      let item = inventory.getStackInSlot(i);
+
+      if (item.isEmpty()) continue;
+
+      // Check if the item is a water wheel or large water wheel
+      if (item.id !== 'create:water_wheel' && item.id !== 'create:large_water_wheel') continue;
+
+      // Check if the item has already been processed
+      if (item.nbt && item.nbt.CustomModelData && item.nbt.CustomModelData !== 420) continue;
+
+      // Check for material data
+      let materialId = null;
+      if (item.nbt?.BlockEntityTag?.Material?.Name) {
+        materialId = item.nbt.BlockEntityTag.Material.Name.toString();
       }
-    })
-    //this is the most unoptimized code ever, but it works
+
+      if (!materialId) continue;
+
+      let foundPlankType = plankTypes.find(p => p.id === materialId);
+      if (!foundPlankType) continue;
+
+      let newCmd = item.id === 'create:large_water_wheel' ? foundPlankType.cmd + 100 : foundPlankType.cmd;
+
+      // Check for existing items with the same NBT that can stack
+      let existingSlot = -1;
+      for (let j = 0; j < 36; j++) {
+        if (j === i) continue; // Skip the current slot
+        let existingItem = inventory.getStackInSlot(j);
+
+        if (existingItem.isEmpty()) continue;
+        if (existingItem.id !== item.id) continue;
+
+        if (existingItem.nbt?.CustomModelData === newCmd && existingItem.getCount() < 64) {
+          existingSlot = j;
+          break;
+        }
+      }
+
+      if (existingSlot !== -1) {
+        // Add to existing stack without exceeding 64
+        let existingItem = inventory.getStackInSlot(existingSlot);
+        let totalCount = existingItem.getCount() + item.getCount();
+
+        if (totalCount > 64) {
+          let remainingCount = totalCount - 64;
+          existingItem.setCount(64);
+          inventory.setStackInSlot(existingSlot, existingItem);
+
+          // Update the original item with the remaining count
+          item.setCount(remainingCount);
+          inventory.setStackInSlot(i, item);
+        } else {
+          existingItem.setCount(totalCount);
+          inventory.setStackInSlot(existingSlot, existingItem);
+
+          // Remove the original item
+          item.setCount(0);
+        }
+      } else {
+        // Update the item's NBT
+        item.nbt = {
+          BlockEntityTag: {
+            Material: {
+              Name: materialId
+            }
+          },
+          CustomModelData: newCmd,
+          display: {
+            Lore: [
+              `{"text":"Material: ${foundPlankType.name}","color":"#${foundPlankType.color}","italic":false}`
+            ]
+          }
+        };
+        inventory.setStackInSlot(i, item);
+      }
+    }
   } catch (error) {
-    console.error(`Error in pickedUp event: ${error}`)
+    console.error(`Error in inventoryChanged event: ${error}`);
   }
-})
+});
 
