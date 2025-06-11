@@ -36,7 +36,7 @@ capabilities {
     # Bypass block placement restrictions
     forcePlace=false
     # Removes the reach limit
-    infiniteReach=true
+    infiniteReach=false
     infiniteReachLimit=-1
     # Move through blocks while flying
     noClip=true

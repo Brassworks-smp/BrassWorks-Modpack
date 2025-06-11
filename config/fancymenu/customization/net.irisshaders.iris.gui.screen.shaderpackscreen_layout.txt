@@ -33,7 +33,7 @@ layout_action_executable_blocks {
 
 element {
   interactable = false
-  source = %#FFB300%Brassworks Modpack Notice:%#% %#FFFFFF%This modpack includes patched versions of%#% %#4FC3F7%Complementary%#% %#FFFFFF%and%#% %#A7FFEB%BSL%#% %#FFFFFF%shaders.%#%%n%%#B2FF59%These patches allow shaders to work with Flywheel, improving FPS with the Create mod.%#%%n%%#FF5252%Other shaders you download WILL NOT WORK!%#%%n%%#B39DDB%For more information, please contact%#% %#FFD54F%Pipo%#% %#B39DDB%or%#% %#FFD54F%Swzo%#%
+  source = %#FFB300%Brassworks Modpack Notice:%#% %#FFFFFF%This modpack includes patched versions of%#% %#4FC3F7%Complementary%#% &f, %#A7FFEB%BSL%#% %#FFFFFF%and%#% %#FFD700%Bliss%#% %#FFFFFF%shaders.%#%%n%%#B2FF59%These patches allow shaders to work with Flywheel, improving FPS with the Create mod.%#%%n%%#FF5252%Other shaders you download WILL NOT WORK!%#%%n%%#B39DDB%For more information, please contact%#% %#FFD54F%Pipo%#% %#B39DDB%or%#% %#FFD54F%Swzo%#%
   source_mode = direct
   shadow = true
   scale = 0.75

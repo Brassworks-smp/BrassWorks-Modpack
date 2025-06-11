@@ -1,4 +1,3 @@
-
 const jademachinery = [ 
     'createenchantablemachinery:enchantable_mechanical_press',
     'createenchantablemachinery:enchantable_millstone',
@@ -29,10 +28,8 @@ StartupEvents.postInit((event) => {
     $WailaClientRegistration.INSTANCE.addTooltipCollectedCallback(0, (tooltip, accessor) => {
         if (!(accessor instanceof $WailaBlockAccessor)) return
         if (!jademachinery.includes(accessor.block.id)) return
-        let addToTooltip = comp => tooltip["add(net.minecraft.network.chat.Component)"](comp)
-            addToTooltip(Text.red('This machine is disabled by the Brassworks SMP, and will not work!'))
-            addToTooltip(Text.red('Please use the unenchanted version of this machine instead.'))
+            let addToTooltip = comp => tooltip["add(net.minecraft.network.chat.Component)"](comp)
+                addToTooltip(Text.red('This machine is disabled by the Brassworks SMP, and will not work!'))
+                addToTooltip(Text.red('Please use the unenchanted version of this machine instead.'))
   })
 }
-
-

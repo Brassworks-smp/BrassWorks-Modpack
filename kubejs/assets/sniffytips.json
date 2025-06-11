@@ -26,7 +26,7 @@
     },
     {
       "id": "sniffytips7",
-      "text": "%#FFE04D%Snout-standing tip:%#% %#FFFFFF%Use stack upgrades from Sophisticated Backpacks for more storage!%#%"
+      "text": "%#FFE04D%Shulker-sniffing tip:%#% %#FFFFFF%Shulker boxes can now be placed in the curios back slot for portable storage!%#%"
     },
     {
       "id": "sniffytips8",
@@ -265,7 +265,7 @@
     },
     {
       "id": "sniffytips67",
-      "text": "%#FFE04D%Storage sniffer says:%#% %#FFFFFF%Item silos are vertical vaults - perfect for storing lots of the same item!%#%"
+      "text": "%#FFE04D%Shulker-opening trick:%#% %#FFFFFF%Right-click with a shulker box to open it without placing it down!%#%"
     },
     {
       "id": "sniffytips68",
@@ -497,7 +497,7 @@
     },
     {
       "id": "sniffytips125",
-      "text": "%#FFE04D%Backpack sniffer tip:%#% %#FFFFFF%You can use Create filters in Sophisticated Backpacks for advanced sorting!%#%"
+      "text": "%#FFE04D%Quick shulker access:%#% %#FFFFFF%Press 'X' to open a shulker box in your back slot without taking it off!%#%"
     },
     {
       "id": "sniffytips126",
