@@ -14,7 +14,7 @@ variable {
 
 variable {
   name = randomtext
-  value = 105
+  value = 189
   reset_on_launch = false
 }
 
@@ -38,7 +38,7 @@ variable {
 
 variable {
   name = welcomemessage
-  value = true
+  value = false
   reset_on_launch = false
 }
 

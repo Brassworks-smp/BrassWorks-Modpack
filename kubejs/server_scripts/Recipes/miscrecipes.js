@@ -781,6 +781,9 @@ ServerEvents.tags('item', event => {
       'create:vertical_framed_glass'
     ])
 
+    event.add('brassworks:experience_heap_hyper', [
+      'brassworks:hyper_experience_heap'
+    ])
     // Add all items from alexcavesradon and copycats from CC tags to forge:hidden tag
     event.add('forge:hidden', '#kubejs:alexcavesradon')
     event.add('forge:hidden', '#kubejs:createconnctedcopycats')
