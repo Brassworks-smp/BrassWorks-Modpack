@@ -80,6 +80,12 @@ const heap = 'brassworks:hyper_experience_heap'
   )
   .id('kubejs:brassworks_hyper_experience_block_to_liquid')
 
+    event.recipes.create.emptying(
+  Fluid.of('create_enchantment_industry:hyper_experience', 12), 'brassworks:hyper_experience_heap'
+  )
+  .id('kubejs:brassworks_hyper_experience_heap_to_liquid')
+
+
 
     event.recipes.create.emptying(
   Fluid.of('create_enchantment_industry:hyper_experience', 3), 'brassworks:hyper_experience_nugget'
