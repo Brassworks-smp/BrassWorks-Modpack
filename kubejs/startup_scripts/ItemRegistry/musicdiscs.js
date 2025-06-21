@@ -1,5 +1,4 @@
 let music_list = {
-  tears:                   [175, ""], // duration in seconds, tag (for loot table)
   truce:                   [249, ""],
   creator:                 [176, ""],
   creator_music_box:       [73,  ""],

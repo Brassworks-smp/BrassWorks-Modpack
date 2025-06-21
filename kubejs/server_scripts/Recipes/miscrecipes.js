@@ -12,6 +12,7 @@ ServerEvents.recipes(event => {
   event.remove({ output: 'createqol:player_paper' })
   event.remove({ output: 'supplementaries:cog_block' }) 
   event.remove({ mod: 'createaddition' });
+  
   // New shapeless Bank Terminal recipe
   event.shapeless(
     'numismatics:bank_terminal',
@@ -444,16 +445,6 @@ ServerEvents.recipes(event => {
     M: '#minecraft:music_discs'
   })
 
-  // Sniffer Egg Recipe
-  event.shaped('minecraft:sniffer_egg', [
-    'NMN',
-    'MEM',
-    'NMN'
-  ], {
-    N: 'minecraft:nether_wart_block',
-    M: 'minecraft:moss_block',
-    E: '#forge:eggs'
-  })
 
   //saddle recipe from 1.21.6
     event.shaped('minecraft:saddle', [
@@ -722,6 +713,11 @@ ServerEvents.tags('item', event => {
       'create:spout'
     ])
 
+    event.add('kubejs:dirt', [
+      'minecraft:dirt',
+      'minecraft:coarse_dirt',
+      'minecraft:rooted_dirt'
+    ])
 
     //tag for all copycats
     event.add('kubejs:copycats', [
@@ -796,7 +792,9 @@ ServerEvents.tags('item', event => {
 
     event.add('kubejs:packagers', [
       'create:packager',
-      'create:repackager'
+      'create:repackager',
+      'create_factory_logistics:jar_packager',
+      'delivery_director:package_rewriter'
     ])
 })
 

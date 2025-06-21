@@ -7,14 +7,6 @@
             }
         ]
     },
-    "music.tears": {
-        "sounds": [
-            {
-                "name": "brassworks:tears",
-                "stream": true
-            }
-        ]
-    },
     "music.creator": {
         "sounds": [
             {
