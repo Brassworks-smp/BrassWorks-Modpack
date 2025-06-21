@@ -45,7 +45,7 @@ ItemEvents.rightClicked(event => {
         orb = 'create_enchantment_industry:hyper_experience_orb';
     }
 
-            player.tell('hyperxp processing...');
+
 
     if (xp <= 0) return;
 
