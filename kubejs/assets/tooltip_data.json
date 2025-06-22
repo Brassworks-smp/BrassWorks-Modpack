@@ -125,5 +125,21 @@
         }
       ]
     }
+  },
+  "create:wrench": {
+    "ctrl": {
+      "controls": [
+        {
+          "control": "Used on Boats",
+          "requiresHold": false,
+          "text": [
+            "If a $Minecart Contraption$ is near the $Boat$,",
+            "The $Contraption$ will $ride$ the $Boat$",
+            "Great for creating $Boat Contraptions$",
+            "or $linking up$ with $Happy Ghasts!$"
+          ]
+        }
+      ]
+    }
   }
 }

@@ -16,15 +16,21 @@ const colorPurple = 0xa800a8;
 ItemEvents.tooltip((tooltip) => {
   Object.entries(tooltipData).forEach(([itemId, data]) => {
     tooltip.addAdvanced(itemId, (item, advanced, text) => {
-      const itemName = text.get(0); // Save the name line
-      text.remove(0); // Remove it for now
+      const itemName = text.get(0);
+      text.remove(0);
 
       const insertLines = [];
 
-      if (tooltip.shift) {
+      const formatKeyHint = (keyName, keyColor) => Text.empty()
+        .append(Text.of("[").darkGray())
+        .append(Text.of(keyName).color(keyColor))
+        .append(Text.of("]").darkGray());
+
+      // SHIFT HELD
+      if (tooltip.shift && (data.shift?.summary || data.shift?.controls)) {
         insertLines.push([
           Text.of("Hold ").darkGray(),
-          Text.of("[Shift]").white(),
+          formatKeyHint("Shift", 0xffffff),
           Text.of(" for Summary").darkGray(),
         ]);
 
@@ -48,48 +54,48 @@ ItemEvents.tooltip((tooltip) => {
           });
         }
 
-      } else if (tooltip.ctrl) {
+      // CTRL HELD
+      } else if (tooltip.ctrl && (data.ctrl?.controls?.length > 0)) {
         insertLines.push([
           Text.of("Hold ").darkGray(),
-          Text.of("[Ctrl]").white(),
+          formatKeyHint("Ctrl", 0xffffff),
           Text.of(" for Controls").darkGray(),
         ]);
 
-        if (data.ctrl?.controls) {
-          data.ctrl.controls.forEach(control => {
-            insertLines.push([]);
-            insertLines.push([
-              Text.of(control.requiresHold ? "Hold " : "When ").gray(),
-              Text.of(control.control).gray()
-            ]);
-            control.text.forEach(line => {
-              insertLines.push([Text.of(" ").append(createFormattedTextObject(line))]);
-            });
+        data.ctrl.controls.forEach(control => {
+          insertLines.push([]);
+          insertLines.push([
+            Text.of(control.requiresHold ? "Hold " : "When ").gray(),
+            Text.of(control.control).gray()
+          ]);
+          control.text.forEach(line => {
+            insertLines.push([Text.of(" ").append(createFormattedTextObject(line))]);
           });
-        }
+        });
 
+      // NEITHER HELD — show gray hint only if data exists
       } else {
-        insertLines.push([
-          Text.of("Hold ").darkGray(),
-          Text.of("[Shift]").gray(),
-          Text.of(" for Summary").darkGray()
-        ]);
+        if (data.shift?.summary || data.shift?.controls) {
+          insertLines.push([
+            Text.of("Hold ").darkGray(),
+            formatKeyHint("Shift", 0xaaaaaa),
+            Text.of(" for Summary").darkGray()
+          ]);
+        }
 
         if (data.ctrl?.controls?.length > 0) {
           insertLines.push([
             Text.of("Hold ").darkGray(),
-            Text.of("[Ctrl]").gray(),
+            formatKeyHint("Ctrl", 0xaaaaaa),
             Text.of(" for Controls").darkGray()
           ]);
         }
       }
 
-      // Insert item name back at top
       text.add(0, itemName);
 
-      // Insert custom tooltips right after item name
       for (let i = insertLines.length - 1; i >= 0; i--) {
-        text.add(1, insertLines[i]); // always insert at index 1 so they appear below name
+        text.add(1, insertLines[i]);
       }
     });
   });
