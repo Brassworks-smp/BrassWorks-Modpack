@@ -26,14 +26,17 @@ ItemEvents.tooltip((tooltip) => {
         .append(Text.of(keyName).color(keyColor))
         .append(Text.of("]").darkGray());
 
-      // SHIFT HELD
-      if (tooltip.shift && (data.shift?.summary || data.shift?.controls)) {
-        insertLines.push([
-          Text.of("Hold ").darkGray(),
-          formatKeyHint("Shift", 0xffffff),
-          Text.of(" for Summary").darkGray(),
-        ]);
+      if (tooltip.shift) {
+        // Show Shift hint if there's content
+        if (data.shift?.summary || data.shift?.controls) {
+          insertLines.push([
+            Text.of("Hold ").darkGray(),
+            formatKeyHint("Shift", 0xffffff),
+            Text.of(" for Summary").darkGray(),
+          ]);
+        }
 
+        // Show actual Shift content if it exists
         if (data.shift?.summary) {
           insertLines.push([]);
           data.shift.summary.forEach(line => {
@@ -54,8 +57,17 @@ ItemEvents.tooltip((tooltip) => {
           });
         }
 
-      // CTRL HELD
-      } else if (tooltip.ctrl && (data.ctrl?.controls?.length > 0)) {
+        // Still show gray Ctrl hint if ctrl content exists
+        if (data.ctrl?.controls?.length > 0) {
+          insertLines.push([]);
+          insertLines.push([
+            Text.of("Hold ").darkGray(),
+            formatKeyHint("Ctrl", 0xaaaaaa),
+            Text.of(" for Controls").darkGray()
+          ]);
+        }
+
+      } else if (tooltip.ctrl && data.ctrl?.controls?.length > 0) {
         insertLines.push([
           Text.of("Hold ").darkGray(),
           formatKeyHint("Ctrl", 0xffffff),
@@ -73,8 +85,8 @@ ItemEvents.tooltip((tooltip) => {
           });
         });
 
-      // NEITHER HELD — show gray hint only if data exists
       } else {
+        // Neither held — show Shift and Ctrl hints if applicable
         if (data.shift?.summary || data.shift?.controls) {
           insertLines.push([
             Text.of("Hold ").darkGray(),
@@ -93,7 +105,6 @@ ItemEvents.tooltip((tooltip) => {
       }
 
       text.add(0, itemName);
-
       for (let i = insertLines.length - 1; i >= 0; i--) {
         text.add(1, insertLines[i]);
       }
