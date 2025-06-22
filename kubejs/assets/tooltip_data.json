@@ -1,0 +1,129 @@
+{
+  "brassworks:hyper_experience_sword": {
+    "shift": {
+      "summary": [
+        "#With each hit, the tool deteriorates,#",
+        "#and #^Hyper XP orbs^# occasionally appear.#"
+      ]
+    }
+  },
+  "brassworks:hyper_experience_pickaxe": {
+    "shift": {
+      "summary": [
+        "#With each hit, the tool deteriorates,#",
+        "#and #^Hyper XP orbs^# occasionally appear.#"
+      ]
+    }
+  },
+  "brassworks:hyper_experience_axe": {
+    "shift": {
+      "summary": [
+        "#With each hit, the tool deteriorates,#",
+        "#and #^Hyper XP orbs^# occasionally appear.#"
+      ]
+    }
+  },
+  "brassworks:hyper_experience_shovel": {
+    "shift": {
+      "summary": [
+        "#With each hit, the tool deteriorates,#",
+        "#and #^Hyper XP orbs^# occasionally appear.#"
+      ]
+    }
+  },
+  "brassworks:hyper_experience_nugget": {
+    "shift": {
+      "summary": [
+        "A speck of $inspiration$ from your",
+        "fantastic inventions."
+      ],
+      "controls": [
+        {
+          "control": "Right Clicked",
+          "requiresHold": false,
+          "text": [
+            "Redeems $Hyper Experience$ points contained within."
+          ]
+        }
+      ]
+    }
+  },
+  "brassworks:hyper_experience_heap": {
+    "shift": {
+      "summary": [
+        "A condensed cluster of $inspiration$,",
+        "holding $4×$ the usual power."
+      ],
+      "controls": [
+        {
+          "control": "Right Clicked",
+          "requiresHold": false,
+          "text": [
+            "Redeems $Hyper Experience$ points contained within."
+          ]
+        }
+      ]
+    }
+  },
+  "create_sa:heap_of_experience": {
+    "shift": {
+      "summary": [
+        "A condensed cluster of $inspiration$,",
+        "holding $4×$ the usual power."
+      ],
+      "controls": [
+        {
+          "control": "Right Clicked",
+          "requiresHold": false,
+          "text": [
+            "Redeems $Experience$ points contained within."
+          ]
+        }
+      ]
+    }
+  },
+  "brassworks:sniffer_plushie": {
+    "shift": {
+      "summary": [
+        "A plush reward for $Event Winners$.",
+        "Well-earned through $competitive triumphs$."
+      ],
+      "controls": [
+        {
+          "control": "Right Clicked",
+          "requiresHold": false,
+          "text": [
+            "Equips to the $cosmetic head slot$ or places as a $decorative plush$."
+          ]
+        }
+      ]
+    }
+  },
+  "brassworks:music_disc_truce": {
+    "shift": {
+      "summary": [
+        "Plays the $Truce$ track — custom-made for $Brassworks$ by a friend of $swzo$.",
+        "Great for $relaxing moments$. Enjoy!",
+        ""
+      ]
+    }
+  },
+  "create_factory_logistics:copper_jar_package_8x8": {
+    "shift": {
+      "summary": [
+        "A $fluid package$ that can hold $various liquids$.",
+        "Use a $bottler$ to create and fill it with $fluids$."
+      ],
+      "controls": [
+        {
+          "control": "Shift-Right Clicked",
+          "requiresHold": false,
+          "text": [
+            "If it contains $XP fluid$ or $Hyper XP fluid$,",
+            "Redeems the $Experience$ points contained within."
+          ]
+        }
+      ]
+    }
+  }
+}

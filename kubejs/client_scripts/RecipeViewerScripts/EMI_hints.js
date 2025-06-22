@@ -495,6 +495,7 @@ JEIEvents.information(event => {
     ],
 
     // Extra Gauges
+    /*
     'extra_gauges:logic_gauge': [
       'Performs logical operations (OR, AND, NOR, NAND, XOR, XNOR) on redstone inputs,',
       'right-click to open connection GUI, hold right-click to change logic mode,',
@@ -515,6 +516,7 @@ JEIEvents.information(event => {
       'configurable threshold value, resets to 0 after triggering,',
       'perfect for counting operations and batch processing controls.'
     ],
+    */
 
     // Create Copycats
     '#kubejs:copycats': [
