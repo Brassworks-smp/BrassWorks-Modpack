@@ -122,6 +122,14 @@
             "If it contains $XP fluid$ or $Hyper XP fluid$,",
             "Redeems the $Experience$ points contained within."
           ]
+        },
+        {
+          "control": "Shift-Right Clicked",
+          "requiresHold": false,
+          "text": [
+            "If it contains a $potion fluid$,",
+            "Applies the potion's $effects$ scaled by amount."
+          ]
         }
       ]
     }
@@ -141,5 +149,319 @@
         }
       ]
     }
+  },
+  "escalated:metal_walkway_steps": {
+    "shift": {
+      "summary": [
+        "Industrial-grade $escalator steps$ with a sleek metal finish.",
+        "Customize with $handrails$, $dyes$, and $glass panels$."
+      ],
+      "controls": [
+        {
+          "control": "Right Clicked with Belt",
+          "requiresHold": false,
+          "text": [
+            "Adds $handrails$ to the escalator."
+          ]
+        },
+        {
+          "control": "Right Clicked with Dye",
+          "requiresHold": false,
+          "text": [
+            "Dyes the $walkway$ with the selected color."
+          ]
+        },
+        {
+          "control": "Right Clicked on Handrail with Dye",
+          "requiresHold": false,
+          "text": [
+            "Changes the color of the $handrails$."
+          ]
+        },
+        {
+          "control": "Right Clicked on Handrail with Glass",
+          "requiresHold": false,
+          "text": [
+            "Makes the $handrails$ see-through with $glass panels$."
+          ]
+        }
+      ]
+    }
+  },
+  "escalated:wooden_walkway_steps": {
+    "shift": {
+      "summary": [
+        "$Classic wooden steps$ for cozy or natural builds.",
+        "Can be styled with $rails$, $colors$, and $glass accents$."
+      ],
+      "controls": [
+        {
+          "control": "Right Clicked with Belt",
+          "requiresHold": false,
+          "text": [
+            "Adds $handrails$ to the escalator."
+          ]
+        },
+        {
+          "control": "Right Clicked with Dye",
+          "requiresHold": false,
+          "text": [
+            "Dyes the $walkway$ with the selected color."
+          ]
+        },
+        {
+          "control": "Right Clicked on Handrail with Dye",
+          "requiresHold": false,
+          "text": [
+            "Changes the color of the $handrails$."
+          ]
+        },
+        {
+          "control": "Right Clicked on Handrail with Glass",
+          "requiresHold": false,
+          "text": [
+            "Makes the $handrails$ see-through with $glass panels$."
+          ]
+        }
+      ]
+    }
+  },
+  "createaddition:straw": {
+    "shift": {
+      "summary": [
+        "Lets you treat a $Blaze Burner$ like a $fluid tank$.",
+        "Pump fluids $directly$ into it with ease."
+      ],
+      "controls": [
+        {
+          "control": "Right Clicked on Blaze Burner",
+          "requiresHold": false,
+          "text": [
+            "Allows the $Blaze Burner$ to accept fluids",
+            "as if it were a $tank$."
+          ]
+        }
+      ]
+    }
+  },
+  "direct_chute:direct_chute": {
+    "shift": {
+      "summary": [
+        "Functions like a normal $Chute$,",
+        "but transfers items $instantly with no buffer$."
+      ]
+    }
+  },
+  "missions:jar_of_tips": {
+    "shift": {
+      "summary": [
+        "Collects $tips$ from your customers.",
+        "Works with $Spurs$, $Cogs$, and other $Numismatics$ currency."
+      ]
+    }
+  },
+  "create_factory_logistics:factory_fluid_gauge": {
+    "shift": {
+      "summary": [
+        "Acts like a normal $Factory Gauge$",
+        "but it displays $fluid levels$ instead."
+      ]
+    }
+  },
+  "create_factory_logistics:jar_packager": {
+    "shift": {
+      "summary": [
+        "Used to create $fluid jars$ from nearby inventories.",
+        "Just like a $Packager$, but for $fluids$."
+      ]
+    }
+  },
+  "dummmmmmy:target_dummy": {
+    "shift": {
+      "summary": [
+        "Helps you test your $weapons$ and $tools$.",
+        "Shows damage dealt and avoids $durability loss$."
+      ]
+    }
+  },
+  "quark:abacus": {
+    "shift": {
+      "summary": [
+        "Click two blocks to count the $distance$ between.",
+        "Helps with $precise building$ and measuring."
+      ],
+      "controls": [
+        {
+          "control": "Right Click (twice)",
+          "requiresHold": false,
+          "text": [
+            "Click a starting point, then a second block",
+            "to count the $blocks in between$."
+          ]
+        }
+      ]
+    }
+  },
+  "supplementaries:slice_map": {
+    "shift": {
+      "summary": [
+        "Generates a map of your current $Y level$ only.",
+        "Especially helpful in $the Nether$."
+      ]
+    }
+  },
+  "minecraft:elytra": {
+    "shift": {
+      "summary": [
+        "Soar through the skies with style.",
+        "Firework boosting is $disabled$ for balance."
+      ]
+    }
+  },
+  "minecraft:firework_rocket": {
+    "shift": {
+      "summary": [
+        "Still fun and flashy, but not for flying.",
+        "No longer boosts $Elytra flight$."
+      ]
+    }
+  },
+  "barteringstation:bartering_station": {
+    "shift": {
+      "summary": [
+        "Automates trades with $Piglins$ using $gold$.",
+        "Compatible with $funnels$ and $chutes$."
+      ]
+    }
+  },
+  "minecraft:ancient_debris": {
+    "shift": {
+      "summary": [
+        "Now $crushable$ for better returns.",
+        "May yield $extra scraps$ and $Hyper XP Nuggets$."
+      ]
+    }
+  },
+  "#c:shulker_boxes": {
+    "shift": {
+      "summary": [
+        "Functions like a wearable $backpack$.",
+        "Can be placed in the $back slot$ and opened on the go."
+      ],
+      "controls": [
+        {
+          "control": "[X] is pressed",
+          "requiresHold": false,
+          "text": [
+            "Opens the $backpack slot$."
+          ]
+        }
+      ]
+    }
+  },
+  "quark:trowel": {
+    "shift": {
+      "summary": [
+        "Randomly places blocks from your $inventory$.",
+        "Perfect for building $roads$ or $messy structures$."
+      ],
+      "controls": [
+        {
+          "control": "Right Clicked",
+          "requiresHold": false,
+          "text": [
+            "Places a $random block$ from your hotbar."
+          ]
+        }
+      ]
+    }
+  },
+  "supplementaries:confetti_popper": {
+    "shift": {
+      "summary": [
+        "Shoots out $colorful confetti$!",
+        "Bring it to your next $Minecraft party$."
+      ],
+      "controls": [
+        {
+          "control": "Right Clicked",
+          "requiresHold": false,
+          "text": [
+            "Pops $confetti$ with a burst of joy!"
+          ]
+        }
+      ]
+    }
+  },
+  "#vanillabackport:harnesses": {
+    "shift": {
+      "summary": [
+        "Used like a saddle on a $happy ghast$.",
+        "Right click to hop on and go for a $ride$!"
+      ],
+      "controls": [
+        {
+          "control": "Right Clicked on a Happy Ghast",
+          "requiresHold": false,
+          "text": [
+            "Mounts a $happy ghast$"
+          ]
+        }
+      ]
+    }
+  },
+  "missions:mechanical_exchanger": {
+    "shift": {
+      "summary": [
+        "Automatically converts between",
+        "$Numismatics$ currency denominations."
+      ]
+    }
+  },
+  "#brassworks:destroyed_tracks": {
+    "shift": {
+      "summary": [
+        "A $worn-down$ segment of rail.",
+        "Obtained by $crushing$ a train track."
+      ]
+    }
+  },
+  "brassworks:whitened_pulp": {
+    "shift": {
+      "summary": [
+        "Used as an alternative to craft $paper$.",
+        "Pairs well with $eco-friendly builds$."
+      ]
+    }
+  },
+  "vanillabackport:dried_ghast": {
+    "shift": {
+      "summary": [
+        "Place in $water$ to grow a $happy ghast$.",
+        "It’s $adorable$—trust us."
+      ]
+    }
+  },
+  "imgurdisplay:display": {
+    "shift": {
+      "summary": [
+        "Used to display $images$ from $Imgur$ links.",
+        "Only supports $png$, $jpg$, $jpeg$, and $gif$ files.",
+        "Maximum display size is $8x8 blocks$."
+      ],
+      "controls": [
+        {
+          "control": "Block is Right Clicked",
+          "requiresHold": false,
+          "text": [
+            "Paste an $Imgur URL$ to assign an image.",
+            "Can be a full link or just the $ID$ (e.g., $W7lJrbu$)."
+          ]
+        }
+      ]
+    }
   }
+
 }
+
+

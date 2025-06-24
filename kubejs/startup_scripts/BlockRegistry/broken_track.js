@@ -18,6 +18,7 @@ StartupEvents.registry('block', event => {
       .tagBlock('minecraft:mineable/pickaxe')
       .mapColor('COLOR_GRAY')
       .displayName(track.name)
-      .box(0.01, 0, 0.01, 15.99, 4, 15.99, true);
+      .box(0.01, 0, 0.01, 15.99, 4, 15.99, true)
+      .tag('brassworks:destroyed_tracks')
   });
 });

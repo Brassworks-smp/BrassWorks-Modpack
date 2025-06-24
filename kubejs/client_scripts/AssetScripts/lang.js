@@ -63,4 +63,5 @@ ClientEvents.lang('en_us', e => {
   e.add('block.create.gantry_pinion', 'Gantry Pinion')
   e.add('block.escalated.handrail', 'Handrail')
   e.add('block.quark.lootr_variant_chest', 'Loot Chest Variant')
+  e.add('entity.imgurdisplay.display', 'Display Image')
 })

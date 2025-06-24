@@ -719,6 +719,52 @@ ServerEvents.tags('item', event => {
       'minecraft:rooted_dirt'
     ])
 
+    event.add('salt:can_be_salted', [
+      'moredelight:toast_with_chocolate',
+      'moredelight:toast_with_glow_berries',
+      'moredelight:toast_with_sweet_berries',
+      'moredelight:toast_with_honey',
+      'moredelight:toast_with_egg',
+      'moredelight:toast',
+      'moredelight:bread_slice',
+      'moredelight:diced_potatoes_with_egg_and_tomato',
+      'moredelight:potato_salad',
+      'moredelight:chicken_salad',
+      'moredelight:carrot_soup',
+      'moredelight:simple_hamburger',
+      'moredelight:hamburger_with_egg',
+      'moredelight:loaded_hamburger',
+      'moredelight:chicken_sandwich_with_egg_and_tomato',
+      'moredelight:steak_sandwich',
+      'moredelight:porkchop_sandwich',
+      'moredelight:egg_with_bacon_sandwich',
+      'moredelight:tomato_sandwich',
+      'moredelight:diced_potatoes_with_porkchop',
+      'moredelight:diced_potatoes_with_beef',
+      'moredelight:diced_potatoes_with_chicken_cuts',
+      'moredelight:mashed_potatoes',
+      'moredelight:creamy_pasta_with_chicken_cuts',
+      'moredelight:creamy_pasta_with_ham',
+      'moredelight:cooked_rice_with_porkchop',
+      'moredelight:cooked_rice_with_beef',
+      'moredelight:cooked_rice_with_chicken_cuts',
+      'moredelight:omelette',
+      'moredelight:chocolate_popsicle',
+      'moredelight:diced_potatoes',
+      'sniffers_delight:sniffer_egg_soup',
+      'sniffers_delight:stuffed_sniffer_egg',
+      'sniffers_delight:torchflower_pistill',
+      'sniffers_delight:glazed_torchflower',
+      'sniffers_delight:sniffer_steak_and_carrots',
+      'sniffers_delight:pitcher_plant_soup',
+      'sniffers_delight:moss_salad',
+      'sniffers_delight:torchflower_salad',
+      'sniffers_delight:glazed_pitcher_pod',
+      'sniffers_delight:boiled_sniffer_egg',
+      'sniffers_delight:cooked_sniffer_steak',
+      'sniffers_delight:raw_sniffer_steak'
+    ])
+
     //tag for all copycats
     event.add('kubejs:copycats', [
       'copycats:copycat_block',

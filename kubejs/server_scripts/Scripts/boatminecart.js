@@ -16,6 +16,7 @@ ItemEvents.entityInteracted(event => {
   const playerId = player.uuid.toString();
   if (cooldownMap[playerId]) {
     player.tell("§cWait before using this again!");
+    event.cancel();
     return;
   }
 
@@ -25,7 +26,7 @@ ItemEvents.entityInteracted(event => {
   cooldownMap[playerId] = true;
   console.log("Added Boat cooldown: " + playerId);
 
-  event.server.scheduleInTicks(100, () => {
+  event.server.scheduleInTicks(40, () => {
     delete cooldownMap[playerId];
     console.log("Boat cooldown expired: " + playerId);
   });

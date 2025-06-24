@@ -15,7 +15,10 @@ const colorPurple = 0xa800a8;
 
 ItemEvents.tooltip((tooltip) => {
   Object.entries(tooltipData).forEach(([itemId, data]) => {
-    tooltip.addAdvanced(itemId, (item, advanced, text) => {
+    // 🔧 Minimal change: allow tag support
+    const itemOrTag = itemId.startsWith('#') ? Ingredient.of(itemId) : itemId;
+
+    tooltip.addAdvanced(itemOrTag, (item, advanced, text) => {
       const itemName = text.get(0);
       text.remove(0);
 

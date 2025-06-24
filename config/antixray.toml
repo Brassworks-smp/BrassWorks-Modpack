@@ -1,12 +1,12 @@
 # Default configuration file for Forge AntiXray mod by DrexHD
 
 # Default values
-enabled = false
+enabled = true
 
 # World specific values
 [overworld]
 enabled = true
-engineMode = 1
+engineMode = 3
 maxBlockHeight = 256
 updateRadius = 2
 lavaObscures = false
