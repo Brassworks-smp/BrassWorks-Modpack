@@ -23,7 +23,12 @@ BlockEvents.rightClicked(event => {
         } else if (isSeedPouchWithBonemeal) {
             item.nbt.itemCount = item.nbt.itemCount - 1;
         }
+
         block.popItem(block.id);
-        event.server.runCommandSilent(`playsound minecraft:item.bone_meal.use block @a ${block.x} ${block.y} ${block.z}`);
+
+        const { x, y, z } = block;
+
+        event.server.runCommandSilent(`playsound minecraft:item.bone_meal.use block @a ${x} ${y} ${z}`);
+        event.server.runCommandSilent(`particle minecraft:happy_villager ${x + 0.5} ${y + 1} ${z + 0.5} 0.3 0.5 0.3 0.1 10`);
     }
 });

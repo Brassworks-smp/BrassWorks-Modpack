@@ -460,8 +460,16 @@
         }
       ]
     }
+  },
+  "brassworks:music_disc_lava_chicken": {
+    "shift": {
+      "summary": [
+        "Drops when you kill a $zombie riding a chicken$.",
+        "In other words, a $CHICKEN JOCKEY$!",
+        "Backported from $Minecraft 1.21.7$."
+      ]
+    }
   }
-
 }
 
 

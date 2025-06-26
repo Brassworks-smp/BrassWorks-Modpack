@@ -104,5 +104,13 @@
                 "stream": true
             }
         ]
+    },
+        "music.lava_chicken": {
+        "sounds": [
+            {
+                "name": "brassworks:lava_chicken",
+                "stream": true
+            }
+        ]
     }
 }
