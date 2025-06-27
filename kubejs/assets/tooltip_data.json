@@ -461,7 +461,7 @@
       ]
     }
   },
-  "brassworks:music_disc_lava_chicken": {
+  "vanillabackport:music_disc_lava_chicken": {
     "shift": {
       "summary": [
         "Drops when you kill a $zombie riding a chicken$.",

@@ -11,8 +11,7 @@ let music_list = {
   spooky_amethyst:         [292, "minecraft:slime_drop_music_discs"],
   spooky_amethyst_trumpet: [292, "minecraft:slime_drop_music_discs"],
   eleven:                  [71,  "minecraft:slime_drop_music_discs"],
-  taswell:                 [364, "minecraft:slime_drop_music_discs"],
-  lava_chicken:            [143, ""]
+  taswell:                 [364, "minecraft:slime_drop_music_discs"]
 };
 
 // Register sound events
