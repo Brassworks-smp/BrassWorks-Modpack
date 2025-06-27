@@ -21,8 +21,6 @@ MoreJSEvents.enchantmentTableEnchant(event => {
     }
 })
 
-
-
 // Cancel right click on blaze enchanter with blocked items
 BlockEvents.rightClicked(event => {
     const { block, hand, item } = event;

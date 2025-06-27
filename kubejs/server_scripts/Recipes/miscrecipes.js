@@ -404,7 +404,22 @@ ServerEvents.recipes(event => {
     S: 'minecraft:soul_sand'
   })
 
-  
+  event.recipes.create.mixing(
+    [Fluid.of('sliceanddice:fertilizer', 1500)], // output: 1.5 buckets
+    [
+      'create:tree_fertilizer',
+      Fluid.of('minecraft:water', 1000) // input: 1 bucket
+    ]
+  ).id('sliceanddice:mixing/fertilizer/from_tree_fertilizer');
+
+      event.recipes.create.mixing(
+      [Fluid.of('sliceanddice:fertilizer', 1500)], 
+      [
+        'farmersdelight:organic_compost',
+        Fluid.of('minecraft:water', 1000) 
+      ]
+    ).id('sliceanddice:mixing/fertilizer/from_compost');
+
   // Fiddle Ferns: 2 short → 1 tall (shaped)
   event.shaped(
     'snifferplus:tall_fiddlefern',
