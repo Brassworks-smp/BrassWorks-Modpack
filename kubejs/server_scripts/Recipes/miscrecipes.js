@@ -520,7 +520,12 @@ ServerEvents.recipes(event => {
     Fluid.of('create:honey', 250)
   ])
 
-
+  event.recipes.create.mixing('8x supplementaries:candy', [
+    'minecraft:sugar',
+    'minecraft:paper',
+    Fluid.of('create:honey', 250)
+  ])
+  
 
   // Sniffer Carpet Recipe
   event.shaped('3x brassworks:sniffer_carpet', [
