@@ -461,15 +461,6 @@ ServerEvents.recipes(event => {
   })
 
 
-  //saddle recipe from 1.21.6
-    event.shaped('minecraft:saddle', [
-    ' L ',
-    'LIL'
-  ], {
-    L: 'leather',
-    I: 'iron_ingot'
-  })
-
   // Sniffer Wool Recipe
   event.shaped('brassworks:sniffer_wool', [
     'RR',
