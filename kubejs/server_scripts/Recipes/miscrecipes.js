@@ -469,6 +469,59 @@ ServerEvents.recipes(event => {
     R: 'brassworks:sniffer_fur'
   })
 
+
+  // 1. Crushing sniffer_wool → 3 fur + 25% chance for extra fur
+  event.recipes.create.crushing([
+    Item.of('brassworks:sniffer_fur', 3),
+    Item.of('brassworks:sniffer_fur').withChance(0.25)
+  ], 'brassworks:sniffer_wool')
+
+  // 2. Spouting honey on bread → honey_bread
+  event.recipes.create.filling('buzzier_bees:honey_bread', [
+    'minecraft:bread',
+    Fluid.of('create:honey', 250)
+  ])
+
+  // 3. Spouting honey on cooked porkchop → glazed_porkchop
+  event.recipes.create.filling('buzzier_bees:glazed_porkchop', [
+    'minecraft:cooked_porkchop',
+    Fluid.of('create:honey', 250)
+  ])
+
+  // 4. Spouting honey on wheat → 4 honey cookies
+  event.recipes.create.filling(Item.of('farmersdelight:honey_cookie', 4), [
+    'minecraft:wheat',
+    Fluid.of('create:honey', 250)
+  ])
+
+  // 5. Mixing → honey_glazed_ham_block
+  event.recipes.create.mixing('farmersdelight:honey_glazed_ham_block', [
+    'minecraft:bowl',
+    'farmersdelight:cooked_rice',
+    'farmersdelight:cooked_rice',
+    'minecraft:sweet_berries',
+    'minecraft:sweet_berries',
+    'minecraft:sweet_berries',
+    'minecraft:sweet_berries',
+    'farmersdelight:smoked_ham',
+    Fluid.of('create:honey', 250)
+  ])
+
+  // 6. Spouting honey on toast → toast_with_honey
+  event.recipes.create.filling('moredelight:toast_with_honey', [
+    'moredelight:toast',
+    Fluid.of('create:honey', 250)
+  ])
+
+  // 7. Mixing end rod + gold nugget + honey → honey lamp
+  event.recipes.create.mixing('buzzier_bees:honey_lamp', [
+    'minecraft:end_rod',
+    'minecraft:gold_nugget',
+    Fluid.of('create:honey', 250)
+  ])
+
+
+
   // Sniffer Carpet Recipe
   event.shaped('3x brassworks:sniffer_carpet', [
     'RR'
