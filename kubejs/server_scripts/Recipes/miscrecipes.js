@@ -725,6 +725,13 @@ ServerEvents.tags('item', event => {
       'minecraft:rooted_dirt'
     ])
 
+    event.add('brassworks:hyper_experience_tools', [
+      'brassworks:hyper_experience_sword',
+      'brassworks:hyper_experience_pickaxe',
+      'brassworks:hyper_experience_axe',
+      'brassworks:hyper_experience_shovel'
+    ])
+
     event.add('salt:can_be_salted', [
       'moredelight:toast_with_chocolate',
       'moredelight:toast_with_glow_berries',
