@@ -25,5 +25,6 @@
 	"item.brassworks.music_disc_spooky_amethyst_trumpet.desc": "Jukio Kallio - Infinite Spooky Amethyst (Trumpet Version)",
 	"item.brassworks.music_disc_spooky_amethyst_trumpet": "Music Disc",
 	"item.brassworks.music_disc_eleven.desc": "C418 - Eleven",
-	"item.brassworks.music_disc_eleven": "Music Disc"
+	"item.brassworks.music_disc_eleven": "Music Disc",
+	"now-playing.minecraft:music/game/custom/moog_city": "Moog City"
 }
