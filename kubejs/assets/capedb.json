@@ -38,5 +38,13 @@
 	"d8d5a923-7b20-43d8-883b-1150148d6955": {
 		"name": "Test",
 		"cape": "donator"
+	},
+	"45ac76b8-207f-4d4a-9c2f-2784935024c3": {
+		"name": "Code",
+		"cape": "admin"
+	},
+	"687ad06c-0bf1-4aa4-af9e-49d97f4104b7": {
+		"name": "123",
+		"cape": "sniffer"
 	}
 }
