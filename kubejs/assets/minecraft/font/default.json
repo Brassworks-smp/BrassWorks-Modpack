@@ -1,0 +1,13 @@
+{
+    "providers": [
+        {
+            "file": "brassworks:gui/serverlogo.png",
+            "chars": [
+                ""
+            ],
+            "height": 128,
+            "ascent": 64,
+            "type": "bitmap"
+        }
+    ]
+}
