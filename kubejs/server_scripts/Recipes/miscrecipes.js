@@ -476,11 +476,6 @@ ServerEvents.recipes(event => {
     Item.of('brassworks:sniffer_fur').withChance(0.25)
   ], 'brassworks:sniffer_wool')
 
-  // 2. Spouting honey on bread → honey_bread
-  event.recipes.create.filling('buzzier_bees:honey_bread', [
-    'minecraft:bread',
-    Fluid.of('create:honey', 250)
-  ])
 
   // 3. Spouting honey on cooked porkchop → glazed_porkchop
   event.recipes.create.filling('buzzier_bees:glazed_porkchop', [
@@ -618,12 +613,72 @@ ServerEvents.recipes(event => {
     L: 'minecraft:leather'
   }).id('kubejs:bundle_leather_string')
 
+  event.recipes.create.mixing('buzzier_bees:honey_bread', [
+    'minecraft:bread',
+    Fluid.of('create:honey', 250)
+  ])
+
   // Quark Limestone to Create Limestone via Emptying (draining water)
   event.recipes.create.emptying([
     '1x create:limestone',
     Fluid.of('minecraft:water', 100)
   ], 'quark:limestone')
   .id('kubejs:quark_limestone_to_create_limestone')
+
+  event.recipes.create.filling('brassworks:honey_roll', [
+    'minecraft:bread',
+    Fluid.of('create:honey', 250)
+  ])
+
+  event.recipes.create.filling('brassworks:choco_roll', [
+    'minecraft:bread',
+    Fluid.of('create:chocolate', 250)
+  ])
+
+    event.recipes.create.filling('brassworks:xp_roll', [
+    'minecraft:bread',
+    Fluid.of('create_enchantment_industry:experience', 4)
+  ])
+
+      event.recipes.create.filling('brassworks:hyper_xp_roll', [
+    'minecraft:bread',
+    Fluid.of('create_enchantment_industry:hyper_experience', 4)
+  ])
+
+    event.recipes.create.mixing(
+      Fluid.of('supplementaries:lumisene', 500),
+      '4x minecraft:glow_berries'
+  ).id('kubejs:lumisene_mixing')
+
+  event.recipes.create.emptying([
+    '1x minecraft:bucket',
+    Fluid.of('supplementaries:lumisene', 1000)
+  ], 'supplementaries:lumisene_bucket')
+  .id('kubejs:lumisene_bucket_emptying')
+
+    event.recipes.create.emptying([
+    '1x minecraft:glass_bottle',
+    Fluid.of('supplementaries:lumisene', 250)
+  ], 'supplementaries:lumisene_bottle')
+  .id('kubejs:lumisene_bottle_emptying')
+
+    event.recipes.create.filling(
+    '1x supplementaries:lumisene_bottle',
+    [
+      Fluid.of('supplementaries:lumisene', 250),
+      '1x minecraft:glass_bottle'
+    ]
+  )
+  .id('kubejs:lumisene_bottle_filling')
+
+  event.recipes.create.filling(
+    '1x brassworks:lumisene_roll',
+    [
+      '1x minecraft:bread',
+      Fluid.of('supplementaries:lumisene', 250)
+    ]
+  )
+  .id('kubejs:lumisene_roll_filling')
 
   // Quark Jasper to Create Crimsite via Emptying (draining water)
   event.recipes.create.emptying([
@@ -728,6 +783,16 @@ ServerEvents.tags('item', event => {
       'createqol:shadow_radiance_helmet',
       'createqol:shadow_radiance_chestplate'
     ])
+
+    event.add('brassworks:cinnabon_rolls', [
+      'create:sweet_roll',
+      'brassworks:honey_roll',
+      'brassworks:choco_roll',
+      'brassworks:xp_roll',
+      'brassworks:hyper_xp_roll',
+      'brassworks:lumisene_roll'
+    ])
+
 
     event.add('kubejs:disabledjetpacks', [
       'create_sa:brass_jetpack_chestplate',
