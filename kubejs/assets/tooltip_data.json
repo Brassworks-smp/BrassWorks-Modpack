@@ -313,16 +313,16 @@
   "minecraft:elytra": {
     "shift": {
       "summary": [
-        "Soar through the skies with style.",
-        "Firework boosting is $disabled$ for balance."
+        "$Soar$ through the skies with $style$.",
+        "Elytra now has increased $air resistance$ for balancing reasons."
       ]
     }
   },
   "minecraft:firework_rocket": {
     "shift": {
       "summary": [
-        "Still fun and flashy, but not for flying.",
-        "No longer boosts $Elytra flight$."
+        "Useful for boosting $Elytra flight$, but weaker than before.",
+        "Fireworks now default to a $flight duration$ of $0.3$."
       ]
     }
   },
@@ -467,6 +467,40 @@
         "Drops when you kill a $zombie riding a chicken$.",
         "In other words, a $CHICKEN JOCKEY$!",
         "Backported from $Minecraft 1.21.7$."
+      ]
+    }
+  },
+  "brassworks:xp_roll": {
+    "shift": {
+      "summary": [
+        "A tightly packed swirl of $knowledge$.",
+        "Grants a small burst of $Experience$ when consumed."
+      ],
+      "controls": [
+        {
+          "control": "Consumed",
+          "requiresHold": false,
+          "text": [
+            "Eat to gain a little $XP$."
+          ]
+        }
+      ]
+    }
+  },
+  "brassworks:hyper_xp_roll": {
+    "shift": {
+      "summary": [
+        "Overflowing with spiraled $wisdom$.",
+        "Grants a small burst of $Hyper Experience$ when consumed."
+      ],
+      "controls": [
+        {
+          "control": "Consumed",
+          "requiresHold": false,
+          "text": [
+            "Eat to gain a small amount of $Hyper XP$."
+          ]
+        }
       ]
     }
   }

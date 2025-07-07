@@ -6,7 +6,7 @@ keep_enchantment_screen_book = false
 #CROUCHING: A tooltip only shows while the player is crouching.
 #ENABLED: A tooltip always shows when a book is looked at.
 #Allowed Values: DISABLED, CROUCHING, ENABLED
-chiseled_bookshelf_tooltip = "ENABLED"
+chiseled_bookshelf_tooltip = "DISABLED"
 #Render inventory contents of an enchanting table.
 #Allowed Values: NONE, FLAT, FLOATING
 render_enchanting_table_contents = "FLOATING"

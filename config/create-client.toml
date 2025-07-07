@@ -65,7 +65,7 @@
 		#.
 		#Offset the overlay from goggle- and hover- information by this many pixels on the respective axis; Use /create overlay
 		#Range: > -2147483648
-		overlayOffsetX = -99
+		overlayOffsetX = 1
 		#.
 		#Offset the overlay from goggle- and hover- information by this many pixels on the respective axis; Use /create overlay
 		#Range: > -2147483648

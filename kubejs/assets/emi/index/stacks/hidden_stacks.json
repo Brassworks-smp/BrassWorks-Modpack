@@ -1,6 +1,8 @@
 {
 	"removed": [
 		"item:create_sa:grapplin_whisk",
+		"item:clayworks:kiln",
+		"item:create_connected:item_silo",
 		"item:createaddition:digital_adapter",
 		"item:createaddition:cake_base",
 		"item:supplementaries:cannon",

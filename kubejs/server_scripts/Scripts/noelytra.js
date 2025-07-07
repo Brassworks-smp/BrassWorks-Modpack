@@ -1,9 +1,17 @@
 ItemEvents.rightClicked(event => {
-    const { item, player } = event;
-    const chestItem = player.inventory.getArmor(2);
-    if (!chestItem || chestItem.id !== 'minecraft:elytra') return;
-    if (!item || item.id !== 'minecraft:firework_rocket') return;
-    // Trigger for both hands
-    player.tell('\u00A7cElytra Firework Boosting is disabled for balancing reasons! Please use Immersive Aircrafts or Trains instead.');
+  const { item, player, hand, server } = event;
+  if (!item || item.id !== 'minecraft:firework_rocket') return;
+
+  let fireworksTag = item.nbt?.Fireworks;
+  let flightValue = fireworksTag?.Flight ?? 0;
+  
+  if (flightValue !== 0.3) {
+    if (!item.nbt) item.nbt = {};
+    if (!item.nbt.Fireworks) item.nbt.Fireworks = {};
+    item.nbt.Fireworks.Flight = 0.3;
+
+    player.setItemInHand(hand, item);
+
     event.cancel();
+  }
 });

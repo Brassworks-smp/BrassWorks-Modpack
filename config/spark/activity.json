@@ -1,0 +1,15 @@
+[
+  {
+    "user": {
+      "type": "player",
+      "name": "swzo",
+      "uniqueId": "f538f9ff-601c-45cf-b6c7-52afc25cfe3e"
+    },
+    "time": 1751762442968,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/zc1oUqnlaM"
+    }
+  }
+]

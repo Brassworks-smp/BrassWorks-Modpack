@@ -1,0 +1,7 @@
+#Average Speed Percent: 200% ~ 24.839 BPS, 100% ~ 13.495 BPS, and 0% ~ 3.019 BPS;
+#Values are taken as the max speed when gliding at an angle of 4 degrees down.
+#The Function of this comes by effectivly increasing air resistance. Therefore lower values can make the elytra feel too slow
+#and prevent players from falling through the air
+#Range: 0 ~ 200
+"Percent value" = 25
+

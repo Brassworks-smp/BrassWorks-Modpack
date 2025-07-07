@@ -1,6 +1,10 @@
 {
   "sniffytips": [
     {
+      "id": "sniffytips0",
+      "text": "%#FFE04D%Sniff approved:%#% %#FFFFFF%Cinnabons are delicious — you should absolutely make some. Swzo can't get enough of them!%#%"
+    },
+    {
       "id": "sniffytips1",
       "text": "%#FFE04D%Sniff sniff!%#% %#FFFFFF%Don't forget to check your weekly missions for extra Spurs!%#%"
     },
@@ -688,7 +692,7 @@
       "text": "%#FFE04D%Flag-waving snout:%#% %#FFFFFF%Flags function like horizontal banners and can be raised or lowered on poles!%#%"
     },
     {
-      "id": "sniffytips173",
+      "id": "sniffytips173", 
       "text": "%#FFE04D%Notice-board nose:%#% %#FFFFFF%Notice boards display written books and maps - perfect for base information!%#%"
     },
     {

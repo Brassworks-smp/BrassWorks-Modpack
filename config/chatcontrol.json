@@ -1,0 +1,24 @@
+{
+  "regexes": [],
+  "phrases": [
+    "(Main Hand)"
+  ],
+  "words": [],
+  "standAloneWords": [],
+  "replacementChars": [],
+  "mutedPlayers": [],
+  "tempMutedPlayers": [],
+  "ignoredPlayers": [],
+  "logFiltered": true,
+  "ignorePrivateMessages": false,
+  "caseSensitive": false,
+  "muteCommand": true,
+  "tellPlayer": true,
+  "censorAndSend": false,
+  "muteAfterOffense": false,
+  "muteAfterOffenseType": "TEMPORARY",
+  "muteAfterOffenseMinutes": 5,
+  "muteAfterOffenseNumber": 3,
+  "offenseExpireMinutes": 30,
+  "offenses": []
+}

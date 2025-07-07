@@ -42,5 +42,3 @@ PlayerEvents.inventoryChanged(event => {
             if (item.nbt.StoredEnchantments) delete item.nbt.StoredEnchantments
         }
     })
-})
-

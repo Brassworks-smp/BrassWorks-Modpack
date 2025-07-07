@@ -12,7 +12,8 @@ ServerEvents.recipes(event => {
   event.remove({ output: 'createqol:player_paper' })
   event.remove({ output: 'supplementaries:cog_block' }) 
   event.remove({ mod: 'createaddition' });
-  
+  event.remove({ output: 'create_connected:item_silo'});
+  event.remove({ type: 'clayworks:baking' })
   // New shapeless Bank Terminal recipe
   event.shapeless(
     'numismatics:bank_terminal',
@@ -65,7 +66,7 @@ ServerEvents.recipes(event => {
     'minecraft:lapis_lazuli',
     [
       'minecraft:blue_dye',
-      Fluid.of('create_enchantment_industry:experience', 20) 
+      Fluid.of('create_enchantment_industry:experience', 4) 
     ]
   )
 
@@ -635,6 +636,14 @@ ServerEvents.recipes(event => {
     Fluid.of('create:chocolate', 250)
   ])
 
+    event.shapeless(
+    Item.of('quark:permafrost', 2),
+    [
+      'minecraft:packed_ice',
+      'minecraft:diorite'
+    ]
+  )
+
     event.recipes.create.filling('brassworks:xp_roll', [
     'minecraft:bread',
     Fluid.of('create_enchantment_industry:experience', 4)
@@ -732,6 +741,8 @@ ServerEvents.recipes(event => {
 ServerEvents.tags('item', event => {
     event.add('forge:hidden', [
         'create_sa:grapplin_whisk',
+        'clayworks:kiln',
+        'create_connected:item_silo',
         'createaddition:digital_adapter',
         'createaddition:cake_base',
         'supplementaries:cannon',
@@ -799,6 +810,8 @@ ServerEvents.tags('item', event => {
       'create_sa:andesite_jetpack_chestplate',
       'create_sa:netherite_jetpack_chestplate'
     ])
+
+
 
     event.add('kubejs:grieferarmor', [
       'savage_and_ravage:griefer_helmet',
@@ -962,7 +975,8 @@ ServerEvents.tags('item', event => {
       'create:horizontal_framed_glass',
       'create:vertical_framed_glass'
     ])
-
+    
+    event.remove('forge:hidden', 'minecraft:air');
     event.add('brassworks:experience_heap_hyper', [
       'brassworks:hyper_experience_heap'
     ])
@@ -997,7 +1011,6 @@ ServerEvents.recipes(event => {
   // Remove all recipes for items in the forge:hidden tag
   event.remove({ input: '#forge:hidden' })
   event.remove({ output: '#forge:hidden' })
-
   // Remove all woodworks:sawing recipes
   event.remove({ type: 'woodworks:sawing' })
 })

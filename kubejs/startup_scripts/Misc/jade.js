@@ -44,8 +44,8 @@ const jademachineryTooltips = {
         Text.red('Use a normal Crushing Wheel Instead.')
     ],
     'brassworks:sniffer_plushie': [
-        Text.of('This Sniffer Plushie is a decorative item.'),
-        Text.of('It is Awarded to Event Winners.')
+        Text.of("§eThis Sniffer Plushie is a decorative item."),
+        Text.of("§cIt is Awarded to Event Winners."),
     ],
 }
 
