@@ -17,7 +17,7 @@ _version = 3
 				# This indicates how quickly LODs decrease in quality the further away they are. 
 				# Higher settings will render higher quality fake chunks farther away, 
 				# but will increase memory and GPU usage.
-				horizontalQuality = "EXTREME"
+				horizontalQuality = "MEDIUM"
 				#
 				# What is the maximum detail LODs should be drawn at? 
 				# Higher settings will increase memory and GPU usage. 
@@ -38,7 +38,7 @@ _version = 3
 				# 
 				# Lowest Quality: HEIGHT_MAP
 				# Highest Quality: EXTREME
-				verticalQuality = "EXTREME"
+				verticalQuality = "MEDIUM"
 				#
 				# How should LOD transparency be handled. 
 				# 
@@ -163,7 +163,7 @@ _version = 3
 				#
 				# Should Minecraft's fog render? 
 				# Note: Other mods may conflict with this setting.
-				enableVanillaFog = false
+				enableVanillaFog = true
 				#
 				# At what distance should the far fog start? 
 				# 

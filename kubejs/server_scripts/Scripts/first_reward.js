@@ -16,9 +16,9 @@ const bundleNbt = {
         id:    "minecraft:written_book",
         Count: 1,
         tag: {
-          CustomModelData: 69420,
           author: "swzo",
           display: {
+            color:16763955,
             Name: '{"text":"📘 Welcome to Brassworks!","color":"#ffcc33"}',
             Lore: [
               '{"text":"A Practical Guide for New Residents","color":"#ff6666"}'
@@ -47,10 +47,10 @@ const bundleNbt = {
           author: "swzo",
           resolved: 1,
           display: {
+              color:8869684,
               Name: '[["",{"text":"🏰 Landlord’s Ledger","italic":false,"color":"#cc9966"}]]',
               Lore: ['["",{"text":"A Landlord’s Guide to the Real Estate Market","italic":false,"color":"#33cc66"}]']
           },
-          CustomModelData: 696969,
           pages: [
               '[["",{"text":"📌","color":"#c26251"},{"text":"Claiming Land 101","color":"#c26251","bold":true},"\\nBy default every newcomer gets ",{"text":"32 free chunks","color":"#ffcc33","bold":true},". Want more claim slots? Open the ",{"text":"OpenPAC","color":"#ff99cc"}," menu with ",{"text":"’","bold":true}," (apostrophe) or ",{"text":"click here","color":"#66cccc","clickEvent":{"action":"run_command","value":"/openguiscreen xaero.pac.client.gui.MainMenu"},"hoverEvent":{"action":"show_text","contents":"Open Claims GUI"}},". You’ll see:\\nA ",{"text":"slider","bold":true}," to increase your total claim limit\\nA ",{"text":"Buy Chunks","color":"#00cc66","bold":true}," button to pay with Spurs\\nEach extra chunk slot costs ",{"text":"4 Spurs","color":"#c26251","bold":true},".\\n",{"text":"(flip to next page)","color":"#666666"}]]',
               '[["",{"text":"🔲","color":"#66cccc"},{"text":"Claiming Chunks","color":"#66cccc","bold":true},"\\nTo actually claim land:\\n",{"text":"Right-click","bold":true}," and drag over the chunks you want on the map.\\nClick ",{"text":"Claim Chunks","color":"#00cc66","bold":true},".\\nEach claimed chunk uses one of your available slots. Only you and your party can build there.\\n",{"text":"(flip to next page)","color":"#666666"}]]',
@@ -71,30 +71,33 @@ const bundleNbt = {
 // flatten it to a one‑line JSON string cuz minecraft is weird af
 const nbtString = JSON.stringify(bundleNbt);
 
+function giveStarterBundle(player) {
+    player.give(Item.of('minecraft:bundle', nbtString));
+    player.tell(Text.green("You have received the Newcomer’s Starter Bundle!"));
+}
+
+
 PlayerEvents.loggedIn(event => {
     const player = event.player;
 
     if (!player.persistentData.hasReceivedBundle) {
         player.persistentData.hasReceivedBundle = true;
-        console.info(`[KubeJS] marking ${player.name.string} as received bundle`);
-
-        player.give(Item.of('minecraft:bundle', nbtString));
-        player.tell(Text.green("You have received the Newcomer’s Starter Bundle!"));
-        console.info(`[KubeJS] gave bundle to ${player.name.string}`); 
+        giveStarterBundle(player);
     }
 });
 
-ServerEvents.commandRegistry(event => {
-  const { commands: Commands, arguments: Arguments } = event;
 
-  event.register(
-    Commands.literal('loginbundle')
-      .requires(source => source.hasPermission(2)) 
-      .executes(ctx => {
-        const player = ctx.source.playerOrException;
-        player.give(Item.of('minecraft:bundle', nbtString));
-        ctx.source.sendSystemMessage(Text.green("You have received the Newcomer’s Starter Bundle!"));
-        return 1;
-      })
-  );
+ServerEvents.commandRegistry(event => {
+    const { commands: Commands } = event;
+    event.register(
+      
+        Commands.literal('loginbundle')
+        .requires(source => source.hasPermission(2))
+        .executes(ctx => {
+
+            const player = ctx.source.playerOrException;
+            giveStarterBundle(player);
+            return 1;
+        })
+    );
 });
