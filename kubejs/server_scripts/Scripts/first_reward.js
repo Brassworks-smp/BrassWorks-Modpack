@@ -74,29 +74,31 @@ const nbtString = JSON.stringify(bundleNbt);
 function giveStarterBundle(player) {
     player.give(Item.of('minecraft:bundle', nbtString));
     player.tell(Text.green("You have received the Newcomer’s Starter Bundle!"));
-}
+    player.tell(Text.of("§dTip: §7Press §8[§7Delete§8] §7to enable shaders."));
 
-
-PlayerEvents.loggedIn(event => {
+  }
+  
+  
+  PlayerEvents.loggedIn(event => {
     const player = event.player;
-
+    
     if (!player.persistentData.hasReceivedBundle) {
-        player.persistentData.hasReceivedBundle = true;
-        giveStarterBundle(player);
+      player.persistentData.hasReceivedBundle = true;
+      giveStarterBundle(player);
     }
-});
-
-
-ServerEvents.commandRegistry(event => {
+  });
+  
+  
+  ServerEvents.commandRegistry(event => {
     const { commands: Commands } = event;
     event.register(
       
-        Commands.literal('loginbundle')
-        .requires(source => source.hasPermission(2))
-        .executes(ctx => {
-
-            const player = ctx.source.playerOrException;
-            giveStarterBundle(player);
+      Commands.literal('loginbundle')
+      .requires(source => source.hasPermission(2))
+      .executes(ctx => {
+        
+        const player = ctx.source.playerOrException;
+            giveStarterBundle(player);    
             return 1;
         })
     );
