@@ -3,5 +3,5 @@
 #The Function of this comes by effectivly increasing air resistance. Therefore lower values can make the elytra feel too slow
 #and prevent players from falling through the air
 #Range: 0 ~ 200
-"Percent value" = 25
+"Percent value" = 90
 
