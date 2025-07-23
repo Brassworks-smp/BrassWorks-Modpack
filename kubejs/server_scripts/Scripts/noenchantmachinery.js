@@ -11,7 +11,8 @@ const blockedmachines = [
     'create:mechanical_mixer',
     'create:mechanical_roller',
     'create:spout',
-    'create_sa:copper_jetpack_chestplate'
+    'create_sa:copper_jetpack_chestplate',
+	'backpacked:backpack'
 ]
 
 // Cancel enchanting table enchantments for blocked items

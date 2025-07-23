@@ -85,6 +85,9 @@ function giveStarterBundle(player) {
     if (!player.persistentData.hasReceivedBundle) {
       player.persistentData.hasReceivedBundle = true;
       giveStarterBundle(player);
+	  event.server.scheduleInTicks(1, () => {
+        event.server.runCommandSilent('tellraw @a {"text":"'+player.name.getString()+' has joined the server for the 1st time!","color":"yellow"}')
+      })
     }
   });
   
