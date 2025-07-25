@@ -14,6 +14,8 @@ ServerEvents.recipes(event => {
   event.remove({ mod: 'createaddition' });
   event.remove({ output: 'create_connected:item_silo'});
   event.remove({ type: 'clayworks:baking' })
+  event.remove({ id: 'create:crushing/tuff' })
+  event.remove({ id: 'create:crushing/tuff_recycling' })
   // New shapeless Bank Terminal recipe
   event.shapeless(
     'numismatics:bank_terminal',
@@ -125,6 +127,12 @@ ServerEvents.recipes(event => {
     ]
   )
 
+    event.shapeless(
+    'minecraft:chest',
+    'woodworks:oak_chest'
+  )
+
+
   // 2 Short Grass → Tall Grass
   event.shapeless(
     'minecraft:tall_grass',
@@ -209,6 +217,15 @@ ServerEvents.recipes(event => {
       'minecraft:mycelium',
       'minecraft:brown_mushroom',
       Fluid.of('minecraft:water', 100)
+    ]
+  )
+
+    event.recipes.create.mixing(
+    '2x minecraft:tuff',
+    [
+      'minecraft:stone',
+      'minecraft:cobblestone',
+      'minecraft:quartz'
     ]
   )
   
@@ -764,7 +781,28 @@ ServerEvents.tags('item', event => {
         'woodworks:birch_boards',
         'woodworks:spruce_boards',
         'woodworks:oak_boards',
-        'woodworks:sawmill'
+        'woodworks:sawmill',
+        'immersive_aircraft:bomb_bay',
+        'immersive_aircraft:enhanced_propeller',
+        'immersive_aircraft:eco_engine',
+        'immersive_aircraft:nether_engine',
+        'immersive_aircraft:steel_boiler',
+        'immersive_aircraft:sturdy_pipes',
+        'immersive_aircraft:rotary_cannon',
+        'immersive_aircraft:telescope',
+        'immersive_aircraft:heavy_crossbow',
+        'immersive_aircraft:bamboo_hopper',
+        'immersive_aircraft:warship',
+        'petrolpark:badge/developer',
+        'petrolpark:badge/early_bird',
+        'petrolpark:badge/nitro',
+        'petrolpark:badge/suggestion',
+        'petrolpark:badge/translator',
+        'petrolpark:menu',
+        'petrolpark:badge/content_creator',
+        'petrolpark:badge/competition_winner',
+        'petrolpark:badge/bestie',
+        'petrolpark:badge/beta_tester'
     ])
 
     // Create the alexcavesradon tag and add all the framed radon lamp items

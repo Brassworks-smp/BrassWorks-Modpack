@@ -82,6 +82,9 @@
     "registry_name": "OFF",
     "mod_name": true
   },
+  "petrolpark": {
+    "contamination": true
+  },
   "corpse": {
     "corpse": true
   },
