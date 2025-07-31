@@ -16,6 +16,8 @@ ServerEvents.recipes(event => {
   event.remove({ type: 'clayworks:baking' })
   event.remove({ id: 'create:crushing/tuff' })
   event.remove({ id: 'create:crushing/tuff_recycling' })
+  event.remove({ id: 'createfood:create/mixing/salt_from_mixing_water' })
+  event.remove({ id: 'minecraft:shulker_box' })
   // New shapeless Bank Terminal recipe
   event.shapeless(
     'numismatics:bank_terminal',
@@ -206,9 +208,17 @@ ServerEvents.recipes(event => {
       '2': 'create:belt_connector',
       '3': 'create_sa:heat_engine',
       '4': 'create:zinc_ingot',
-      '5': '#c:stones'
+      '5': '#forge:stone'
     }
   )
+
+  event.recipes.create.mixing(
+    Item.of('4x supplementaries:ash'),
+    [
+      '#minecraft:logs_that_burn'
+    ]
+  ).heated();
+	
 
   // Environmental: Mycelium Sprouts (Create mixing)
   event.recipes.create.mixing(
@@ -802,7 +812,43 @@ ServerEvents.tags('item', event => {
         'petrolpark:badge/content_creator',
         'petrolpark:badge/competition_winner',
         'petrolpark:badge/bestie',
-        'petrolpark:badge/beta_tester'
+        'petrolpark:badge/beta_tester',
+        'brassworks:shop_1',
+        'brassworks:shop_2',
+        'brassworks:shop_3',
+        'brassworks:shop_4'
+    ])
+
+    event.add('sliceanddice:allowed_tools', [
+      'minecraft:iron_shovel',
+      'minecraft:wooden_shovel',
+      'minecraft:netherite_shovel',
+      'minecraft:golden_shovel',
+      'minecraft:stone_shovel',
+      'minecraft:diamond_shovel',
+      'brassworks:hyper_experience_shovel',
+      'create_sa:blazing_shovel',
+      'create_sa:zinc_shovel',
+      'create_sa:experience_shovel',
+      'create_sa:brass_shovel',
+      'create_sa:rose_quartz_shovel',
+      'create_sa:copper_shovel',
+      'minecraft:stick',
+      'minecraft:shears',
+      'create_sa:portable_drill',
+      'minecraft:iron_pickaxe',
+      'minecraft:wooden_pickaxe',
+      'minecraft:netherite_pickaxe',
+      'minecraft:golden_pickaxe',
+      'minecraft:stone_pickaxe',
+      'minecraft:diamond_pickaxe',
+      'create_sa:blazing_pickaxe',
+      'brassworks:hyper_experience_pickaxe',
+      'create_sa:zinc_pickaxe',
+      'create_sa:rose_quartz_pickaxe',
+      'create_sa:copper_pickaxe',
+      'create_sa:experience_pickaxe',
+      'create_sa:brass_pickaxe'
     ])
 
     // Create the alexcavesradon tag and add all the framed radon lamp items
@@ -899,6 +945,14 @@ ServerEvents.tags('item', event => {
       'minecraft:rooted_dirt'
     ])
 
+    event.add('brassworks:veridium_discs', [
+      'brassworks:music_disc_that_s_amore',
+      'brassworks:music_disc_dixie_biscuit',
+      'brassworks:music_disc_fukashigi_no_trumpet',
+      'brassworks:music_disc_csgo_bhop_song',
+      'brassworks:music_disc_its_all_over_but_the_crying',
+    ])
+
     event.add('brassworks:hyper_experience_tools', [
       'brassworks:hyper_experience_sword',
       'brassworks:hyper_experience_pickaxe',
@@ -949,7 +1003,166 @@ ServerEvents.tags('item', event => {
       'sniffers_delight:glazed_pitcher_pod',
       'sniffers_delight:boiled_sniffer_egg',
       'sniffers_delight:cooked_sniffer_steak',
-      'sniffers_delight:raw_sniffer_steak'
+      'sniffers_delight:raw_sniffer_steak',
+      'createfood:chicken_cheeseburger_bacon',
+      'createfood:chicken_cheeseburger_bacon_lettuce',
+      'createfood:chicken_cheeseburger_lettuce',
+      'createfood:chicken_cheeseburger_lettuce_tomato',
+      'createfood:chicken_cheeseburger_tomato',
+      'createfood:chicken_nuggets',
+      'createfood:chicken_patty',
+      'createfood:sausage_biscuit_fried_egg',
+      'createfood:sausage_biscuit_fried_egg_bacon',
+      'createfood:sausage_biscuit_sandwich',
+      'createfood:sausage_biscuit_sandwich_bacon',
+      'createfood:sausage_biscuit_sandwich_cheese_bacon',
+      'createfood:sausage_biscuit_sandwich_cheese_fried_egg',
+      'createfood:sausage_biscuit_sandwich_cheese_fried_egg_bacon',
+      'createfood:sausage_biscuit_sandwich_fried_egg',
+      'createfood:sausage_biscuit_sandwich_fried_egg_bacon',
+      'createfood:sausage_calzone',
+      'createfood:sausage_bits',
+      'createfood:sausage_biscuit_cheese_fried_egg_bacon',
+      'createfood:sausage_biscuit_cheese_fried_egg',
+      'createfood:sausage_biscuit_cheese_bacon',
+      'createfood:sausage_biscuit_bacon',
+      'createfood:sausage_biscuit',
+      'createfood:sausage_bacon_pizza_slice',
+      'createfood:pasta_plate',
+      'createfood:pasta_plate_butter',
+      'createfood:pasta_plate_cheese',
+      'createfood:pasta_plate_cheese_tomato_sauce',
+      'createfood:pasta_plate_chicken_cut',
+      'createfood:pasta_plate_chicken_cut_tomato_sauce',
+      'createfood:pasta_plate_slime',
+      'createfood:pasta_plate_rabbit_meatballs_tomato_sauce',
+      'createfood:pasta_plate_rabbit_meatballs',
+      'createfood:pasta_plate_pork_meatballs_tomato_sauce',
+      'createfood:pasta_plate_pork_meatballs',
+      'createfood:pasta_plate_mutton_chop',
+      'createfood:pasta_plate_meatballs',
+      'createfood:pasta_plate_fish_tomato_sauce',
+      'createfood:pasta_plate_fish',
+      'createfood:pasta_plate_endermite_meatballs_tomato_sauce',
+      'createfood:pasta_plate_endermite_meatballs',
+      'createfood:pasta_plate_eggplant',
+      'createfood:pasta_plate_squid_ink',
+      'createfood:pasta_plate_strider_meatballs',
+      'createfood:pasta_plate_strider_meatballs_tomato_sauce',
+      'createfood:pasta_plate_tomato_sauce',
+      'createfood:potato_chip_bowl',
+      'createfood:toast_fried_egg_plate',
+      'createfood:toast_plate',
+      'createfood:tortilla_chip_bowl',
+      'createfood:macaroni_bowl_sausage',
+      'createfood:macaroni_bowl_cheese_sausage',
+      'createfood:macaroni_bowl_cheese_bacon',
+      'createfood:macaroni_bowl_cheese',
+      'createfood:glow_berry_ice_cream_bowl',
+      'createfood:hash_brown_fried_egg_plate',
+      'createfood:hash_brown_plate',
+      'createfood:hash_brown_toast_plate',
+      'createfood:ice_cream_bowl',
+      'createfood:macaroni_bowl',
+      'createfood:macaroni_bowl_bacon',
+      'createfood:breakfast_plate',
+      'createfood:nacho_bowl',
+      'createfood:meatball_stick_1',
+      'createfood:meatball_stick_2',
+      'createfood:meatball_stick_3',
+      'createfood:pork_meatball_stick_1',
+      'createfood:pork_meatball_stick_2',
+      'createfood:pork_meatball_stick_3',
+      'createfood:rabbit_meatball_stick_1',
+      'createfood:rabbit_meatball_stick_2',
+      'createfood:rabbit_meatball_stick_3',
+      'createfood:smoked_corn_stick',
+      'createfood:strider_meatball_stick_1',
+      'createfood:strider_meatball_stick_2',
+      'createfood:strider_meatball_stick_3',
+      'createfood:cheeseburger',
+      'createfood:cheeseburger_bacon',
+      'createfood:cheeseburger_bacon_lettuce',
+      'createfood:cheeseburger_bacon_lettuce_tomato',
+      'createfood:cheeseburger_lettuce',
+      'createfood:cheeseburger_lettuce_tomato',
+      'createfood:cheeseburger_onion',
+      'createfood:cheese_and_beef_bun_lettuce_tomato',
+      'createfood:cheese_and_beef_bun_lettuce',
+      'createfood:cheese_and_beef_bun_bacon_lettuce_tomato',
+      'createfood:cheese_and_beef_bun_bacon_lettuce',
+      'createfood:cheese_and_beef_bun_bacon',
+      'createfood:cheese_and_beef_bun',
+      'createfood:cheesecake_slice',
+      'createfood:cheeseburger_tomato',
+      'createfood:cheeseburger_onion_lettuce_tomato',
+      'createfood:cheeseburger_onion_lettuce',
+      'createfood:cheeseburger_onion_bacon_lettuce',
+      'createfood:cheeseburger_onion_bacon',
+      'createfood:cheese_and_beef_bun_onion',
+      'createfood:cheese_and_beef_bun_onion_bacon',
+      'createfood:cheese_and_beef_bun_onion_bacon_lettuce',
+      'createfood:cheese_and_beef_bun_onion_lettuce',
+      'createfood:cheese_and_beef_bun_onion_lettuce_tomato',
+      'createfood:cheese_and_chicken_bun',
+      'createfood:cheese_and_chicken_bun_bacon_lettuce',
+      'createfood:cheese_and_chicken_bun_lettuce',
+      'createfood:cheese_and_chicken_bun_lettuce_tomato',
+      'createfood:cheese_and_eggplant_bun',
+      'createfood:cheese_and_eggplant_bun_lettuce',
+      'createfood:cheese_and_eggplant_bun_lettuce_tomato',
+      'createfood:chicken_bun_bacon_lettuce',
+      'createfood:chicken_bun_bacon',
+      'createfood:chicken_bun',
+      'createfood:cheese_slice',
+      'createfood:cheese_sandwich',
+      'createfood:cheese_pizza_slice',
+      'createfood:cheese_calzone',
+      'createfood:cheese_block',
+      'createfood:cheese_biscuit_sandwich',
+      'createfood:cheese_biscuit',
+      'createfood:cheese_and_sausage_biscuit_sandwich',
+      'createfood:cheese_and_sausage_biscuit',
+      'createfood:chicken_bun_cheese_bacon',
+      'createfood:chicken_bun_cheese_tomato',
+      'createfood:chicken_bun_lettuce',
+      'createfood:chicken_bun_lettuce_tomato',
+      'createfood:chicken_bun_tomato',
+      'createfood:chicken_burger',
+      'createfood:chicken_burger_bacon',
+      'createfood:chicken_burger_bacon_lettuce',
+      'createfood:chicken_burger_lettuce',
+      'createfood:chicken_burger_lettuce_tomato',
+      'createfood:chicken_burger_tomato',
+      'createfood:chicken_cheeseburger',
+      'createfood:beef_bun',
+      'createfood:beef_bun_bacon_lettuce',
+      'createfood:beef_bun_bacon_lettuce_tomato',
+      'createfood:beef_bun_lettuce',
+      'createfood:beef_bun_lettuce_tomato',
+      'createfood:beef_bun_onion',
+      'createfood:beef_bun_tomato',
+      'createfood:beef_bun_cheese_tomato',
+      'createfood:beef_bun_peanut_butter_bacon',
+      'createfood:beef_bun_peanut_butter',
+      'createfood:beef_bun_onion_lettuce_tomato',
+      'createfood:beef_bun_onion_lettuce',
+      'createfood:beef_bun_onion_bacon_lettuce',
+      'createfood:beef_bun_onion_bacon',
+      'createfood:bread_carrot',
+      'createfood:bread_fried_egg',
+      'createfood:bread_lettuce',
+      'createfood:bread_lettuce_carrot',
+      'createfood:bread_slice',
+      'createfood:bread_slice_bacon',
+      'createfood:bread_slice_bacon_lettuce',
+      'createfood:bread_slice_bacon_lettuce_tomato',
+      'createfood:bread_slice_beetroot',
+      'createfood:bread_slice_beetroot_lettuce',
+      'createfood:bread_slice_tomato',
+      'createfood:bread_slice_mutton',
+      'createfood:bread_slice_melon_jam',
+      'createfood:bread_slice_lettuce_tomato'
     ])
 
     //tag for all copycats
@@ -1015,6 +1228,7 @@ ServerEvents.tags('item', event => {
     ])
     
     event.remove('forge:hidden', 'minecraft:air');
+    event.remove('forge:salt', 'createfood:salt');
     event.add('brassworks:experience_heap_hyper', [
       'brassworks:hyper_experience_heap'
     ])

@@ -503,6 +503,15 @@
         }
       ]
     }
+  },
+  "#brassworks:veridium_discs": {
+    "shift": {
+      "summary": [
+        "Part of the $Veridium collection$.",
+        "A Line of music discs suggested by the $community$.",
+        ""
+      ]
+    }
   }
 }
 

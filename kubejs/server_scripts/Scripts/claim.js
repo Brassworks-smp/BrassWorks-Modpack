@@ -33,7 +33,7 @@ ServerEvents.commandRegistry(event => {
               );
   
               // Compute bonus from this transaction
-              const bonus = Math.floor(amount / 4);
+              const bonus = Math.floor(amount / 8);
   
               // Use persistentData as single source of truth
               const pd = player.persistentData;
@@ -44,7 +44,9 @@ ServerEvents.commandRegistry(event => {
               // Build and run the OpenPac set command as the player with OP privileges
               const opCmd = `execute as ${player.name.string} run openpac player-config for ${player.name.string} set claims.bonusChunkClaims ${newTotal}`;
               ctx.source.server.runCommandSilent(opCmd);
-  
+              const sound = `execute at ${player.name.string} run playsound create:stock_ticker_trade player @a`;
+              ctx.source.server.runCommandSilent(sound);
+
               player.sendSystemMessage(
                 Text.green(`Used ${amount} spurs. Total bonus chunk claims is now ${newTotal}.`)
               );

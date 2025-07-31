@@ -8,6 +8,51 @@
             "height": 128,
             "ascent": 64,
             "type": "bitmap"
+        },
+                {
+            "file": "brassworks:gui/ranks/admin.png",
+            "chars": [
+                ""
+            ],
+            "height": 9,
+            "ascent": 8,
+            "type": "bitmap"
+        },
+        {
+            "file": "brassworks:gui/ranks/mod.png",
+            "chars": [
+                ""
+            ],
+            "height": 9,
+            "ascent": 8,
+            "type": "bitmap"
+        },
+        {
+            "file": "brassworks:gui/ranks/donator.png",
+            "chars": [
+                ""
+            ],
+            "height": 9,
+            "ascent": 8,
+            "type": "bitmap"
+        },
+        {
+            "file": "brassworks:gui/ranks/sniffer.png",
+            "chars": [
+                ""
+            ],
+            "height": 9,
+            "ascent": 8,
+            "type": "bitmap"
+        },
+        {
+            "file": "brassworks:gui/ranks/discord.png",
+            "chars": [
+                ""
+            ],
+            "height": 9,
+            "ascent": 8,
+            "type": "bitmap"
         }
     ]
 }

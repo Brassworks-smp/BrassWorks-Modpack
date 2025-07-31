@@ -104,5 +104,45 @@
                 "stream": true
             }
         ]
+    },
+    "music.that_s_amore": {
+        "sounds": [
+            {
+                "name": "brassworks:that_s_amore",
+                "stream": true
+            }
+        ]
+    },
+    "music.dixie_biscuit": {
+        "sounds": [
+            {
+                "name": "brassworks:dixie_biscuit",
+                "stream": true
+            }
+        ]
+    },
+    "music.fukashigi_no_trumpet": {
+        "sounds": [
+            {
+                "name": "brassworks:fukashigi_no_trumpet",
+                "stream": true
+            }
+        ]
+    },
+    "music.csgo_bhop_song": {
+        "sounds": [
+            {
+                "name": "brassworks:csgo_bhop_song",
+                "stream": true
+            }
+        ]
+    },
+    "music.its_all_over_but_the_crying": {
+        "sounds": [
+            {
+                "name": "brassworks:its_all_over_but_the_crying",
+                "stream": true
+            }
+        ]
     }
 }

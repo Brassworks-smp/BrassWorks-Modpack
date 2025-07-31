@@ -2,7 +2,7 @@
   "_documentation": "https://github.com/Luke100000/ImmersiveOptimization/wiki",
   "enableEntities": true,
   "enableBlockEntities": true,
-  "enableDistanceCulling": true,
+  "enableDistanceCulling": false,
   "enableTrackingCulling": true,
   "enableViewportCulling": true,
   "minDistance": 6,
