@@ -945,14 +945,6 @@ ServerEvents.tags('item', event => {
       'minecraft:rooted_dirt'
     ])
 
-    event.add('brassworks:veridium_discs', [
-      'brassworks:music_disc_that_s_amore',
-      'brassworks:music_disc_dixie_biscuit',
-      'brassworks:music_disc_fukashigi_no_trumpet',
-      'brassworks:music_disc_csgo_bhop_song',
-      'brassworks:music_disc_its_all_over_but_the_crying',
-    ])
-
     event.add('brassworks:hyper_experience_tools', [
       'brassworks:hyper_experience_sword',
       'brassworks:hyper_experience_pickaxe',

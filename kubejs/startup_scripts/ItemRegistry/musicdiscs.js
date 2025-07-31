@@ -1,22 +1,26 @@
+const veridium = "brassworks:veridium_discs";
+const slime = "minecraft:slime_drop_music_discs";
+
 let music_list = {
+  chris:                       [87,  slime],
+  door:                        [111, slime],
+  droopy_likes:                [209, slime],
+  ki:                          [92,  slime],
+  intro:                       [276, slime],
+  spooky_amethyst:             [292, slime],
+  spooky_amethyst_trumpet:     [292, slime],
+  eleven:                      [71,  slime],
+  taswell:                     [364, slime],
   truce:                       [249, ""],
   creator:                     [176, ""],
   creator_music_box:           [73,  ""],
   precipice:                   [299, ""],
-  chris:                       [87,  "minecraft:slime_drop_music_discs"],
-  door:                        [111, "minecraft:slime_drop_music_discs"],
-  droopy_likes:                [209, "minecraft:slime_drop_music_discs"],
-  ki:                          [92,  "minecraft:slime_drop_music_discs"],
-  intro:                       [276, "minecraft:slime_drop_music_discs"],
-  spooky_amethyst:             [292, "minecraft:slime_drop_music_discs"],
-  spooky_amethyst_trumpet:     [292, "minecraft:slime_drop_music_discs"],
-  eleven:                      [71,  "minecraft:slime_drop_music_discs"],
-  taswell:                     [364, "minecraft:slime_drop_music_discs"],
-  that_s_amore:                [187, ""],
-  dixie_biscuit:               [199, ""],
-  fukashigi_no_trumpet:        [261, ""],
-  csgo_bhop_song:              [230, ""],
-  its_all_over_but_the_crying: [169, ""]
+  that_s_amore:                [187, veridium],
+  dixie_biscuit:               [199, veridium],
+  fukashigi_no_trumpet:        [261, veridium],
+  csgo_bhop_song:              [230, veridium],
+  its_all_over_but_the_crying: [169, veridium],
+  whiskey_cola_and_tequila:    [187, veridium]
 };
 
 // Register sound events

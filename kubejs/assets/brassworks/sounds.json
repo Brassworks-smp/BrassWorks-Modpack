@@ -144,5 +144,13 @@
                 "stream": true
             }
         ]
+    },
+    "music.whiskey_cola_and_tequila": {
+        "sounds": [
+            {
+                "name": "brassworks:whiskey_cola_and_tequila",
+                "stream": true
+            }
+        ]
     }
 }
