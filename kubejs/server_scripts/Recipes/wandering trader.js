@@ -26,7 +26,7 @@ MoreJSEvents.villagerTrades((event) => {
         const trade = VillagerUtils.createSimpleTrade(`${price}x minecraft:emerald`, disc);
         trade.villagerExperience(Math.ceil(price * 1.5));
         for (let i = 2; i <= 5; i++) {
-            event.addTrade("djvillager:dj", i, trade);
+            event.addTrade("brassworks_djs:dj", i, trade);
         }
     });
 });
