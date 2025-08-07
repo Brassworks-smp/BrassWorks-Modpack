@@ -92,6 +92,18 @@ StartupEvents.registry('block', event => {
     ]
   );
 
-  
+  createPlushie(
+    'brassworks:steven_uk_plushie',
+    'Steven_UK Plushie',
+    'COLOR_CYAN',
+    [
+      [5, 0, 8, 11, 8, 12],
+      [1.5, 1.25, 8.75, 4, 7.25, 11.25],
+      [11.75, 0.75, 9, 14.25, 6.75, 11.5],
+      [4, 8, 6, 12, 16, 14],
+      [3.75, 7.75, 5.75, 12.25, 16.25, 14.25],
+      [3.1, 0, 2.8, 13, 2.4, 12.1]
+    ]
+  );
 })
 

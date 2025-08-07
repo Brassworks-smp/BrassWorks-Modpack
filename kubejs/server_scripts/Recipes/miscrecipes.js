@@ -18,6 +18,7 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'create:crushing/tuff_recycling' })
   event.remove({ id: 'createfood:create/mixing/salt_from_mixing_water' })
   event.remove({ id: 'minecraft:shulker_box' })
+  event.remove({ id: 'create_mechanical_chicken:compacting/compacting_seed_oil' })
   // New shapeless Bank Terminal recipe
   event.shapeless(
     'numismatics:bank_terminal',
@@ -35,7 +36,13 @@ ServerEvents.recipes(event => {
       'numismatics:spur'
     ]
   )
-
+	event.shapeless(
+	    '9x brassworks:hyper_experience_nugget',
+	    [
+	      'brassworks:hyper_experience_block'
+	    ]
+	)
+	
   // Add a Create spouting recipe to craft Artifacts' Night Vision Goggles
   event.recipes.createFilling(
     'artifacts:night_vision_goggles',
@@ -94,6 +101,17 @@ ServerEvents.recipes(event => {
   })
   .id('kubejs:cog_block')
 
+
+  event.recipes.create.cutting('minecraft:barrel', '#minecraft:logs')
+	
+  event.recipes.create.mixing(
+    Item.of('minecraft:gilded_blackstone'),
+    [
+      'minecraft:blackstone',
+      Item.of('minecraft:gold_nugget', 24)
+    ]
+  ).heated();
+	
   // Mechanical Exchanger Recipe
   event.shaped('missions:mechanical_exchanger', [
     ' B ',
@@ -816,7 +834,9 @@ ServerEvents.tags('item', event => {
         'brassworks:shop_1',
         'brassworks:shop_2',
         'brassworks:shop_3',
-        'brassworks:shop_4'
+        'brassworks:shop_4',
+        'create_mechanical_chicken:seed_oil',
+        'create_mechanical_chicken:seed_oil_bucket'
     ])
 
     event.add('sliceanddice:allowed_tools', [
@@ -844,6 +864,7 @@ ServerEvents.tags('item', event => {
       'minecraft:diamond_pickaxe',
       'create_sa:blazing_pickaxe',
       'brassworks:hyper_experience_pickaxe',
+	  'brassworks:hyper_experience_axe',
       'create_sa:zinc_pickaxe',
       'create_sa:rose_quartz_pickaxe',
       'create_sa:copper_pickaxe',
@@ -1154,7 +1175,20 @@ ServerEvents.tags('item', event => {
       'createfood:bread_slice_tomato',
       'createfood:bread_slice_mutton',
       'createfood:bread_slice_melon_jam',
-      'createfood:bread_slice_lettuce_tomato'
+      'createfood:bread_slice_lettuce_tomato',
+      'brewinandchewin:vegetable_omelet',
+      'brewinandchewin:creamy_onion_soup',
+      'brewinandchewin:cheesy_pasta',
+      'brewinandchewin:horror_lasagna',
+      'brewinandchewin:scarlet_pierogi',
+      'brewinandchewin:pizza_slice',
+      'brewinandchewin:quiche_slice',
+      'brewinandchewin:ham_and_cheese_sandwich',
+      'brewinandchewin:kimchi',
+      'brewinandchewin:jerky',
+      'brewinandchewin:pickled_pickles',
+      'brewinandchewin:kippers',
+      'brewinandchewin:flaxen_cheese_wedge'
     ])
 
     //tag for all copycats
@@ -1221,6 +1255,7 @@ ServerEvents.tags('item', event => {
     
     event.remove('forge:hidden', 'minecraft:air');
     event.remove('forge:salt', 'createfood:salt');
+    event.remove('forge:plantoil', 'create_mechanical_chicken:seed_oil')
     event.add('brassworks:experience_heap_hyper', [
       'brassworks:hyper_experience_heap'
     ])
@@ -1245,8 +1280,29 @@ ServerEvents.tags('block', event => {
   event.add('brassworks:tall_flowers', [
     'snifferplus:tall_fiddlefern'
   ])
+	
   event.add('brassworks:small_flowers', [
     'snifferplus:fiddlefern'
+  ])
+	
+  event.add('create:wrench_pickup', [
+    'minecraft:shulker_box',
+    'minecraft:white_shulker_box',
+    'minecraft:orange_shulker_box',
+    'minecraft:magenta_shulker_box',
+    'minecraft:light_blue_shulker_box',
+    'minecraft:yellow_shulker_box',
+    'minecraft:lime_shulker_box',
+    'minecraft:pink_shulker_box',
+    'minecraft:gray_shulker_box',
+    'minecraft:light_gray_shulker_box',
+    'minecraft:cyan_shulker_box',
+    'minecraft:purple_shulker_box',
+    'minecraft:blue_shulker_box',
+    'minecraft:brown_shulker_box',
+    'minecraft:green_shulker_box',
+    'minecraft:red_shulker_box',
+    'minecraft:black_shulker_box'
   ])
 })
 

@@ -53,6 +53,24 @@
             "height": 7,
             "ascent": 7,
             "type": "bitmap"
+        },
+        {
+            "file": "brassworks:gui/ranks/atm.png",
+            "chars": [
+                "🛈"
+            ],
+            "height": 7,
+            "ascent": 7,
+            "type": "bitmap"
+        },
+                {
+            "file": "brassworks:gui/ranks/worker.png",
+            "chars": [
+                ""
+            ],
+            "height": 7,
+            "ascent": 7,
+            "type": "bitmap"
         }
     ]
 }

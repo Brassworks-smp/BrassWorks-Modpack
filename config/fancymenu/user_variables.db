@@ -14,7 +14,7 @@ variable {
 
 variable {
   name = randomtext
-  value = 94
+  value = 137
   reset_on_launch = false
 }
 
