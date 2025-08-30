@@ -15,7 +15,7 @@
 	#Range: > 1
 	outputAmount = 1
 	#Required fluid
-	requiredFluid = "#forge:plantoil"
+	requiredFluid = "createaddition:seed_oil"
 	#Processing time (in ticks)
 	#Range: > 0
 	processingTime = 500

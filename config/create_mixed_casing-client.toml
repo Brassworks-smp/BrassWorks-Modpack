@@ -1,0 +1,6 @@
+
+[General]
+	#Define the block radius of the wrench overlay when in Encasing Mode.
+	#Range: 0 ~ 256
+	wrench_overlay_radius = 96
+

@@ -20,7 +20,9 @@ let music_list = {
   fukashigi_no_trumpet:        [261, veridium],
   csgo_bhop_song:              [230, veridium],
   its_all_over_but_the_crying: [169, veridium],
-  whiskey_cola_and_tequila:    [187, veridium]
+  whiskey_cola_and_tequila:    [187, veridium],
+  average_summer_song:         [172, veridium],
+  warni_warni:                 [430, veridium]
 };
 
 // Register sound events

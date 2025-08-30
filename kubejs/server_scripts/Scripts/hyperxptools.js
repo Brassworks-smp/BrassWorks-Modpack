@@ -74,7 +74,7 @@ PlayerEvents.inventoryChanged(event => {
     const xp = 10;
 
     event.server.runCommandSilent(
-      `summon create_enchantment_industry:hyper_experience_orb ${x} ${y} ${z} {clumpedMap:{1:${xp}}}`
+      `execute at ${player.name.string} run summon create_enchantment_industry:hyper_experience_orb ${x} ${y} ${z} {clumpedMap:{1:${xp}}}`
     );
   }
 });

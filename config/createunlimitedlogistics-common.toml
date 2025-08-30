@@ -1,0 +1,7 @@
+
+[createunlimitedlogistics]
+
+	[createunlimitedlogistics.configuration]
+		#Range: 1 ~ 423
+		slot_max = 64
+

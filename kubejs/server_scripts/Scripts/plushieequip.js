@@ -7,7 +7,8 @@ ItemEvents.rightClicked(event => {
     'brassworks:blue_axolotl_plushie',
     'brassworks:pink_axolotl_plushie',
     'brassworks:glow_squid_plushie',
-    'brassworks:steven_uk_plushie'
+    'brassworks:steven_uk_plushie',
+    'brassworks:slabfish_plushie'
   ];
 
   // Early exit if the conditions are not met

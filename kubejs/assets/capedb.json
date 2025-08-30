@@ -59,14 +59,6 @@
 		"name": "DerErneuerer",
 		"cape": "sniffer"
 	},
-	"2f15fd1b-e2d1-4d91-93d5-b38eae66488f": {
-		"name": "WellChuffed",
-		"cape": "sniffer"
-	},
-	"9a5b2ac8-2123-4c31-b3b6-1cfd6d3bfd77": {
-		"name": "Trig_Nucleare",
-		"cape": "sniffer"
-	},
 	"03e15785-dd9f-4f00-a797-5f9ea7a78766": {
 		"name": "steven_uk",
 		"cape": "donator"
@@ -77,6 +69,18 @@
 	},
 	"f84de693-313e-4670-936a-ce7122d491ba": {
 		"name": "_derp",
+		"cape": "donator"
+	},
+	"1ece1100-4bcd-4f5a-ba05-3756d41290de": {
+		"name": "WillowSewn",
+		"cape": "donator"
+	},
+	"0219f6a5-6a04-402b-bc47-01b619f6e1e4": {
+		"name": "SocialRoses",
+		"cape": "donator"
+	},
+	"ef28c2da-e6a5-4eb7-8794-31a22eb76ae7": {
+		"name": "Midir6",
 		"cape": "donator"
 	}
 }

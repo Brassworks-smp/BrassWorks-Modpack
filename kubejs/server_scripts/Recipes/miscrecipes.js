@@ -1,24 +1,69 @@
 ServerEvents.recipes(event => {
   // Recipe Removals
-  event.remove({ output: 'numismatics:bank_terminal' })
-  event.remove({ output: 'supplementaries:cannon' })
-  event.remove({ output: 'buzzier_bees:honey_apple' })
-  event.remove({ output: 'barteringstation:bartering_station' })
-  event.remove({ output: 'vanillabackport:dried_ghast' })
-  event.remove({ id: 'minecraft:lead' }) // Remove vanilla lead recipe
-  event.remove({ output: 'missions:mechanical_exchanger' }) // Remove any existing recipe for mechanical exchanger
-  event.remove({ output: 'missions:jar_of_tips' }) // Remove any existing recipe for jar of tips
-  event.remove({ output: 'createqol:inventory_linker' }) 
-  event.remove({ output: 'createqol:player_paper' })
-  event.remove({ output: 'supplementaries:cog_block' }) 
   event.remove({ mod: 'createaddition' });
-  event.remove({ output: 'create_connected:item_silo'});
   event.remove({ type: 'clayworks:baking' })
-  event.remove({ id: 'create:crushing/tuff' })
-  event.remove({ id: 'create:crushing/tuff_recycling' })
-  event.remove({ id: 'createfood:create/mixing/salt_from_mixing_water' })
-  event.remove({ id: 'minecraft:shulker_box' })
-  event.remove({ id: 'create_mechanical_chicken:compacting/compacting_seed_oil' })
+
+  var outputsToRemove = [
+  'numismatics:bank_terminal',
+  'supplementaries:cannon',
+  'buzzier_bees:honey_apple',
+  'barteringstation:bartering_station',
+  'vanillabackport:dried_ghast',
+  'missions:mechanical_exchanger',
+  'missions:jar_of_tips',
+  'createqol:inventory_linker',
+  'createqol:player_paper',
+  'supplementaries:cog_block',
+  'create_connected:item_silo',
+  'farmersdelight:wheat_dough'
+];
+
+var recipesToRemove = [
+  'minecraft:lead',
+  'create:crushing/tuff',
+  'create:crushing/tuff_recycling',
+  'createfood:create/mixing/salt_from_mixing_water',
+  'minecraft:shulker_box',
+  'create_mechanical_chicken:compacting/compacting_seed_oil',
+  'brewinandchewin:filling/create/honey_bottle',
+  'brewinandchewin:emptying/create/honey_bottle',
+  'create:industrial_iron_block_from_iron_ingots_stonecutting',
+  'createdeco:compacting/industrial_iron_ingot',
+  'minecraft:farmersdelight.dough'
+];
+
+outputsToRemove.forEach(function(output) {
+  event.remove({ output: output });
+});
+
+recipesToRemove.forEach(function(id) {
+  event.remove({ id: id });
+});
+
+
+    // Replace Brewin and Chewin honey with Create honey in all recipe inputs
+  event.replaceInput(
+    { }, // empty filter means "all recipes"
+    Fluid.of('brewinandchewin:honey', 250),
+    Fluid.of('create:honey', 250)
+  )
+
+  // Replace Brewin and Chewin honey with Create honey in all recipe outputs
+  event.replaceOutput(
+    { }, // all recipes i think, dunno
+    Fluid.of('brewinandchewin:honey', 250),
+    Fluid.of('create:honey', 250)
+  )
+
+  
+   event.recipes.createFilling(
+    Item.of('create:ochrum', 1),
+    [
+      'create:limestone',
+      Fluid.of('create:honey', 50)
+    ]
+  )
+
   // New shapeless Bank Terminal recipe
   event.shapeless(
     'numismatics:bank_terminal',
@@ -149,7 +194,12 @@ ServerEvents.recipes(event => {
 
     event.shapeless(
     'minecraft:chest',
-    'woodworks:oak_chest'
+    '#c:chests/wooden'
+  )
+
+    event.shapeless(
+    'create_factory_logistics:factory_fluid_gauge',
+    'create_factory_logistics:factory_fluid_gauge'
   )
 
 
@@ -836,7 +886,10 @@ ServerEvents.tags('item', event => {
         'brassworks:shop_3',
         'brassworks:shop_4',
         'create_mechanical_chicken:seed_oil',
-        'create_mechanical_chicken:seed_oil_bucket'
+        'create_mechanical_chicken:seed_oil_bucket',
+        'brewinandchewin:honey',
+        'createfood:salt',
+        'railways:portable_fuel_interface'
     ])
 
     event.add('sliceanddice:allowed_tools', [
@@ -1255,6 +1308,7 @@ ServerEvents.tags('item', event => {
     
     event.remove('forge:hidden', 'minecraft:air');
     event.remove('forge:salt', 'createfood:salt');
+    event.remove('forge:dough', 'farmersdelight:wheat_dough')
     event.remove('forge:plantoil', 'create_mechanical_chicken:seed_oil')
     event.add('brassworks:experience_heap_hyper', [
       'brassworks:hyper_experience_heap'
@@ -1313,4 +1367,8 @@ ServerEvents.recipes(event => {
   event.remove({ output: '#forge:hidden' })
   // Remove all woodworks:sawing recipes
   event.remove({ type: 'woodworks:sawing' })
+})
+
+ServerEvents.tags('fluid', event => {
+  event.add('forge:hidden', 'brewinandchewin:honey')
 })

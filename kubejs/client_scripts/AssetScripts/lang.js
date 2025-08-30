@@ -65,4 +65,5 @@ ClientEvents.lang('en_us', e => {
   e.add('block.quark.lootr_variant_chest', 'Loot Chest Variant')
   e.add('entity.imgurdisplay.display', 'Display Image')
   e.add('entity.minecraft.villager.djvillager.dj', 'DJ')
+  e.add('slabfish.type.environmental.timeless_grotto', 'Timeless Grotto')
 })

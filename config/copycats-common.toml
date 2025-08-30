@@ -49,6 +49,7 @@ disableMigration = false
 	copycat_slope = true
 	copycat_vertical_slope = true
 	copycat_vertical_half_layer = true
+	locked_copycat_fluid_pipe = true
 
 #.
 #Enable/disable categories of features. Disabling a category hides all related features. Values on server override clients

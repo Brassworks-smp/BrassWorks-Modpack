@@ -50,9 +50,9 @@ ItemEvents.rightClicked(event => {
     if (xp <= 0) return;
 
     const { x, y, z } = player;
-    server.runCommandSilent(`summon ${orb} ${x} ${y + 1} ${z} {clumpedMap:{1:${xp}}}`);
+    server.runCommandSilent(`execute at ${player.name.string} run summon ${orb} ${x} ${y + 1} ${z} {clumpedMap:{1:${xp}}}`);
     const pitch = (Math.random() * 0.5 + 1).toFixed(2);
-    server.runCommandSilent(`playsound minecraft:block.amethyst_block.break player @a ${x} ${y + 1} ${z} 1 ${pitch}`);
+    server.runCommandSilent(`execute at ${player.name.string} run playsound minecraft:block.amethyst_block.break player @a ${x} ${y + 1} ${z} 1 ${pitch}`);
     item.count -= consumeAmount;
     event.cancel();
 });

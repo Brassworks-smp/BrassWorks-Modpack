@@ -1,6 +1,48 @@
 type = user_variables
 
 variable {
+  name = spleef.playersleft
+  value = 0
+  reset_on_launch = false
+}
+
+variable {
+  name = randomtext
+  value = 157
+  reset_on_launch = false
+}
+
+variable {
+  name = claimamount
+  value = 
+  reset_on_launch = true
+}
+
+variable {
+  name = countdownText
+  value = 0
+  reset_on_launch = false
+}
+
+variable {
+  name = parties.join.partyid
+  value = 
+  reset_on_launch = true
+}
+
+variable {
+  name = spleef.redtext
+  value = 0.0
+  reset_on_launch = false
+}
+
+variable {
+  name = welcomemessage
+  value = false
+  reset_on_launch = false
+}
+
+variable {
   name = parties.invite.playername
   value = 
   reset_on_launch = true
@@ -13,21 +55,15 @@ variable {
 }
 
 variable {
-  name = randomtext
-  value = 137
+  name = timer
+  value = 0
   reset_on_launch = false
 }
 
 variable {
-  name = claimamount
-  value = 
-  reset_on_launch = true
-}
-
-variable {
-  name = parties.join.partyid
-  value = 
-  reset_on_launch = true
+  name = spleef.deathmatch
+  value = false
+  reset_on_launch = false
 }
 
 variable {
@@ -37,8 +73,14 @@ variable {
 }
 
 variable {
-  name = welcomemessage
-  value = true
+  name = opacity
+  value = 1.0
+  reset_on_launch = false
+}
+
+variable {
+  name = spleef.playersleftnew
+  value = 2
   reset_on_launch = false
 }
 

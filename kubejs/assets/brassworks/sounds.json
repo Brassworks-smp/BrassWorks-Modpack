@@ -152,5 +152,21 @@
                 "stream": true
             }
         ]
+    },
+        "music.warni_warni": {
+        "sounds": [
+            {
+                "name": "brassworks:warni_warni",
+                "stream": true
+            }
+        ]
+    },
+        "music.average_summer_song": {
+        "sounds": [
+            {
+                "name": "brassworks:average_summer_song",
+                "stream": true
+            }
+        ]
     }
 }

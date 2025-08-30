@@ -1,0 +1,20 @@
+{
+  "conditions": [
+    {
+      "type": "environmental:event",
+      "events": [
+        "spawn",
+        "breed"
+      ]
+    },
+    {
+      "type": "environmental:in_biome",
+      "biomes": "snifferplus:timeless_grotto"
+    }
+  ],
+  "description": {
+    "translate": "slabfish.type.environmental.timeless_grotto"
+  },
+  "priority": 1,
+  "texture": "environmental:type/timeless_grotto"
+}

@@ -22,17 +22,18 @@ MoreJSEvents.enchantmentTableEnchant(event => {
     }
 })
 
-// Cancel right click on blaze enchanter with blocked items
+// Cancel right click on blaze enchanter with blocked items or when stack size > 1
 BlockEvents.rightClicked(event => {
     const { block, hand, item } = event;
     if (
         block.id === 'create_enchantment_industry:blaze_enchanter' &&
         item &&
-        blockedmachines.includes(item.id)
+        (blockedmachines.includes(item.id) || item.count > 1)
     ) {
         event.cancel();
     }
 });
+
 
 //remove enchantments from enchanted machines just in case
 PlayerEvents.inventoryChanged(event => {
@@ -44,3 +45,17 @@ PlayerEvents.inventoryChanged(event => {
         }
     })
 })
+
+
+// Fix ivano exploit
+BlockEvents.rightClicked(event => {
+    const { block, item } = event;
+    if (
+        block.id === 'create_enchantment_industry:blaze_enchanter' &&
+        item &&
+        item.id === 'create:mechanical_drill' &&
+        item.count > 1
+    ) {
+        event.cancel();
+    }
+});

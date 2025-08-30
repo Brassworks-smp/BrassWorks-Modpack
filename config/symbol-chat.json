@@ -14,6 +14,7 @@
   "chat_suggestion_regex": "^(/(msg|tell|w|say|me|teammsg|tm) |[^/]).*",
   "custom_symbols": "",
   "custom_kaomojis": [
-    ""
+    ":plum:",
+    "🍑"
   ]
 }
