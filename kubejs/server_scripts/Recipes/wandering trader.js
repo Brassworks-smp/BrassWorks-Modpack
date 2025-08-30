@@ -19,7 +19,9 @@ MoreJSEvents.villagerTrades((event) => {
         "brassworks:music_disc_dixie_biscuit": 24,
         "brassworks:music_disc_fukashigi_no_trumpet": 23,
         "brassworks:music_disc_csgo_bhop_song": 22,
-        "brassworks:music_disc_its_all_over_but_the_crying": 20
+        "brassworks:music_disc_its_all_over_but_the_crying": 20,
+        "brassworks:music_disc_average_summer_song": 23,
+        "brassworks:music_disc_warni_warni": 24
     };
 
     Object.entries(discPrices).forEach(([disc, price]) => {
