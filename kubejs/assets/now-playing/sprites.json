@@ -1,0 +1,13 @@
+{
+    "minecraft:silence-1hour":		"minecraft:textures/item/music_disc_11",
+    "brassworks_events:tumble_01":	"minecraft:textures/item/snowball",
+	"brassworks_events:tumble_02":	"minecraft:textures/item/snowball",
+	"brassworks_events:tumble_03":	"minecraft:textures/item/snowball",
+	"brassworks_events:tumble_04":	"minecraft:textures/item/snowball",
+	"brassworks_events:tumble_05":	"minecraft:textures/item/snowball",
+	"brassworks_events:tumble_06":	"minecraft:textures/item/snowball",
+	"brassworks_events:tumble_07":	"minecraft:textures/item/snowball",
+	"brassworks_events:tumble_08":	"minecraft:textures/item/snowball",
+	"brassworks_events:tumble_09":	"minecraft:textures/item/snowball",
+	"brassworks_events:tumble_10":	"minecraft:textures/item/snowball"
+}

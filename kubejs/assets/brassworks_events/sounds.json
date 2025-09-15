@@ -15,6 +15,18 @@
             }
         ]
     },
+	"sfx.shortfall": {
+        "sounds": [
+            {
+                "name": "brassworks_events:shortfall1",
+                "stream": true
+            },
+            {
+                "name": "brassworks_events:shortfall2",
+                "stream": true
+            }
+        ]
+	},
 	"sfx.shortfall1": {
         "sounds": [
             {
@@ -27,6 +39,62 @@
         "sounds": [
             {
                 "name": "brassworks_events:shortfall2",
+                "stream": true
+            }
+        ]
+	},
+	"sfx.lavadeath": {
+        "sounds": [
+            {
+                "name": "brassworks_events:lavadeath1",
+                "stream": true
+            },
+			{
+                "name": "brassworks_events:lavadeath2",
+                "stream": true
+            },
+			{
+                "name": "brassworks_events:lavadeath3",
+                "stream": true
+            }
+        ]
+	},
+	"sfx.showdown": {
+        "sounds": [
+            {
+                "name": "brassworks_events:showdown",
+                "stream": true
+            }
+        ]
+	},
+	"sfx.celebration": {
+        "sounds": [
+            {
+                "name": "brassworks_events:celebration",
+                "stream": true
+            }
+        ]
+	},
+	"sfx.celebration2": {
+        "sounds": [
+            {
+                "name": "brassworks_events:celebration2",
+                "stream": true
+            }
+        ]
+	},
+	"sfx.gamestart": {
+        "sounds": [
+            {
+                "name": "brassworks_events:gamestart",
+                "stream": true
+            }
+        ]
+	},
+	"sfx.gameend": {
+        "sounds": [
+            {
+                "name": "brassworks_events:gameend",
                 "stream": true
             }
         ]
@@ -69,6 +137,86 @@
                 "name": "brassworks_events:tumble_09",
                 "stream": true
             },
+            {
+                "name": "brassworks_events:tumble_10",
+                "stream": true
+            }
+        ]
+    },
+	"music.tumble_01": {
+        "sounds": [
+            {
+                "name": "brassworks_events:tumble_01",
+                "stream": true
+            }
+        ]
+    },
+	"music.tumble_02": {
+        "sounds": [
+            {
+                "name": "brassworks_events:tumble_02",
+                "stream": true
+            }
+        ]
+    },
+	"music.tumble_03": {
+        "sounds": [
+            {
+                "name": "brassworks_events:tumble_03",
+                "stream": true
+            }
+        ]
+    },
+	"music.tumble_04": {
+        "sounds": [
+            {
+                "name": "brassworks_events:tumble_04",
+                "stream": true
+            }
+        ]
+    },
+	"music.tumble_05": {
+        "sounds": [
+            {
+                "name": "brassworks_events:tumble_05",
+                "stream": true
+            }
+        ]
+    },
+	"music.tumble_06": {
+        "sounds": [
+            {
+                "name": "brassworks_events:tumble_06",
+                "stream": true
+            }
+        ]
+    },
+	"music.tumble_07": {
+        "sounds": [
+            {
+                "name": "brassworks_events:tumble_07",
+                "stream": true
+            }
+        ]
+    },
+	"music.tumble_08": {
+        "sounds": [
+            {
+                "name": "brassworks_events:tumble_08",
+                "stream": true
+            }
+        ]
+    },
+	"music.tumble_09": {
+        "sounds": [
+            {
+                "name": "brassworks_events:tumble_09",
+                "stream": true
+            }
+        ]
+    },
+	"music.tumble_10": {
+        "sounds": [
             {
                 "name": "brassworks_events:tumble_10",
                 "stream": true
